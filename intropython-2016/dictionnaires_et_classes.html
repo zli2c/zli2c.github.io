@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Zhentao Li" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="tp6.html">Cours 6</a> 
+              <a class="leftmenu" href="tp6c.html">Corrigé 6</a> 
+              <a class="leftmenu" href="tp7.html">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="10"></td>
+                <td valign="top" class="mainbox">
+
+<h1 id="dictionnaires">Dictionnaires</h1>
+<h2 id="dictionnaires-1">Dictionnaires</h2>
+<p>Les listes nous permettent d’accéder aux éléments de la liste par indices.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> animaux[<span class="dv">2</span>]
+<span class="co">&#39;singe&#39;</span></code></pre></div>
+<p>Mais parfois, on aimerais que les indices soient autre chose que des numéros. Des chaînes de caractères, par exemple.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> nombre[<span class="st">&quot;giraffe&quot;</span>]
+<span class="dv">3</span>
+<span class="op">&gt;&gt;&gt;</span> nombre[<span class="st">&quot;singe&quot;</span>]
+<span class="dv">5</span>
+<span class="op">&gt;&gt;&gt;</span> emplacement[<span class="st">&quot;giraffe&quot;</span>]
+<span class="co">&quot;Cage nord-ouest&quot;</span></code></pre></div>
+<p>Une telle représentation de l’information est possible avec le dictionnaire.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> nombre <span class="op">=</span> {<span class="st">&quot;giraffe&quot;</span>:<span class="dv">3</span>, <span class="st">&quot;singe&quot;</span>:<span class="dv">5</span>}
+<span class="op">&gt;&gt;&gt;</span> emplacement <span class="op">=</span> {<span class="st">&quot;giraffe&quot;</span>:<span class="st">&quot;Cage nord-ouest&quot;</span>}</code></pre></div>
+<h2 id="dictionnaire">Dictionnaire</h2>
+<ul>
+<li><p>La <em>liste</em> associe à chaque <em>indice</em> une valeur.</p>
+<p>Le <em>dictionnaire</em> associe à chaque <em>clé</em> une valeur.</p></li>
+<li><p>Une clé de dictionnaire peut être un <em>chiffre</em>, une <em>chaîne de caractères</em>, un <em>n-tuplet</em>, etc. Mais pas une <em>liste</em> ou un autre <em>dictionnaire</em>.</p></li>
+<li><p>Un dictionnaire est créé en utilisant les accolades <code>{}</code> avec la syntaxe</p>
+<p><code>{cle1: valeur1, cle2: valeur2, …}</code></p></li>
+</ul>
+<p><strong>Remarque</strong>: Les dictionnaires sont un type de base en Python mais est inhabituelle pour d’autre langages de programmation.</p>
+<p>Dans ce sens, ils ne sont pas strictement nécessaires. De plus il est possible de simuler un dictionnaire avec des listes (c’est-à-dire écrire un ensemble de fonctions qui remplissent les mêmes fonctions que celle d’un dictionnaire).</p>
+<h2 id="opération-sur-les-dictionnaires">Opération sur les dictionnaires</h2>
+<p><a href="http://www.pythontutor.com/visualize.html#code=nombre+%3D+%7B%22giraffe%22%3A3,+%22singe%22%3A5%7D%0Aemplacement+%3D+%7B%22giraffe%22%3A%22Cage+nord-ouest%22%7D%0Anombre%5B&#39;dahu&#39;%5D+%3D+1%0Anombre%5B%22singe%22%5D+%3D+6%0Aprint+nombre%0Aprint+&#39;singe&#39;+in+nombre%0Aprint+&#39;ornithorynque&#39;+in+nombre%0Aprint+nombre.keys%28%29%0Aprint+nombre.values%28%29%0Aprint+nombre.items%28%29%0Aliste_de_paires+%3D+nombre.items%28%29%0Aprint+dict%28liste_de_paires%29%0Afor+cle+in+nombre%3A%0A++++print+cle%0Adel+nombre%5B&#39;giraffe&#39;%5D%0Aprint+nombre%0Aordre+%3D+%7Bcara%3A+ord%28cara%29+for+cara+in+&#39;abcde&#39;+if+cara+!%3D+&#39;d&#39;%7D%0Aprint+ordre&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser tous les exemples sur les dictionnaires.</a> <a href="dictionnaire.py">Télécharger l'exemple.</a></p>
+<ul>
+<li><p>Ajout ou mise à jour de valeur.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> nombre[<span class="st">&#39;dahu&#39;</span>] <span class="op">=</span> <span class="dv">1</span>
+<span class="op">&gt;&gt;&gt;</span> nombre[<span class="st">&quot;singe&quot;</span>] <span class="op">=</span> <span class="dv">6</span>
+<span class="op">&gt;&gt;&gt;</span> nombre
+{<span class="st">&#39;giraffe&#39;</span>: <span class="dv">3</span>, <span class="st">&#39;dahu&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;singe&#39;</span>: <span class="dv">6</span>}</code></pre></div></li>
+<li><p>Déterminer si une clé existe dans un dictionnaire.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;singe&#39;</span> <span class="op">in</span> nombre
+<span class="va">True</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;ornithorynque&#39;</span> <span class="op">in</span> nombre
+<span class="va">False</span></code></pre></div></li>
+<li><p>Obtenir les clés, valeurs ou paires clé valeur comme liste.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> nombre.keys()
+[<span class="st">&#39;giraffe&#39;</span>, <span class="st">&#39;dahu&#39;</span>, <span class="st">&#39;singe&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> nombre.values()
+[<span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">6</span>]
+<span class="op">&gt;&gt;&gt;</span> nombre.items()
+[(<span class="st">&#39;giraffe&#39;</span>, <span class="dv">3</span>), (<span class="st">&#39;dahu&#39;</span>, <span class="dv">1</span>), (<span class="st">&#39;singe&#39;</span>, <span class="dv">6</span>)]</code></pre></div></li>
+</ul>
+<h2 id="opération-sur-les-dictionnaires-1">Opération sur les dictionnaires</h2>
+<ul>
+<li><p>Conversion de liste de paires en dictionnaire.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> liste_de_paires <span class="op">=</span> nombre.items()
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">dict</span>(liste_de_paires)
+{<span class="st">&#39;giraffe&#39;</span>: <span class="dv">3</span>, <span class="st">&#39;dahu&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;singe&#39;</span>: <span class="dv">6</span>}</code></pre></div></li>
+<li><p>Itération sur les clés</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="cf">for</span> cle <span class="op">in</span> nombre:
+...   <span class="bu">print</span> cle
+... 
+giraffe
+dahu
+singe</code></pre></div></li>
+<li><p>Enlever une paire clé-valeur.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="kw">del</span> nombre[<span class="st">&#39;giraffe&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> nombre
+{<span class="st">&#39;dahu&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;singe&#39;</span>: <span class="dv">6</span>}</code></pre></div></li>
+</ul>
+<h2 id="compréhension-de-dictionnaire-très-avancé">Compréhension de dictionnaire (très avancé)</h2>
+<p>Comme pour les listes, une notation « mathématique » compacte existe pour la création de dictionnaires.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Pour les listes</span>
+carres_impairs <span class="op">=</span> [i<span class="op">*</span>i <span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="dv">10</span>) <span class="cf">if</span> i<span class="op">%</span><span class="dv">2</span> <span class="op">==</span> <span class="dv">1</span>]
+<span class="co"># Pour les dictionnaires</span>
+ordre <span class="op">=</span> {cara: <span class="bu">ord</span>(cara) <span class="cf">for</span> cara <span class="op">in</span> <span class="st">&#39;abcde&#39;</span> <span class="cf">if</span> cara <span class="op">!=</span> <span class="st">&#39;d&#39;</span>}
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> ordre
+{<span class="st">&#39;a&#39;</span>: <span class="dv">97</span>, <span class="st">&#39;c&#39;</span>: <span class="dv">99</span>, <span class="st">&#39;b&#39;</span>: <span class="dv">98</span>, <span class="st">&#39;e&#39;</span>: <span class="dv">101</span>}</code></pre></div>
+<h1 id="classes">Classes</h1>
+<h2 id="définition-de-nouveaux-types-avec-classes">Définition de nouveaux types avec classes</h2>
+<p>Que faire si vos données sont mieux représentées par autre chose que les types en Python?</p>
+<p>Dans un sens, vous aurez jamais besoin de d'autre types. Il suffit de suivre quelques convention (par exemple, toujours mettre une certaine variable comme premier paramètre) avec une interprétation implicite de l'emboîtement et indices des données (« ce dictionnaire représente toujours... »).</p>
+<p>Pour avoir une déclaration explicite, nous pouvons créer de nouveaux types appelés <em>classes</em>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> MaClasse:
+    <span class="cf">pass</span>
+
+instance <span class="op">=</span> MaClasse()</code></pre></div>
+<p>Comme l'instruction <code>def</code> pour déclarer des fonctions, <code>class</code> fait simplement définir une nouvelle classe et n'a aucun effet d'exécution immédiate.</p>
+<p>Comme les types <code>int</code>, <code>str</code>, <code>list</code>, etc, vous pouvez en avoir plusieurs copies d'une même classe à valeurs différentes, chacune appelée une <em>instance</em> de la classe.</p>
+<p>Voir <code>help(&quot;class&quot;)</code> à l'intérieur de l'interpréteur pour de l'aide.</p>
+<h2 id="attributs-et-méthodes">Attributs et méthodes</h2>
+<p>Une classe est constituée de</p>
+<ul>
+<li><strong>attributs</strong>: un dictionnaire</li>
+<li><strong>méthodes</strong>: un regroupement de fonction qui seront notamment utiliser pour modifier ou obtenir de l'information sur des instances de la classe.</li>
+</ul>
+<p>Exemple d'attributs avec les nombres complexes qui ont deux attributs: <code>real</code> et <code>imag</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="bu">complex</span>(<span class="dv">1</span>, <span class="dv">2</span>)
+<span class="op">&gt;&gt;&gt;</span> x.real
+<span class="fl">1.0</span>
+<span class="op">&gt;&gt;&gt;</span> x.imag
+<span class="fl">2.0</span>
+<span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> x <span class="op">+</span> <span class="dv">3</span>
+<span class="op">&gt;&gt;&gt;</span> x.real
+<span class="fl">4.0</span></code></pre></div>
+<p>Les attributs sont accédés et assignés avec la syntaxe <code>nom_de_variable.nom_de_l_attribut</code>.</p>
+<p><strong>Remarque:</strong> Les fonctions de conversion de types du premier cours étaient des initialisations de variables.</p>
+<p>Exemple de méthode:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> x.conjugate()</code></pre></div>
+<p>Nous avons déjà vu beaucoup d'exemples de méthodes avec <code>str</code>, <code>list</code>, <code>dict</code> comme <code>list.append</code> et <code>dict.keys</code>.</p>
+<p><strong>Rappel:</strong> La deuxième formes d'appel d'une fonction <code>variable.nom_de_fonction(parametre1, parametre2, ...)</code> est un appel à une méthode.</p>
+<p>La définition de méthode nous permet de créer de nouvelle fonctions qui sont appelé de cette façon.</p>
+<p>La notion de classes fait partie de la &quot;programmation orienté objet&quot;. L'intuition est que les instances sont des objets que nous manipulons. Soit en les examinant (attributs), soit en les modifiants (méthodes).</p>
+<h2 id="déclaration-dune-classe">Déclaration d'une classe</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Point:
+    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x, y):
+        <span class="va">self</span>.x <span class="op">=</span> x
+        <span class="va">self</span>.y <span class="op">=</span> y
+
+    <span class="kw">def</span> distance(<span class="va">self</span>, autre_point):
+        distance_carre <span class="op">=</span> (<span class="va">self</span>.x <span class="op">-</span> autre_point.x)<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> (<span class="va">self</span>.y <span class="op">-</span> autre_point.y)<span class="op">**</span><span class="dv">2</span>
+        <span class="cf">return</span> distance_carre<span class="op">**</span><span class="fl">0.5</span>
+
+point <span class="op">=</span> Point(<span class="dv">10</span>, <span class="dv">20</span>)
+<span class="bu">print</span> point.x, point.y
+point.x <span class="op">+=</span> <span class="dv">3</span>
+<span class="bu">print</span> point.x, point.y
+origine <span class="op">=</span> Point(<span class="dv">0</span>, <span class="dv">0</span>)
+<span class="bu">print</span> point.distance(origine)</code></pre></div>
+<p>La forme générale que prends la déclaration d'une classe est la suivante.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> MaClasse:
+    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, parametre1, parametre2, ...):
+        <span class="co"># Blocs d&#39;instructions</span>
+        <span class="co"># Inclut typiquement l&#39;initialisation des attributs de l&#39;instance.</span>
+
+    <span class="kw">def</span> methode1(<span class="va">self</span>, parametre1, ...):
+        <span class="co"># Bloc d&#39;instructions</span>
+
+    <span class="kw">def</span> methode2(<span class="va">self</span>, parametre1, ...):
+        <span class="co"># Bloc d&#39;instructions</span>
+
+instance <span class="op">=</span> MaClasse()
+<span class="bu">print</span> instance.attribut1</code></pre></div>
+<p>La méthode <code>__init__</code> est spéciale. Elle est appelée à la création d'une instance. Il y a d'autre méthodes « magiques » semblables, tous de la forme <code>__nom__</code> (comme <code>__add__</code>, <code>__sub__</code>, <code>__str__</code>, <code>__getitem__</code>) que nous n'allons pas décrire en détail ici (voir p.94-95 des <a href="cordeau.pdf">transparents ici</a> pour quelques exemples).</p>
+<h2 id="similarités-entre-méthodes-et-fonctions">Similarités entre méthodes et fonctions</h2>
+<p>Le premier paramètre d'une fonction est toujours l'instance de la classe. Par convention, on utilise (presque) toujours <code>self</code> pour le nom de cette variable (mais <code>self</code> a sinon aucune signification spéciale).</p>
+<p>Comparer cette fonction avec la méthode <code>distance</code> définie plus haut.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> distance(premier_point, autre_point):
+    distance_carre <span class="op">=</span> (premier_point.x <span class="op">-</span> autre_point.x)<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> (premier_point.y <span class="op">-</span> autre_point.y)<span class="op">**</span><span class="dv">2</span>
+    <span class="cf">return</span> distance_carre<span class="op">**</span><span class="fl">0.5</span>
+
+point <span class="op">=</span> Point(<span class="dv">10</span>, <span class="dv">20</span>)
+origine <span class="op">=</span> Point(<span class="dv">0</span>, <span class="dv">0</span>)
+<span class="bu">print</span> point.distance(origine)
+<span class="bu">print</span> distance(point, origine)</code></pre></div>
+<p>Ces deux fonctions donnent le même résultat.</p>
+<h2 id="attributs-de-classes">Attributs de classes</h2>
+<p>Vous pouvez aussi avoir des attributs de classes (plutôt que des attributs d'instances) mais c'est plus rarement utilisé.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> MaClasse:
+    x <span class="op">=</span> <span class="dv">10</span>
+    chaine <span class="op">=</span> <span class="st">&quot;abc&quot;</span>
+
+<span class="bu">print</span> MaClasse.x <span class="co"># 10</span>
+MaClasse.x <span class="op">=</span> <span class="dv">20</span>
+<span class="bu">print</span> MaClasse.x <span class="co"># 20</span>
+instance <span class="op">=</span> MaClasse()
+<span class="bu">print</span> instance.x <span class="co"># 20</span>
+instance.x <span class="op">=</span> <span class="dv">30</span>
+<span class="bu">print</span> MaClasse.x <span class="co"># 20</span>
+<span class="bu">print</span> instance.x <span class="co"># 30</span></code></pre></div>
+<p>Les attributs de classes sont</p>
+<h2 id="héritage-et-polymorphisme-avancé">Héritage et polymorphisme (avancé)</h2>
+<p>Si on veut créer une nouvelle classe qui presque toutes les mêmes méthodes qu'une autre classe, nous pouvons utiliser la syntaxe suivante pour faire hériter la nouvelle classe.</p>
+<p>Exemple:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Rectangle:
+    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, longueur, largeur):
+        <span class="va">self</span>.longueur <span class="op">=</span> longueur
+        <span class="va">self</span>.largeur <span class="op">=</span> largeur
+
+    <span class="kw">def</span> volume(<span class="va">self</span>):
+        <span class="cf">return</span> <span class="va">self</span>.longueur <span class="op">*</span> <span class="va">self</span>.largeur
+
+<span class="kw">class</span> TriangleRectangle(Rectangle):
+    <span class="kw">def</span> volume(<span class="va">self</span>):
+        <span class="cf">return</span> <span class="va">self</span>.longueur <span class="op">*</span> <span class="va">self</span>.largeur <span class="op">/</span> <span class="dv">2</span>
+
+rectangle <span class="op">=</span> Rectangle(<span class="dv">10</span>, <span class="dv">20</span>)
+<span class="bu">print</span> rectangle.volume()  <span class="co"># 200</span>
+triangle <span class="op">=</span> TriangleRectangle(<span class="dv">10</span>, <span class="dv">20</span>)
+<span class="bu">print</span> triangle.volume()  <span class="co"># 100</span></code></pre></div>
+<p>Notez que <code>__init__</code> n'avait pas besoin d'être redéfinie pour <code>TriangleRectangle</code>.</p>
+<p>La syntaxe est</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> NouvelleClasse(AncienneClasse):
+    <span class="co"># Definition des methodes de la nouvelle classe</span></code></pre></div>
+<p>Il est possible d'appeler les méthode de l'ancienne classe (que nous avons possiblement remplacé) avec <code>AncienneClasse.nom_de_la_methde(parametre1, ...)</code></p>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

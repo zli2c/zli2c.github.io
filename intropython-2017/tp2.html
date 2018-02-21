@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>Initiation à la programmation pour non-informaticiens en Python</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="CM-web.pdf">Cours 6</a> 
+              <a class="leftmenu" href="nltk.pdf">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr> 
+                <td width="10"></td>
+                <td valign="top" class="mainbox"> 
+<h2 id="cours">Cours</h2>
+<p>Les transparents du deuxième cours sont disponibles ici: <a href="listes_et_fonctions-transp.pdf">ici</a> et <a href="deboggage.pdf">ici</a></p>
+<p>La version longue des transparents est <a href="listes_et_fonctions">ici</a></p>
+<p><a href="http://chat.efnet.org:9090/?randomnick=1&amp;channels=intropython&amp;prompt=1&amp;uio=MT11bmRlZmluZWQb1">Communiquer ici</a> (pour copier des ligne de programmes)</p>
+<h2 id="exercice-1---listes-et-tri">Exercice 1 - Listes et tri</h2>
+<ol style="list-style-type: decimal">
+<li><p>Écrire un programme qui affiche tous les caractères d'une chaîne de caractères en mettant un par ligne.</p></li>
+<li><p>Écrire une fonction qui prend une liste en argument et détermine si elle contient un doublon.</p></li>
+<li><p>À partir de trois entiers <code>a</code>, <code>b</code> et <code>c</code> entrés au clavier par l'utilisateur, écrire un programme qui les affiche dans l'ordre croissant.</p></li>
+</ol>
+<h2 id="exercice-2---la-crypto-cest-rigolo">Exercice 2 - La crypto c'est rigolo</h2>
+<h3 id="cryptographie">2.1 Cryptographie</h3>
+<ol style="list-style-type: decimal">
+<li><p>Dans un interpréteur Python créez la chaîne de caractères <code>message</code> contenant la valeur <code>'ceci est mon message a chiffrer'</code>. A l'aide d'une boucle <code>for</code> sur cette chaîne, chiffrer la par un décalage de 3 (chiffre de César). Par exemple la lettre <code>a</code> sera chiffrée en la lettre <code>d</code> (et la lettre <code>x</code> en la lettre <code>a</code>).</p></li>
+<li><p>Écrire un script Python qui chiffre (ou déchiffre selon le choix de l'utilisateur) une chaîne de caractères entrée au clavier avec une clé (<em>i.e.</em>un décalage) choisi aussi par l'utilisateur. On définira les fonctions <code>chiffrer</code> et <code>dechiffrer</code>.</p>
+<pre><code>$ python chiffeur.py 
+Entrer le texte a chiffrer/dechiffrer : ceci est un autre message a chiffrer
+Entrer le decalage (0 a 26) : 12
+Entrer &#39;c&#39; pour chiffrer ou &#39;d&#39; pour dechiffrer : c
+oqou qef gz mgfdq yqeemsq m oturrdqd
+$ python chiffeur.py 
+Entrer le texte a chiffrer/dechiffrer : oqou qef gz mgfdq yqeemsq m oturrdqd
+Entrer le decalage (0 a 26) : 12
+Entrer &#39;c&#39; pour chiffrer ou &#39;d&#39; pour dechiffrer : d
+ceci est un autre message a chiffrer</code></pre></li>
+<li><p>Modifier le script précédent pour qu'il utilise la méthode de chiffrement de Vigenère : la clé est désormais une chaîne de caractères et le chiffrement se fait en décalant la i-ème lettre du message gràce à la i-ème lettre de la clé (on reprend au début de la clef quand on a fini de lire celle-ci) suivant la règle naturelle A=1,B=2,...,Z=26(=0).</p></li>
+<li><p>Modifier le script précédent pour qu'il chiffre/déchiffre un fichier dont le chemin est entré par l'utilisateur. On pourra utiliser cette <a href="Poe.txt">nouvelle</a> de Edgar Poe pour tester le script.</p>
+<p>Pour obtenir le contenu d'un fichier a partir de son nom, vous pouvez utiliser. Nous verrons plus en détail les fonctions reliés aux fichiers au prochain cours.</p>
+<pre><code>nom_fichier = &quot;Poe.txt&quot;
+contenu_fichier = open(nom_fichier).read()</code></pre></li>
+</ol>
+<h3 id="cryptanalyse">2.2 Cryptanalyse</h3>
+<p><strong>Cryptanalyse</strong></p>
+<p>Comme expliqué dans la nouvelle de E. Poe, les chiffrements par substitution alphabétique peuvent être <em>casser</em> facilement par une analyse fréquentielle. Par exemple, dans un texte écrit en langue française, la lettre la plus fréquente est généralement le &quot;E&quot; et puisqu'un chiffrement de César ne modifie pas les fréquences, la lettre qui apparaît le plus fréquemment dans le texte chiffré correspond vraisemblablement à &quot;E&quot; et si c'est le cas le décalage entre les deux lettres donne la clé et permet de retrouver l'intégralité du message clair.</p>
+<ol style="list-style-type: decimal">
+<li><p>Écrire une fonction Python qui prenant en entrée une chaîne de caractères (ou un fichier texte) affiche la fréquence des caractères qui le composent.</p></li>
+<li><p>Modifier le programme précédent pour qu'il affiche la lettre qui apparaît le plus de fois.</p></li>
+<li><p>Utiliser cette fonction pour créer une fonction qui prend en entrée un texte chiffré avec le chiffrement de César (mais pas la clé) et retourne un texte clair associé. On pourra demander à l'utilisateur de valider que ce texte est correct (et si ce n'est pas le cas proposer un nouveau texte clair probable).</p></li>
+<li><p>**L'encyclopédie Wikipedia propose un article expliquant une méthode de cryptanalyse du <a href="http://fr.wikipedia.org/wiki/Cryptanalyse_du_chiffre_de_Vigen%C3%A8re">chiffrement de Vigenère</a> reposant sur les mêmes principes. Écrire une fonction Python qui prend un entrée un texte chiffré avec le chiffrement de Vigenère (mais pas la clé) et retourne un texte clair associé possible.</p></li>
+</ol>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

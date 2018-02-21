@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<!-- Begin header --><title>Zhentao Li's Homepage</title>
+
+
+
+
+
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="imagetoolbar" content="no">
+    <link rel="stylesheet" type="text/css" href="css/greenStyle.css">
+    <meta name="Description" content="Initiation à la programmation en Python - Cours 4">
+</head><body>
+
+<div id="page">
+<a name="top"></a>
+
+<div id="header">
+<div class="begin_frame"></div> 
+  <h1>Zhentao Li's Homepage</h1>
+  <h2>Initiation à la programmation en Python</h2>
+  <h2>Cours 4</h2>
+<div class="end_frame"></div>
+</div>
+
+
+
+<div id="main">
+<div class="begin_main"></div>
+
+<!-- End header -->
+
+<p></p>
+
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Cours</h2>
+
+Les transparents du quatrième cours sont disponibles <a href="CM_20140312	_Python.pdf">ici</a>.
+
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Exercice 1 - Pyramide des âges</h2>
+<p>Le fichier <a href="ages-2013.txt">ages-2013.txt</a> contient le recensement de la population des régions de la France métropolitaine en 2013 (selon l'<a href="http://www.insee.fr/">INSEE</a>).
+
+<div class="highlight"><pre class="wrapper"><span class="n">Homme 0 à 19 ans,Homme 20 à 39 ans,Homme 40 à 59 ans,Homme 60 à 74 ans,Homme 75 ans et plus,Femme 0 à 19 ans,Femme 20 à 39 ans,Femme 40 à 59 ans,Femme 60 à 74 ans,Femme 75 ans et plus</span>
+<span class="n">Alsace</span><span class="p">,</span><span class="mi">228114</span><span class="p">,</span><span class="mi">232452</span><span class="p">,</span><span class="mi">262694</span><span class="p">,</span><span class="mi">130053</span><span class="p">,</span><span class="mi">56677</span><span class="p">,</span><span class="mi">217353</span><span class="p">,</span><span class="mi">236656</span><span class="p">,</span><span class="mi">264906</span><span class="p">,</span><span class="mi">136065</span><span class="p">,</span><span class="mi">96050</span>
+<span class="n">Aquitaine</span><span class="p">,</span><span class="mi">379188</span><span class="p">,</span><span class="mi">375522</span><span class="p">,</span><span class="mi">442336</span><span class="p">,</span><span class="mi">258219</span><span class="p">,</span><span class="mi">134564</span><span class="p">,</span><span class="mi">362797</span><span class="p">,</span><span class="mi">380724</span><span class="p">,</span><span class="mi">463419</span><span class="p">,</span><span class="mi">287831</span><span class="p">,</span><span class="mi">218792</span>
+<span class="n">Auvergne</span><span class="p">,</span><span class="mi">149863</span><span class="p">,</span><span class="mi">151217</span><span class="p">,</span><span class="mi">186737</span><span class="p">,</span><span class="mi">112709</span><span class="p">,</span><span class="mi">56890</span><span class="p">,</span><span class="mi">144904</span><span class="p">,</span><span class="mi">147238</span><span class="p">,</span><span class="mi">187984</span><span class="p">,</span><span class="mi">121273</span><span class="p">,</span><span class="mi">96815</span>
+</pre></div>
+
+Les résultats sont regroupés par région, sexe et grande classe d'âge.
+<ul><li>
+La première ligne contient les catégories (sexe et classe d'âge), séparés de virgules.
+</li><li>
+Chaque ligne suivante contient le nom de la région suivi du nombre de personne recensé pour chaque catégorie dans cette région. Toutes ces informations sont séparés d'une virgule.
+</li></ul>
+
+<ol>
+<li><p>&Eacute;crire un script Python chargeant le fichier dans deux <i>array</i> à deux dimensions (un par sexe) associant aux catégorie d'âge 
+et aux régions le nombre d'habitants correspondants.</p>
+</li>
+
+<li>
+<p>Modifier le script pour qu'il calcule la population totale d'une région par catégorie d'âge. Faire ce calcul pour toutes les régions.</p> 
+</li>
+
+<li>
+<p>Modifier le script pour qu'il trouve la région le plus jeune, le plus agé, le plus masculin et le plus féminin (en moyenne sur la population de la région).</p> 
+</li>
+
+<li>
+<p>Modifier le script pour qu'il calcule le coefficient de corrélation des âges correspondant à deux régions quelconques puis qu'il affiche les régions où les âges de la population sont les plus corrélés.</p>
+</li>
+
+<li>
+Modifier le script pour ajouter une fonction qui affiche sous forme d'une pyramide des âges, le recensement cumulé d'une liste de noms de régions. (La fonction devrait prendre en entrée cette liste de nom de régions.)
+
+<p>Exemple de sortie (la vôtre peut être très différente):
+<div style="text-align: center;">
+<img src="pyramide.png" height=300>
+</div>
+</li>
+</ol>
+	
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Exercice 2 - Ensemble de Mandelbrot</h2>
+
+<p><i>D'après Wikipédia</i></p>
+
+<p>L'<i>ensemble de Mandelbrot</i> est une fractale qui est définie comme l'ensemble des points <b>c</b> du plan complexe pour lesquels la suite récurrente définie par :
+<b>z<sub>n+1</sub> = z<sub>n</sub><sup>2</sup> + c</b> et la condition <b>z<sub>0</sub> = 0</b> ne tend pas vers l'infini (en module). Si nous reformulons cela sans utiliser
+les nombres complexes, en remplaçant <b>z<sub>n</sub></b> par le couple <b>(x<sub>n</sub>, y<sub>n</sub>)</b> et <b>c</b> par le couple <b>(a, b)</b> alors nous obtenons:
+<b>x<sub>n+1</sub> = x<sub>n</sub><sup>2</sup> - y<sub>n</sub><sup>2</sup> + a</b> et <b>y<sub>n+1</sub> = 2x<sub>n</sub>y<sub>n</sub> + b</b>. </p>
+
+<p>Il peut être démontré que dès que le module de <b>z<sub>n</sub></b> est strictement plus grand que 2 
+(<b>z<sub>n</sub></b> étant sous forme algébrique, quand <b>x<sub>n</sub><sup>2</sup> + y<sub>n</sub><sup>2</sup> &gt; 2</b>), la suite diverge vers l'infini, et donc 
+<b>c</b> est en dehors de l'ensemble de Mandelbrot. Cela nous permet d'arrêter le calcul pour les points ayant un module strictement supérieur à 2 et qui sont donc 
+en dehors de l'ensemble de Mandelbrot. Pour les points de l'ensemble de Mandelbrot, i.e. les nombres complexes <b>c</b> pour lesquels <b>z<sub>n</sub></b> ne tend pas 
+vers l'infini, le calcul n'arrivera jamais à terme, donc il doit être arrêté après un certain nombre d'itérations déterminé par le programme. </p>
+
+
+<p>&Eacute;crire un script qui affiche (une approximation de) l'ensemble de Mandelbrot.</p>
+<br>
+
+<div style="text-align: center;">
+<img src="mandelbrot.png">
+</div>
+
+
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+
+
+
+<!-- Begin footer -->
+
+
+<div class="end_main"></div>
+</div> <!-- end main div -->
+
+<div class="hr"></div>
+
+
+</div> <!-- end page div -->
+
+</body></html>

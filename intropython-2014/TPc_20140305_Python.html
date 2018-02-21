@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<!-- Begin header --><title>Zhentao Li's Homepage</title>
+
+
+
+
+
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="imagetoolbar" content="no">
+    <link rel="stylesheet" type="text/css" href="css/greenStyle.css">
+    <meta name="Description" content="Initiation à la programmation en Python - Cours 3">
+</head><body>
+
+<div id="page">
+<a name="top"></a>
+
+<div id="header">
+<div class="begin_frame"></div> 
+  <h1>Zhentao Li's Homepage</h1>
+  <h2>Initiation à la programmation en Python</h2>
+  <h2>Cours 3</h2>
+<div class="end_frame"></div>
+</div>
+
+
+
+<div id="main">
+<div class="begin_main"></div>
+
+<!-- End header -->
+
+<p></p>
+
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Cours</h2>
+
+<p>Les transparents du troisième cours sont disponibles <a href="CM_20140226_Python.pdf">ici</a> et <a href="CM_dictionnaire.pdf">ici</a>.
+</p><p>
+<a href="encodage.html">Parenthèse sur l'encodage de texte</a> (utile si vous ouvrez des fichiers textes en français, par exemple).
+</p>
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Session TP</h2>
+
+Les fichier créés durant le TP.
+
+<ul>
+<li>
+<a href="sol/cours3-console.txt">Console</a>
+</li><li>
+<a href="sol/cours3-sol1.py">Solution finale à la question 1</a>. À noter que si le fichier <code>poeme.txt</code> existe déjà, un nouveau poème sera ajouté à la fin (plutôt que de remplacer le fichier). Testé sur <a href="vers.txt">vers.txt</a>.
+</li><li>
+<a href="sol/cours3-sol2.py">Solution finale à la question 2</a>
+</li>
+</ul>
+
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Exercice 1 - Cent mille milliards de poèmes</h2>
+
+<image src="queneaufan1.jpg" width="50%" height="50%">
+
+<p><i>Cent mille milliards de poèmes</i>, est une œuvre de poésie combinatoire de Raymond Queneau, publiée en 1961. Le livre est composé de dix feuilles, chacune séparée en quatorze bandes horizontales, chaque bande portant sur son recto un vers. Le lecteur peut donc, en tournant les bandes horizontales comme des pages, choisir pour chaque vers une des dix versions proposées par Queneau. Les dix versions de chaque vers ont la même scansion et la même rime, ce qui assure que chaque sonnet ainsi assemblé est régulier dans sa forme.</p>
+
+<p>Supposons que l'on dispose d'un fichier <tt>vers.txt</tt> qui contient une séquence de 14 groupements de 10 vers séparés par des lignes vides.
+
+<ol>
+<li><p>&Eacute;crire un script Python chargeant le fichier dans une liste associant aux entiers de 0 à 13, la liste des vers de chaque groupement.</p>
+</li>
+
+<li>
+<p>Modifier le script pour générer un poème de 14 vers en prenant un vers aléatoirement dans chaque groupement.</p> 
+
+<p>Utiliser pour cela le module <tt>random</tt> de la bibliothèque
+standard de Python. </p>
+</li>
+</ol>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">tout_groupe</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;vers.txt&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">vers_possible</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">vers</span> <span class="ow">in</span> <span class="n">tout_groupe</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">)[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+    <span class="n">vers_possible</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vers</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">))</span>
+
+<span class="n">sortie</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;poeme.txt&quot;</span><span class="p">,</span><span class="s">&quot;w&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">possibilites</span> <span class="ow">in</span> <span class="n">vers_possible</span><span class="p">:</span>
+    <span class="n">sortie</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">possibilites</span><span class="o">+</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">))</span>
+<span class="n">sortie</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+	
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Exercice 2 - Générateur de texte</h2>
+
+<ol>
+<li>
+<p>Écrire une fonction Python qui génère une liste des mots consécutifs d'un texte.
+
+<div class="highlight"><pre class="wrapper"><span class="gp">&gt;&gt;&gt; </span><span class="n">texte</span> <span class="o">=</span> <span class="s">&quot;Ecrire un programme Python qui genere une liste des mots consecutifs d&#39;un texte. Une autre phrase de ce texte. En une derniere.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">consecutifs</span><span class="p">(</span><span class="n">texte</span><span class="p">)</span>
+<span class="go">[(&#39;Ecrire&#39;, &#39;un&#39;), (&#39;un&#39;, &#39;programme&#39;), (&#39;programme&#39;, &#39;Python&#39;), (&#39;Python&#39;, &#39;qui&#39;), (&#39;qui&#39;, &#39;genere&#39;), (&#39;genere&#39;, &#39;une&#39;), (&#39;une&#39;, &#39;liste&#39;), (&#39;liste&#39;, &#39;des&#39;), (&#39;des&#39;, &#39;mots&#39;), (&#39;mots&#39;, &#39;consecutifs&#39;), (&#39;consecutifs&#39;, &quot;d&#39;un&quot;), (&quot;d&#39;un&quot;, &#39;texte.&#39;), (&#39;texte.&#39;, &#39;Une&#39;), (&#39;Une&#39;, &#39;autre&#39;), (&#39;autre&#39;, &#39;phrase&#39;), (&#39;phrase&#39;, &#39;de&#39;), (&#39;de&#39;, &#39;ce&#39;), (&#39;ce&#39;, &#39;texte.&#39;), (&#39;texte.&#39;, &#39;En&#39;), (&#39;En&#39;, &#39;une&#39;), (&#39;une&#39;, &#39;derniere.&#39;)]</span>
+</pre></div>
+
+(Supposer que "mots" veux dire des chaines de caractères séparés d'espaces.)
+</li><li>
+<p>Écrire une fonction Python qui prends un texte et génère un dictionnaire où les clés sont les mots du texte et les valeurs pour un mot sont les mots qui peuvent le suivre dans le texte.
+
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">suivant</span> <span class="o">=</span> <span class="n">mot_suivant</span><span class="p">(</span><span class="n">texte</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">suivant</span><span class="p">[</span><span class="s">&quot;une&quot;</span><span class="p">]</span>
+<span class="go">[&#39;liste&#39;, &#39;derniere.&#39;]</span>
+</pre></div>
+
+Fichier appelé <code>mots.py</code>.
+
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">consecutifs</span><span class="p">(</span><span class="n">texte</span><span class="p">):</span>
+    <span class="n">mots</span> <span class="o">=</span> <span class="n">texte</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">mots_consecutifs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mots</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">mots_consecutifs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">mots</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">mots</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">mots_consecutifs</span>
+
+<span class="k">def</span> <span class="nf">mot_suivant</span><span class="p">(</span><span class="n">texte</span><span class="p">):</span>
+    <span class="n">suivant</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">mot1</span><span class="p">,</span> <span class="n">mot2</span> <span class="ow">in</span> <span class="n">consecutifs</span><span class="p">(</span><span class="n">texte</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">mot1</span> <span class="ow">in</span> <span class="n">suivant</span><span class="p">:</span>
+            <span class="n">suivant</span><span class="p">[</span><span class="n">mot1</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mot2</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">suivant</span><span class="p">[</span><span class="n">mot1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">mot2</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">suivant</span>
+</pre></div>
+
+</li><li>
+<p>Sauvegarder les deux fonctions précédentes en un module. Importer ce module. Écrire un programme Python qui prends le nom d'un fichier en entrée, lit le texte dans ce fichier et écrit dans un deuxième fichier un texte dont tous les mots qui se suivent apparaissent comme mots consécutifs dans le texte original.
+
+<p>Ce deuxième texte devrait être générer de façon aléatoire (de sorte qu'on obtienne très probablement un texte différent à chaque lancée du programme sur un même texte).
+
+<p>En supposant que le premier fichier est appelé <code>mots.py</code>.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">mots</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">genere_texte</span><span class="p">(</span><span class="n">nom_fichier</span><span class="p">,</span> <span class="n">longueur_max</span><span class="p">):</span>
+    <span class="n">texte</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">nom_fichier</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">suivant</span> <span class="o">=</span> <span class="n">mots</span><span class="o">.</span><span class="n">mot_suivant</span><span class="p">(</span><span class="n">texte</span><span class="p">)</span>
+    <span class="n">mot</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">suivant</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+    <span class="n">texte</span> <span class="o">=</span> <span class="n">mot</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">longueur_max</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">mot</span> <span class="ow">in</span> <span class="n">suivant</span><span class="p">:</span>
+            <span class="n">mot</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">suivant</span><span class="p">[</span><span class="n">mot</span><span class="p">])</span>
+            <span class="n">texte</span> <span class="o">=</span> <span class="n">texte</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">mot</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">break</span>
+    <span class="k">return</span> <span class="n">texte</span>
+
+<span class="n">longueur_max</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">nom_fichier</span> <span class="o">=</span> <span class="s">&quot;Poe.txt&quot;</span>
+<span class="n">nouveau_texte</span> <span class="o">=</span> <span class="n">genere_texte</span><span class="p">(</span><span class="n">nom_fichier</span><span class="p">,</span> <span class="n">longueur_max</span><span class="p">)</span>
+<span class="nb">open</span><span class="p">(</span><span class="s">&quot;nouveau_texte.txt&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">nouveau_texte</span><span class="p">)</span>
+</pre></div>
+
+Exemple de <a href="nouveau_texte.txt">sortie</a>.
+
+</li><li>
+<p>* Changer le programme (et module) précédent pour que le texte en sortie et le texte en entrée ont les même triplets consécutifs.
+</ol>
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+
+
+
+
+<!-- Begin footer -->
+
+
+<div class="end_main"></div>
+</div> <!-- end main div -->
+
+<div class="hr"></div>
+
+
+</div> <!-- end page div -->
+
+</body></html>

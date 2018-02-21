@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
+</script>
+</head>
+<body>
+<h1>Projet: Le problème du voyageur de commerce.</h1>
+
+<p><img src="tsp1.png" alt="Instance TSP" title="" /> <img src="tsp2.png" alt="voyageur" title="" /></p>
+
+<p>Dans ce problème classique d'optimization combinatoire, un voyageur cherche à visiter toutes les villes d'une région avec le trajet le plus court possible.</p>
+
+<p>Nous pouvons formaliser ce problème en terme de graphe de façon suivante.</p>
+
+<p><strong>Entrée</strong>: Un graphe avec des arêtes pondérés. <br />
+<strong>Sortie</strong>: Un cycle contenant tous les sommets, de poids minimum.</p>
+
+<p>Nous appellons un cycle qui visite toutes les villes un <em>tour</em>.
+Cette variante du problème ainsi que les deux suivantes sont les plus étudiés.</p>
+
+<ol>
+<li>Le tour ne doit pas contenir le même sommet deux fois (i.e., être Hamiltonian).</li>
+<li>Les poids $d$ satisfont l'inégalité triangulaire $d(uv) \le d(uw) + d(wv)$ pour tout $u,v,w$.</li>
+</ol>
+
+<p>Pour ce projet, vous implémenterez des algorithmes (heuristiques) pour ce problème ainsi que des algorithmes pour obtenir des bornes inférieures sur la coût du tour minimum.</p>
+
+<p>Vous lancerez vos programme sur les instances de <a href="http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/">TSPLIB</a>. Le but principal du projet est d'obtenir de bonnes bornes inférieures sur ces instances.</p>
+
+<h2>Outils permis</h2>
+
+<p>Pour la partie programmation de ce projet, vous pouvez utiliser le langage de programmation de votre choix ainsi que des bibliothèques d'algèbre linéaire pour des opération de base (addition, multiplication de matrices ou vecteurs, re-arrangement des colonne d'une matrices, construction de matrices constantes, etc). Mais pas d'algorithme (sauf pour la multiplication de matrices), par exemple, de résolution de système linéaire.</p>
+
+<p>Vous pouvez aussi utiliser des bibliothèques pour la manipulation de nombre rationels or symbolique.</p>
+
+<p>Vous pouvez utiliser des parseurs existant pour charger les données dans votre programme.</p>
+
+<p>Nous demander si vous voulez des suggestions d'outil à utiliser.</p>
+
+<h2>Algorithme du simplex</h2>
+
+<p>Puisque nous utiliserons une formulation du problème en terme de contraintes linéaires, il faut d'abord un programme pour résoudre les programmes linéaires.</p>
+
+<p><strong>(1)</strong> Implémenter l'algorithme du simplex avec l'option d'utiliser (au moins) deux choix de pivots différents.</p>
+
+<p>Voir <a href="http://jeffe.cs.illinois.edu/teaching/algorithms/notes/27-simplex.pdf">ici</a> pour une description intuitive de l'algorithme et les notes de cours pour une description en terme de tableaux qui peut être plus adapté à son implémentation.</p>
+
+<p>Tester votre implémentation des instances de problèmes de taille varié.</p>
+
+<h2>Heuristiques</h2>
+
+<p>Ce problème est NP-difficile et donc nous commençons par des heuristiques.</p>
+
+<p><strong>(2)</strong> Implémentez un heuristic (exponentiel) exacte. Il servira de comparateur de la solution trouvée par vos autres algorithmes. L'algorithme naif en $n!$ suffit.</p>
+
+<p>Si vous voulez un algorithme plus rapide, vous pouvez implémenter l'algorithme  par programmation dynamique de Held-Karp.</p>
+
+<p><strong>(3)</strong> Implémentez au moins un algorithme heuristiques simple et polynomial (qui retourne un tour qui n'est pas nécéssairement optimal). Comparer avec l'algorithme exacte sur des petites instances.</p>
+
+<p>Par exemple, vous pouvez utiliser un algorithme d'amélioration local qui commence avec n'importe quel tour et qui tente d'échanger deux arêtes du tour pour deux ares non-utilisés de tel sorte à obtenir un nouveau tour de coût moindre (et de répéter ce processus avec ce nouveau tour jusqu'à avoir aucun échange améliorant possible).</p>
+
+<h2>Programme linéaire et garantie d'approximation</h2>
+
+<p>Sans même connaître la solution optimal, nous pouvons borner le facteur d'approximation de la solution heuristique que nous avons en obtenant une borne inférieure, souvant plsu facile à calculer. (Ce facteur est donc borné par la ratio de la valeur de notre solution sur la borne inférieure.)</p>
+
+<p>Pour obtenir une telle borne, nous utilisons un programme linéaire (dont la version entière décrit le problème du voyageur de commerce exactement).</p>
+
+$$\begin{eqnarray}
+&&\min \sum_e c_e x_e \\
+&&x(\delta(v)) = 2, \text{ pour tout }v \in V(G) \\
+&&x(\delta(S)) \ge 2,\text{ pour tout ensemble non-trivial }\emptyset \neq S \subset V(G)\\
+&&0 \le x_e \le 1, \text{ pour tout }e \in E(G) \\
+\end{eqnarray}$$
+
+<p>La deuxième contrainte appellé élimination de sous-tours, est une contrainte similaire à celle que nous avons ajouté au polytope d'Edmonds pour les couplages. Elle empêche des solutions qui sont des unions disjointes de tours.</p>
+
+<p><strong>(4)</strong> Essayez de résoudre (sans contrainte d'intégralité) ce PL pour des petites instances du voyageur de commerce.</p>
+
+<p>On remarque qu'il y a un nombre exponentiel de contraintes d'élimination de sous-tours. Pour remédier à ce problème, nous utilisons l'idée de séparation (déjà vu pour l'algorithme de l'ellipsoide).</p>
+
+<ol>
+<li>Résoudre le PL sans contraintes de sous-tours.</li>
+<li>Répéter les étapes suivantes.
+<ol>
+<li>Déterminer si les contraintes de sous-tours sont déjà satisfaite par la solution. Si oui, retourner cette solution.</li>
+<li>Trouver un ensemble $S$ pour lequel la contrainte de sous-tours n'est pas satisfaite.</li>
+<li>Ajouter la contrainte trouver et résoudre le nouveau PL.</li>
+</ol></li>
+</ol>
+
+<p>Il reste à décrire l'algorithme pour 3a et 3b. C'est-à-dire un algorithme pour trouver une contrainte de sous-tours non satisfaite, si elle existe. </p>
+
+<p>Ce problème est équivalent à determiner si la coupe minimum dans le graphe pondéré par la solution du PL a une coupe de poids de valeur inférieur à 2. Nous pouvons trouver une telle coupe si elle existe en calculant la coupe minimum dans ce graphe.</p>
+
+<p><strong>(5)</strong> Implémentez un algorithme pour calculer la coupe minimum pondéré d'un graphe pondéré.</p>
+
+<h2>Nombre de variables</h2>
+
+<p>Nous rencontrerons cependant un deuxième problème: le nombre de variables dans le PL est trop élevé. Surtout si le graphe est proche du graphe complet.</p>
+
+<p>Pour résoudre ce problème, nous pouvons sous restreindre à un sous-ensemble $E'$ des arêtes du graphe. La solution obtenue est alors probablement non-optimale pour le graphe en entier. Nous pouvons utiliser le PL dual pour vérifier si c'est le cas.</p>
+
+<p><strong>(6)</strong> Écrire le PL dual.</p>
+
+<p>En résolvant le PL dual restreint à $E'$, nous pouvons résoudre trouver les contraintes dual (pour $E(G)$) qui ne sont pas satisfaites. Nous ajoutons ensuite les arêtes correspondant à ces contraintes à $E'$ et on répète ces étapes.</p>
+
+<p>Si nous arêtons cet algorithme à une certaine itération, nous obtenons un borne inférieure sur le problème du voyageur de commerce de départ.</p>
+
+<p><strong>(7)</strong> Implémenter l'algorithme itérative de résolution du dual restreint décrit ici.</p>
+
+<h2>Question</h2>
+
+<ol>
+<li>Est-ce que le PL avec contraintes d'élimination de sous-tours est intégral? (Donner une preuve ou un contre-exemple.)</li>
+<li>Regarder les solutions obtenus pour des intances de taille moyenne. En examinant ceux-ci, donner quelques autre exemple d'inégalités linéaires qui sont satisfaits par des solutions entières mais pas des solution fractionnaires du PL.</li>
+</ol>
+
+<h2>Références</h2>
+
+<p>Combinatorial Optimization, <em>W. J. Cook, W. H. Cunningham, W. R. Pulleyblank and A. Schrijver</em>, pp 257-267</p>
+</body></html>

@@ -1,0 +1,5 @@
+#!/bin/bash
+cat duallp duallpsetcols > duallpall
+./gencpscr duallpall > cpscr
+cplex < cpscr > cplexres
+./cplexreadz22 cplexres

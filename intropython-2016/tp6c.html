@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Zhentao Li" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="tp6.html">Cours 6</a> 
+              <a class="leftmenu" href="tp6c.html">Corrigé 6</a> 
+              <a class="leftmenu" href="tp7.html">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="10"></td>
+                <td valign="top" class="mainbox">
+
+<p><strong>Attention:</strong> Ce cours aura lieu le 30 mars et non le 23 mars.</p>
+<p>Les transparents du sixième cours sont disponibles <a href="interface_graphique-transp.pdf">ici</a>.</p>
+<p>La version longue des transparents est <a href="interface_graphique">ici</a>.</p>
+<p>Voir le chapitre <a href="http://python.developpez.com/cours/TutoSwinnen/?page=Chapitre8">8</a> du livre <a href="http://python.developpez.com/cours/TutoSwinnen/">Apprendre à programmer avec Python</a>.</p>
+<p>Les documents de référence les plus intéressants sont en anglais. Ainsi le manuel de Fredrik Lundh, <a href="http://www.pythonware.com/library/tkinter/introduction/">An Introduction to Tkinter</a> et celui de John Shipman, <a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/">Tkinter Reference</a> détaillent l'ensemble des paramètres de configuration des objets graphiques de la bibliothèque.</p>
+<p>Les exercices proposés ci-dessous sont empruntés à <a href="http://www.labri.fr/perso/schlick/prog2/">Christophe Schlick</a>.</p>
+<h2 id="remarque-sur-.config">Remarque sur .config</h2>
+<p>Il y a une syntaxe plus naturel de modifier les paramètres des widgets déjà crée: on peut les traiter comme des dictionnaires.</p>
+<pre><code>etiquette[&quot;text&quot;] = &quot;nouveau texte&quot;</code></pre>
+<p>a le même effet que</p>
+<pre><code>etiquette.config(text=&quot;nouveau texte&quot;)</code></pre>
+<p>Autre exemples:</p>
+<pre><code>etiquette[&quot;bg&quot;] = &quot;red&quot;
+etiquette[&quot;font&quot;] = (&quot;Monospace&quot;, 80)</code></pre>
+<h2 id="exercice-1---compteur">Exercice 1 - Compteur</h2>
+<p>Érire un programme counter qui affiche une fenêtre graphique permettant à l'utilisateur de contrôler un compteur numérique dans un intervalle [-1000, 1000] par une série de sept boutons de commande.</p>
+<p>Les trois boutons &quot;|&lt;&quot;, &quot;0&quot; et &quot;&gt;|&quot; permettent d'aller directement à la valeur minimale, la valeur nulle ou la valeur maximale du compteur. Les quatre boutons &quot;&lt;&lt;&quot;, &quot;&lt;&quot;, &quot;&gt;&quot; et &quot;&gt;&gt;&quot; permettent de modifier la valeur courante du compteur par pas de -10, -1, 1 et 10. À tout moment, il faut vérifier que la valeur du compteur se trouve bien dans l'intervalle autorisé. Le résultat graphique souhaité est représenté dans l'image ci-dessous (widgets utilisées : <code>Frame</code>, <code>Label</code>, <code>Button</code>) :</p>
+<div class="figure">
+<img src="compteur.png" /><p class="caption"></p>
+</div>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> Tkinter <span class="ch">as</span> tk
+
+MAXIMUM = <span class="dv">1000</span>
+MINIMUM = -<span class="dv">1000</span>
+compteur = <span class="dv">0</span>
+
+<span class="kw">def</span> verifier_bornes():
+    <span class="kw">global</span> compteur
+    <span class="kw">if</span> compteur &gt; <span class="dv">1000</span>:
+        compteur = <span class="dv">1000</span>
+    <span class="kw">if</span> compteur &lt; -<span class="dv">1000</span>:
+        compteur = -<span class="dv">1000</span>
+    etiquette_compteur[<span class="st">&#39;text&#39;</span>] = <span class="dt">str</span>(compteur)
+
+<span class="kw">def</span> remise_au_maximum():
+    <span class="kw">global</span> compteur
+    compteur = MAXIMUM
+    verifier_bornes()
+
+<span class="kw">def</span> soustraire_un():
+    <span class="kw">global</span> compteur
+    compteur = compteur - <span class="dv">1</span>
+    verifier_bornes()
+
+<span class="kw">def</span> remise_a_zero():
+    <span class="kw">global</span> compteur
+    compteur = <span class="dv">0</span>
+    verifier_bornes()
+
+<span class="kw">def</span> ajouter_un():
+    <span class="kw">global</span> compteur
+    compteur = compteur + <span class="dv">1</span>
+    verifier_bornes()
+
+<span class="kw">def</span> remise_au_minimum():
+    <span class="kw">global</span> compteur
+    compteur = MINIMUM
+    verifier_bornes()
+
+racine = tk.Tk()
+frame_boutons = tk.Frame(racine)
+frame_boutons.pack()
+etiquette_compteur = tk.Label(racine, text=<span class="dt">str</span>(compteur), font=(<span class="st">&#39;Monospace&#39;</span>, <span class="dv">40</span>) )
+etiquette_compteur.pack()
+
+bouton_minimum = tk.Button(frame_boutons, text=<span class="st">&#39;&gt;|&#39;</span>, command=remise_au_minimum)
+bouton_minimum.pack(side=<span class="st">&#39;left&#39;</span>)
+bouton_moins = tk.Button(frame_boutons, text=<span class="st">&#39;&lt;&#39;</span>, command=soustraire_un)
+bouton_moins.pack(side=<span class="st">&#39;left&#39;</span>)
+bouton_zero = tk.Button(frame_boutons, text=<span class="st">&#39;0&#39;</span>, command=remise_a_zero)
+bouton_zero.pack(side=<span class="st">&#39;left&#39;</span>)
+bouton_plus = tk.Button(frame_boutons, text=<span class="st">&#39;&gt;&#39;</span>, command=ajouter_un)
+bouton_plus.pack(side=<span class="st">&#39;left&#39;</span>)
+bouton_maximum = tk.Button(frame_boutons, text=<span class="st">&#39;&gt;|&#39;</span>, command=remise_au_maximum)
+bouton_maximum.pack(side=<span class="st">&#39;left&#39;</span>)
+
+<span class="co"># Les paragraphe ci-dessus peut etre ecrit de facon un peu plus compacte</span>
+<span class="co"># et en evitant des erreurs de recopie</span>
+
+<span class="co">#liste_des_boutons_voulues = [(&#39;|&lt;&#39;, remise_au_minimum),</span>
+<span class="co">#                              (&#39;&lt;&#39;, soustraire_un),</span>
+<span class="co">#                              (&#39;0&#39;, remise_a_zero),</span>
+<span class="co">#                              (&#39;&gt;&#39;, ajouter_un),</span>
+<span class="co">#                              (&#39;&gt;|&#39;, remise_au_maximum_un)]</span>
+<span class="co">#</span>
+<span class="co">#for nom, fonction in liste_des_boutons_voulues:</span>
+<span class="co">#    bouton = tk.Button(frame_boutons, text=&#39;|&lt;&#39;, command=remise_a_zero)</span>
+<span class="co">#    bouton.pack(side=&#39;left&#39;)</span>
+
+racine.mainloop()</code></pre>
+<h2 id="exercice-2---couleurs">Exercice 2 - Couleurs</h2>
+<p>Écrire un programme qui affiche une fenêtre graphique permettant à l'utilisateur de créer interactivement une couleur dans le mode RGB (Red, Green, Blue).</p>
+<p>Pour cela, le programme doit fournir trois potentiomètres (Widget <a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/scale.html"><code>Scale</code></a>) permettant de saisir une valeur entre 0 et 255, contrôlant respectivement les intensités de rouge, de vert et de bleu. Les valeurs de ces trois potentiomètres sont alors converties en hexadécimal pour créer une chaîne de caractères de la forme &quot;#RRGGBB&quot; correspondant à la représentation standard des couleurs de Tkinter.</p>
+<p>Cette couleur est ensuite utilisée comme couleur de fond de la partie inférieure de la fenêtre, ce qui permet à l'utilisateur de visualiser le résultat de ses manipulations. Le résultat graphique souhaité est représenté dans l'image ci-dessous (widgets utilisées :<code>Frame</code>, <code>Label</code>, <code>Button</code>, <code>Scale</code>) :</p>
+<div class="figure">
+<img src="couleurs.png" /><p class="caption"></p>
+</div>
+<p>Dans la solution suivante, nous utilisons la chaine de caractere '%20x' qui est interprété transforme un entier en sa representation à deux chiffres en base 16 lorsque l'opération <code>%</code> est appliqué. Par exemple:</p>
+<pre><code>&gt;&gt;&gt; &quot;%02x&quot; % 249
+&#39;ff&#39;</code></pre>
+<p>Sinon, nous pouvons a la place faire la transformation nous même</p>
+<pre><code>&gt;&gt;&gt; valeur = 249
+&gt;&gt;&gt; chiffres_hexadecimaux = &quot;0123456789abcdef&quot;
+&gt;&gt;&gt; chiffres_hexadecimaux[valeur/16]
+&#39;f&#39;
+&gt;&gt;&gt; chiffres_hexadecimaux[valeur%16]
+&#39;9&#39;
+&gt;&gt;&gt; chiffres_hexadecimaux[valeur/16] + chiffres_hexadecimaux[valeur%16]
+&#39;f9&#39;</code></pre>
+<p>Nous utilisons le fait que nous attendons une réponse à deux chiffres. On porrait aussi créer une fonction.</p>
+<pre class="sourceCode python"><code class="sourceCode python">chiffres_hexadecimaux = <span class="st">&quot;0123456789abcdef&quot;</span>
+<span class="kw">def</span> transformer(valeur):
+    <span class="kw">return</span> chiffres_hexadecimaux[valeur/<span class="dv">16</span>] + chiffres_hexadecimaux[valeur%<span class="dv">16</span>]</code></pre>
+<p>Solution complète:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> Tkinter <span class="ch">as</span> tk
+
+<span class="co"># Cette fonction sera appellee a tout changement.</span>
+<span class="co"># Nous ignorons la nouvelle valeur qui nous est donnee</span>
+<span class="co"># puisque nous allons lire toutes les valeurs avec get</span>
+<span class="co"># de toute facon.</span>
+<span class="kw">def</span> mise_a_jour_couleur(nouvelle_valeur):
+    r, v, b = rouge.get(), vert.get(), bleu.get()
+    couleur = <span class="st">&quot;#</span><span class="ot">%02x%02x%02x</span><span class="st">&quot;</span> % (r, v, b)
+    couleur_fond[<span class="st">&#39;bg&#39;</span>] = couleur
+    nom_couleur[<span class="st">&#39;text&#39;</span>] = couleur
+
+racine = tk.Tk()
+frame_scales = tk.Frame(racine)
+frame_scales.pack(side=<span class="st">&#39;top&#39;</span>)
+nom_couleur = tk.Label(frame_scales, font=(<span class="st">&quot;Arial&quot;</span>, <span class="dv">12</span>), width=<span class="dv">9</span>, relief=tk.GROOVE)
+rouge = tk.Scale(frame_scales, orient=tk.HORIZONTAL, to=<span class="dv">255</span>, troughcolor=<span class="st">&#39;red&#39;</span>,
+                 show=<span class="dv">0</span>, command=mise_a_jour_couleur)
+vert = tk.Scale(frame_scales, orient=tk.HORIZONTAL, to=<span class="dv">255</span>, troughcolor=<span class="st">&#39;green&#39;</span>,
+                show=<span class="dv">0</span>, command=mise_a_jour_couleur)
+bleu = tk.Scale(frame_scales, orient=tk.HORIZONTAL, to=<span class="dv">255</span>, troughcolor=<span class="st">&#39;blue&#39;</span>,
+                show=<span class="dv">0</span>, command=mise_a_jour_couleur)
+nom_couleur.pack(side=<span class="st">&#39;left&#39;</span>)
+rouge.pack(side=<span class="st">&#39;left&#39;</span>)
+vert.pack(side=<span class="st">&#39;left&#39;</span>)
+bleu.pack(side=<span class="st">&#39;left&#39;</span>)
+couleur_fond = tk.Frame(racine, bg=<span class="st">&#39;black&#39;</span>, height=<span class="dv">200</span>, width=<span class="dv">450</span>)
+couleur_fond.pack(side=<span class="st">&#39;top&#39;</span>)
+racine.title(<span class="st">&quot;Couleurs&quot;</span>)
+racine.mainloop()</code></pre>
+<h2 id="exercice-3---chasse-au-trésor">Exercice 3 - Chasse au trésor</h2>
+<p>Écrire un programme qui affiche une fenêtre graphique permettant à l'utilisateur de jouer au jeu classique de la chasse au trésor.</p>
+<ul>
+<li><p>Le programme sélectionne aléatoirement l'une des cases d'un tableau 15x15 qui représentera l'emplacement du trésor (la taille du tableau doit être un paramètre de configuration modifiable dans le code source).</p></li>
+<li><p>À chaque tour, l'utilisateur clique sur une case et le programme y affiche un code de couleur relatif à la distance entre cette case et la case au trésor (rouge pour une distance &lt; 3, jaune pour une distance &lt; 6, vert pour une distance &lt; 9, bleu pour une distance &lt; 12, et gris pour toutes les distances au-delà).</p></li>
+<li><p>Attention, il ne s'agit pas d'une distance euclidienne, mais d'une distance dite de Manhattan, correspondant au nombre de déplacements horizontaux ou verticaux nécessaires pour rejoindre la case au trésor.</p></li>
+</ul>
+<p>Le but du jeu est évidemment de trouver le tésor en un minimum de tours. Le résultat graphique souhaité est représenté dans l'image ci-dessous (widgets utilisées :<code>Frame</code>, <code>Button</code>) :</p>
+<div class="figure">
+<img src="tresor.png" /><p class="caption"></p>
+</div>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> Tkinter <span class="ch">as</span> tk
+<span class="ch">import</span> random
+
+largeur = <span class="dv">15</span>
+hauteur = <span class="dv">15</span>
+couleurs = [<span class="st">&#39;red&#39;</span>, <span class="st">&#39;yellow&#39;</span>, <span class="st">&#39;green&#39;</span>, <span class="st">&#39;blue&#39;</span>, <span class="st">&#39;darkgrey&#39;</span>]
+
+<span class="co"># Il est possible sans classe en utilisant global.</span>
+
+<span class="kw">class</span> JeuTresor:
+    <span class="kw">def</span> <span class="ot">__init__</span>(<span class="ot">self</span>, hauteur, largeur, grille):
+        <span class="ot">self</span>.hauteur = hauteur
+        <span class="ot">self</span>.largeur = largeur
+        <span class="ot">self</span>.grille = grille
+        <span class="kw">for</span> bouton in <span class="ot">self</span>.grille.values():
+            <span class="co"># Nous utilisons bind au lieu de command</span>
+            <span class="co"># pour pouvoir connaitre le bouton sur</span>
+            <span class="co"># lequel nous avons appuye.</span>
+            bouton.bind(<span class="st">&#39;&lt;Button-1&gt;&#39;</span>, <span class="ot">self</span>.colorier)
+        <span class="ot">self</span>.nouvelle_partie()
+
+    <span class="kw">def</span> nouvelle_partie(<span class="ot">self</span>):
+        <span class="ot">self</span>.fin_de_partie = <span class="ot">False</span>
+        <span class="ot">self</span>.tresor = (random.randint(<span class="dv">0</span>, hauteur<span class="dv">-1</span>), random.randint(<span class="dv">0</span>, largeur<span class="dv">-1</span>))
+        <span class="ot">self</span>.compteur = <span class="dv">0</span>
+        etiquette_coups[<span class="st">&#39;text&#39;</span>] = <span class="st">&#39;</span><span class="ot">%s</span><span class="st">&#39;</span> % <span class="ot">self</span>.compteur
+        <span class="kw">for</span> i in <span class="dt">range</span>(<span class="ot">self</span>.hauteur):
+            <span class="kw">for</span> j in <span class="dt">range</span>(<span class="ot">self</span>.largeur):
+                <span class="ot">self</span>.grille[(i,j)][<span class="st">&#39;text&#39;</span>] = <span class="st">&#39;&#39;</span>
+                <span class="ot">self</span>.grille[(i,j)][<span class="st">&#39;background&#39;</span>] = <span class="st">&#39;#FFF&#39;</span>
+                <span class="ot">self</span>.grille[(i,j)][<span class="st">&#39;activebackground&#39;</span>] = <span class="st">&#39;#FFF&#39;</span>
+
+    <span class="kw">def</span> distance(<span class="ot">self</span>, i, j):
+        <span class="kw">return</span> <span class="dt">abs</span>(<span class="ot">self</span>.tresor[<span class="dv">0</span>]-i) + <span class="dt">abs</span>(<span class="ot">self</span>.tresor[<span class="dv">1</span>]-j)
+
+    <span class="kw">def</span> couleur(<span class="ot">self</span>, i, j):
+        <span class="kw">return</span> couleurs[<span class="dt">min</span>(<span class="ot">self</span>.distance(i,j)/<span class="dv">3</span>, <span class="dv">4</span>)]
+
+    <span class="kw">def</span> fin(<span class="ot">self</span>):
+        <span class="co"># Afficher toute la grille</span>
+        <span class="ot">self</span>.fin_de_partie = <span class="ot">True</span>
+        <span class="kw">for</span> i in <span class="dt">range</span>(<span class="ot">self</span>.hauteur):
+            <span class="kw">for</span> j in <span class="dt">range</span>(<span class="ot">self</span>.largeur):
+                <span class="ot">self</span>.grille[(i,j)][<span class="st">&#39;text&#39;</span>] = <span class="ot">self</span>.distance(i,j)
+                <span class="ot">self</span>.grille[(i,j)][<span class="st">&#39;background&#39;</span>] = <span class="ot">self</span>.couleur(i, j)
+                <span class="ot">self</span>.grille[(i,j)][<span class="st">&#39;activebackground&#39;</span>] = <span class="ot">self</span>.couleur(i, j)
+
+    <span class="kw">def</span> colorier(<span class="ot">self</span>, event):
+        bouton = event.widget
+        i, j = bouton.coordonnees
+        <span class="kw">if</span> <span class="ot">self</span>.fin_de_partie:
+            <span class="kw">return</span>
+        <span class="ot">self</span>.compteur += <span class="dv">1</span>
+        etiquette_coups[<span class="st">&#39;text&#39;</span>] = <span class="st">&#39;</span><span class="ot">%s</span><span class="st">&#39;</span> % <span class="ot">self</span>.compteur
+        <span class="kw">if</span> <span class="ot">self</span>.distance(i, j) == <span class="dv">0</span>:
+            <span class="ot">self</span>.fin()
+        <span class="kw">else</span>:
+            <span class="ot">self</span>.grille[(i,j)][<span class="st">&#39;background&#39;</span>] = <span class="ot">self</span>.couleur(i, j)
+            <span class="ot">self</span>.grille[(i,j)][<span class="st">&#39;activebackground&#39;</span>] = <span class="ot">self</span>.couleur(i, j)        
+
+racine = tk.Tk()
+
+planche = tk.Frame(racine, height=<span class="dv">200</span>, width=<span class="dv">200</span>)
+grille = {}
+<span class="kw">for</span> i in <span class="dt">range</span>(hauteur):
+    <span class="kw">for</span> j in <span class="dt">range</span>(largeur):
+        grille[(i, j)] = tk.Button(planche,
+                                  text=<span class="st">&#39;&#39;</span>,
+                                  bg=<span class="st">&#39;#FFF&#39;</span>,
+                                  width=<span class="dv">1</span>,
+                                  height=<span class="dv">1</span>)
+        grille[(i, j)].coordonnees = (i, j)
+        grille[(i, j)].grid(row = i, column = j)
+
+frame_coups = tk.Frame(racine)
+etiquette = tk.Label(frame_coups, text = <span class="st">&#39;Nombre de coups : &#39;</span>)
+etiquette_coups = tk.Label(frame_coups)
+etiquette.pack(side=<span class="st">&#39;left&#39;</span>)
+etiquette_coups.pack(side=<span class="st">&#39;left&#39;</span>)
+
+jeu = JeuTresor(hauteur, largeur, grille)
+
+boutons = tk.Frame(racine)
+bouton_quitter = tk.Button(boutons, text = <span class="st">&#39;Quitter&#39;</span>, command = racine.quit)
+bouton_rejouer = tk.Button(boutons,text = <span class="st">&#39;Rejouer&#39;</span>, command = jeu.nouvelle_partie)
+bouton_quitter.pack(side=<span class="st">&#39;left&#39;</span>)
+bouton_rejouer.pack(side=<span class="st">&#39;left&#39;</span>)
+
+boutons.pack()
+planche.pack()
+frame_coups.pack()
+racine.mainloop()</code></pre>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

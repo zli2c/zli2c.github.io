@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Zhentao Li" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="tp6.html">Cours 6</a> 
+              <a class="leftmenu" href="tp6c.html">Corrigé 6</a> 
+              <a class="leftmenu" href="tp7.html">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="10"></td>
+                <td valign="top" class="mainbox">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="table.css" type="text/css" />
+</head>
+<body>
+<h2 id="le-langage-r">Le langage R</h2>
+<p>Le langage R est un langage beaucoup utlisé pour le calcul statistiques qui, comme <code>scipy</code>, manipule les valeurs vectoriels.</p>
+<p>Les commandes vus dans le cours de <a href="tp5">calcul scientifique</a> peuvent être considérés comme des analogues de commandes dans R.</p>
+<p>Voici un tableau d'équivalences.</p>
+<div id="innertable">
+<table style="width:75%;">
+<colgroup>
+<col width="19%" />
+<col width="5%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Opération</th>
+<th align="left">R</th>
+<th align="left">python (avec <code>import scipy as sp</code> en entête)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">assignation</td>
+<td align="left"><code>&lt;-</code> (ou <code>=</code>)</td>
+<td align="left"><code>=</code></td>
+</tr>
+<tr class="even">
+<td align="left">création de vecteur</td>
+<td align="left"><code>c(3, 4, 5)</code></td>
+<td align="left"><code>sp.array([3, 4, 5])</code></td>
+</tr>
+<tr class="odd">
+<td align="left">concaténation</td>
+<td align="left"><code>c(v, 6, 7)</code></td>
+<td align="left"><code>sp.append(v, [6, 7])</code></td>
+</tr>
+<tr class="even">
+<td align="left">indexation</td>
+<td align="left"><code>v[2]</code></td>
+<td align="left"><code>v[1]</code> (les indices commencent à 0 au lieu de 1)</td>
+</tr>
+<tr class="odd">
+<td align="left">suite</td>
+<td align="left"><code>1:10</code></td>
+<td align="left"><code>sp.arange(1, 11)</code></td>
+</tr>
+<tr class="even">
+<td align="left">longueur</td>
+<td align="left"><code>length(v)</code></td>
+<td align="left"><code>len(v)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">addition élément par élément</td>
+<td align="left"><code>v1 + v2</code></td>
+<td align="left"><code>v1 + v2</code></td>
+</tr>
+<tr class="even">
+<td align="left">multiplication élément par élément</td>
+<td align="left"><code>v1 * v2</code></td>
+<td align="left"><code>v1 * v2</code></td>
+</tr>
+<tr class="odd">
+<td align="left">création de matrices</td>
+<td align="left"><code>rbind(1:2, c(5,8))</code></td>
+<td align="left"><code>sp.array([range(1, 3), sp.array([5, 8])])</code></td>
+</tr>
+<tr class="even">
+<td align="left">multiplication matricielle</td>
+<td align="left"><code>m1 %*% m2</code></td>
+<td align="left"><code>m1.dot(m2)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">modulo (élément par élément)</td>
+<td align="left"><code>v %% 2</code></td>
+<td align="left"><code>v % 2</code></td>
+</tr>
+<tr class="even">
+<td align="left">sélection par vecteur d'indices</td>
+<td align="left"><code>v1[v2]</code></td>
+<td align="left"><code>v1[v2]</code></td>
+</tr>
+<tr class="odd">
+<td align="left">comparisons</td>
+<td align="left"><code>v &gt; 2</code></td>
+<td align="left"><code>v &gt; 2</code></td>
+</tr>
+<tr class="even">
+<td align="left">booléens</td>
+<td align="left"><code>TRUE; FALSE</code> (ou <code>T; F</code>)</td>
+<td align="left"><code>True; False</code></td>
+</tr>
+<tr class="odd">
+<td align="left">valeur vide</td>
+<td align="left"><code>NULL</code></td>
+<td align="left"><code>None</code></td>
+</tr>
+<tr class="even">
+<td align="left">moyenne</td>
+<td align="left"><code>mean(v)</code></td>
+<td align="left"><code>sp.mean(v)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">déviation</td>
+<td align="left"><code>sd(v)</code></td>
+<td align="left"><code>sp.std(v)</code></td>
+</tr>
+<tr class="even">
+<td align="left">liste R/dictionnaire python</td>
+<td align="left"><code>list(a=3, b=4)</code></td>
+<td align="left"><code>dict(a=3, b=4)</code> (pas exactement équivalent)</td>
+</tr>
+<tr class="odd">
+<td align="left">élément d'une liste R</td>
+<td align="left"><code>l$a</code></td>
+<td align="left"><code>l['a']</code></td>
+</tr>
+<tr class="even">
+<td align="left">élément d'une liste R</td>
+<td align="left"><code>l[[1]]</code></td>
+<td align="left"><code>l.values()[0]</code> (attention: l'ordre n'est pas préservé)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Les fonctions dans R</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">compte_impairs <span class="op">&lt;-</span> function(v) {
+    length(v[v <span class="op">%%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">1</span>]) 
+}</code></pre></div>
+<p>Les fonctions en Python</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> compte_impairs(v):
+    <span class="cf">return</span> <span class="bu">len</span>(v[v <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">1</span>])</code></pre></div>
+<p><strong>Remarque (avancée):</strong> En fait, il y a une syntaxe que resemble encore plus à celui de R en Python: l'instruction <code>lambda</code> qui crée une fonction sans nom.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">compte_impairs <span class="op">=</span> <span class="kw">lambda</span> v: <span class="bu">len</span>(v[v <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">1</span>])</code></pre></div>
+<p>Pour d'autre correspondances de fonctions statistiques <a href="http://docs.scipy.org/doc/numpy/reference/routines.statistics.html">voir ici</a></p>
+<h2 id="interface-entre-r-et-python">Interface entre R et Python</h2>
+<p>Il existe plusieurs modules pour pouvoir appeller les fonctions et échanger des données entre les deux langages. Les plus populaires sont</p>
+<ul>
+<li><a href="http://rpy.sourceforge.net/">rpy2</a></li>
+<li><a href="https://pypi.python.org/pypi/pyRserve/">pyRserver</a> (avec <a href="https://rforge.net/Rserve/">Rserve</a> du côté R)</li>
+<li><a href="http://www.webarray.org/softwares/PypeR/">PypeR</a></li>
+</ul>
+<p>Nous allons voir l'utilisation de <code>rpy2</code> qui est relativement simple.</p>
+<h2 id="rpy2">rpy2</h2>
+<p>Il se trouve que la plupart des fonctionalités de <code>rpy2</code> sont dans le sous-module <code>robjects</code> et l'objet <code>r</code> de <code>rpy2.robjects</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> rpy2 <span class="im">import</span> robjects
+<span class="im">from</span> rpy2.robjects <span class="im">import</span> r</code></pre></div>
+<p><strong>Remarque:</strong> Les <strong>objets</strong> sont une notion que nous avons déjà vu (sous un autre nom) lorsque nous avons parlé de <code>Class</code>. Les instances de n'importe quel classe est considéré comme un objet. Ici <code>r</code> est une instance de la classe <code>R</code> (et nous avons normalement une seule instance de cette classe).</p>
+<h2 id="un-exemple-rpy2">Un exemple rpy2</h2>
+<p>Les constantes sont accessible avec la syntaxe suivante.</p>
+<div class="sourceCode"><pre class="sourceCode small python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> rpy2.robjects <span class="im">import</span> r
+<span class="op">&gt;&gt;&gt;</span> r.pi
+<span class="op">&lt;</span>FloatVector <span class="op">-</span> Python:<span class="bn">0x29d9998</span> <span class="op">/</span> R:<span class="bn">0x22e30f8</span><span class="op">&gt;</span>
+[<span class="fl">3.141593</span>]
+<span class="op">&gt;&gt;&gt;</span> r.pi[<span class="dv">0</span>]
+<span class="fl">3.141592653589793</span>
+<span class="op">&gt;&gt;&gt;</span> v <span class="op">=</span> r.pi <span class="op">+</span> <span class="dv">2</span>
+<span class="op">&gt;&gt;&gt;</span> v
+<span class="op">&lt;</span>FloatVector <span class="op">-</span> Python:<span class="bn">0x29d9c68</span> <span class="op">/</span> R:<span class="bn">0x1657398</span><span class="op">&gt;</span>
+[<span class="fl">3.141593</span>, <span class="fl">2.000000</span>]
+<span class="op">&gt;&gt;&gt;</span> r.<span class="bu">sum</span>(v)
+<span class="op">&lt;</span>FloatVector <span class="op">-</span> Python:<span class="bn">0x29dba70</span> <span class="op">/</span> R:<span class="bn">0x22ed868</span><span class="op">&gt;</span>
+[<span class="fl">5.141593</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="co"># On peut aussi appeler des fonctions python sur les vecteurs R</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">sum</span>(v) 
+<span class="fl">5.141592653589793</span></code></pre></div>
+<h2 id="création-dobjets-r">Création d'objets R</h2>
+<p>Puisque nous avons accès à la fonction <code>c()</code> de concatenation de R, nous pouvons créer des vecteurs R comme suit.</p>
+<div class="sourceCode"><pre class="sourceCode small python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> r.c(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)
+<span class="op">&lt;</span>IntVector <span class="op">-</span> Python:<span class="bn">0x29dccf8</span> <span class="op">/</span> R:<span class="bn">0x1657520</span><span class="op">&gt;</span>
+[       <span class="dv">1</span>,        <span class="dv">2</span>,        <span class="dv">3</span>]
+<span class="op">&gt;&gt;&gt;</span> r.c(<span class="fl">1.0</span>, <span class="dv">2</span>, <span class="dv">3</span>)
+<span class="op">&lt;</span>FloatVector <span class="op">-</span> Python:<span class="bn">0x29dcbd8</span> <span class="op">/</span> R:<span class="bn">0x27c8ac0</span><span class="op">&gt;</span>
+[<span class="fl">1.000000</span>, <span class="fl">2.000000</span>, <span class="fl">3.000000</span>]</code></pre></div>
+<p>On peut créer ces vecteurs « directement » en faissant appel à <code>robjects.IntVector</code>, <code>robjects.FloatVector</code>, <code>robjects.StrVector</code>, etc.</p>
+<div class="sourceCode"><pre class="sourceCode small python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> robjects.IntVector([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])
+<span class="op">&lt;</span>IntVector <span class="op">-</span> Python:<span class="bn">0x29dd9e0</span> <span class="op">/</span> R:<span class="bn">0x1657638</span><span class="op">&gt;</span>
+[       <span class="dv">1</span>,        <span class="dv">2</span>,        <span class="dv">3</span>]
+<span class="op">&gt;&gt;&gt;</span> robjects.FloatVector([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])
+<span class="op">&lt;</span>FloatVector <span class="op">-</span> Python:<span class="bn">0x29dd488</span> <span class="op">/</span> R:<span class="bn">0x27c8a30</span><span class="op">&gt;</span>
+[<span class="fl">1.000000</span>, <span class="fl">2.000000</span>, <span class="fl">3.000000</span>]
+<span class="op">&gt;&gt;&gt;</span> robjects.StrVector([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])
+<span class="op">&lt;</span>StrVector <span class="op">-</span> Python:<span class="bn">0x29dd170</span> <span class="op">/</span> R:<span class="bn">0x1f0dda8</span><span class="op">&gt;</span>
+[<span class="st">&#39;1&#39;</span>, <span class="st">&#39;2&#39;</span>, <span class="st">&#39;3&#39;</span>]</code></pre></div>
+<h2 id="interface-avec-scipy-ou-numpy">Interface avec scipy (ou numpy)</h2>
+<p>Il est possible de transformer les vecteurs <code>numpy</code>/<code>scipy</code> en vecteurs R et vice versa.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> v1 <span class="op">=</span> r.c(<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>)
+<span class="op">&gt;&gt;&gt;</span> v2 <span class="op">=</span> sp.array(v1)
+<span class="op">&gt;&gt;&gt;</span> v2
+array([<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>], dtype<span class="op">=</span>int32)
+<span class="op">&gt;&gt;&gt;</span> v3 <span class="op">=</span> v2 <span class="op">*</span> <span class="dv">2</span>
+<span class="op">&gt;&gt;&gt;</span> v4 <span class="op">=</span> robjects.IntVector(v3)
+<span class="op">&gt;&gt;&gt;</span> v4
+<span class="op">&lt;</span>IntVector <span class="op">-</span> Python:<span class="bn">0x2ea8440</span> <span class="op">/</span> R:<span class="bn">0x16578d8</span><span class="op">&gt;</span>
+[       <span class="dv">6</span>,       <span class="dv">10</span>,       <span class="dv">14</span>]</code></pre></div>
+<h2 id="exécution-directe">Exécution directe</h2>
+<p>Il est possible d'exécuter une (ou plusieurs) ligne(s) de R directement.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> v <span class="op">=</span> r(<span class="st">&#39;1:10&#39;</span>)
+<span class="op">&gt;&gt;&gt;</span> v
+<span class="op">&lt;</span>IntVector <span class="op">-</span> Python:<span class="bn">0x2979830</span> <span class="op">/</span> R:<span class="bn">0x1d49fe0</span><span class="op">&gt;</span>
+[       <span class="dv">1</span>,        <span class="dv">2</span>,        <span class="dv">3</span>, ...,        <span class="dv">8</span>,        <span class="dv">9</span>,       <span class="dv">10</span>]
+<span class="op">&gt;&gt;&gt;</span> r(<span class="st">&#39;sum(1:10)&#39;</span>)
+<span class="op">&lt;</span>IntVector <span class="op">-</span> Python:<span class="bn">0x29dda70</span> <span class="op">/</span> R:<span class="bn">0x22f0448</span><span class="op">&gt;</span>
+[      <span class="dv">55</span>]</code></pre></div>
+<p>Nous appelons <code>rpy2.robjects.r</code> comme une fonction avec un seul paramètre: une chaîne de caractères. Cette chaîne a comme valeur le code R que nous voulons exécuter.</p>
+<h2 id="importation-de-paquets-r">Importation de paquets R</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> rpy2.robjects.packages <span class="im">import</span> importr
+<span class="op">&gt;&gt;&gt;</span> datasets <span class="op">=</span> importr(<span class="st">&#39;datasets&#39;</span>)
+<span class="op">&gt;&gt;&gt;</span> datasets.occupationalStatus
+<span class="op">&lt;</span>Matrix <span class="op">-</span> Python:<span class="bn">0x3d78128</span> <span class="op">/</span> R:<span class="bn">0x3e10060</span><span class="op">&gt;</span>
+[      <span class="dv">50</span>,       <span class="dv">16</span>,       <span class="dv">12</span>, ...,      <span class="dv">177</span>,       <span class="dv">71</span>,      <span class="dv">106</span>]</code></pre></div>
+</body>
+</html>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

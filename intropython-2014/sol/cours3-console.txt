@@ -1,0 +1,1532 @@
+Script started on Wed 05 Mar 2014 06:14:06 PM CET
+zhentao@martagon:~/winter2014/intropython/cours$ ipython
+Python 2.6.6 (r266:84292, Sep 15 2010, 15:52:39) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 0.10 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object'. ?object also works, ?? prints more.
+
+In [1]: vers = open("vers.txt").readlines()
+
+In [2]: vers
+Out[2]: 
+['vers numero 0 version a\n',
+ 'vers numero 0 version b\n',
+ 'vers numero 0 version c\n',
+ 'vers numero 0 version d\n',
+ 'vers numero 0 version e\n',
+ 'vers numero 0 version f\n',
+ 'vers numero 0 version g\n',
+ 'vers numero 0 version h\n',
+ 'vers numero 0 version i\n',
+ 'vers numero 0 version j\n',
+ '\n',
+ 'vers numero 1 version a\n',
+ 'vers numero 1 version b\n',
+ 'vers numero 1 version c\n',
+ 'vers numero 1 version d\n',
+ 'vers numero 1 version e\n',
+ 'vers numero 1 version f\n',
+ 'vers numero 1 version g\n',
+ 'vers numero 1 version h\n',
+ 'vers numero 1 version i\n',
+ 'vers numero 1 version j\n',
+ '\n',
+ 'vers numero 2 version a\n',
+ 'vers numero 2 version b\n',
+ 'vers numero 2 version c\n',
+ 'vers numero 2 version d\n',
+ 'vers numero 2 version e\n',
+ 'vers numero 2 version f\n',
+ 'vers numero 2 version g\n',
+ 'vers numero 2 version h\n',
+ 'vers numero 2 version i\n',
+ 'vers numero 2 version j\n',
+ '\n',
+ 'vers numero 3 version a\n',
+ 'vers numero 3 version b\n',
+ 'vers numero 3 version c\n',
+ 'vers numero 3 version d\n',
+ 'vers numero 3 version e\n',
+ 'vers numero 3 version f\n',
+ 'vers numero 3 version g\n',
+ 'vers numero 3 version h\n',
+ 'vers numero 3 version i\n',
+ 'vers numero 3 version j\n',
+ '\n',
+ 'vers numero 4 version a\n',
+ 'vers numero 4 version b\n',
+ 'vers numero 4 version c\n',
+ 'vers numero 4 version d\n',
+ 'vers numero 4 version e\n',
+ 'vers numero 4 version f\n',
+ 'vers numero 4 version g\n',
+ 'vers numero 4 version h\n',
+ 'vers numero 4 version i\n',
+ 'vers numero 4 version j\n',
+ '\n',
+ 'vers numero 5 version a\n',
+ 'vers numero 5 version b\n',
+ 'vers numero 5 version c\n',
+ 'vers numero 5 version d\n',
+ 'vers numero 5 version e\n',
+ 'vers numero 5 version f\n',
+ 'vers numero 5 version g\n',
+ 'vers numero 5 version h\n',
+ 'vers numero 5 version i\n',
+ 'vers numero 5 version j\n',
+ '\n',
+ 'vers numero 6 version a\n',
+ 'vers numero 6 version b\n',
+ 'vers numero 6 version c\n',
+ 'vers numero 6 version d\n',
+ 'vers numero 6 version e\n',
+ 'vers numero 6 version f\n',
+ 'vers numero 6 version g\n',
+ 'vers numero 6 version h\n',
+ 'vers numero 6 version i\n',
+ 'vers numero 6 version j\n',
+ '\n',
+ 'vers numero 7 version a\n',
+ 'vers numero 7 version b\n',
+ 'vers numero 7 version c\n',
+ 'vers numero 7 version d\n',
+ 'vers numero 7 version e\n',
+ 'vers numero 7 version f\n',
+ 'vers numero 7 version g\n',
+ 'vers numero 7 version h\n',
+ 'vers numero 7 version i\n',
+ 'vers numero 7 version j\n',
+ '\n',
+ 'vers numero 8 version a\n',
+ 'vers numero 8 version b\n',
+ 'vers numero 8 version c\n',
+ 'vers numero 8 version d\n',
+ 'vers numero 8 version e\n',
+ 'vers numero 8 version f\n',
+ 'vers numero 8 version g\n',
+ 'vers numero 8 version h\n',
+ 'vers numero 8 version i\n',
+ 'vers numero 8 version j\n',
+ '\n',
+ 'vers numero 9 version a\n',
+ 'vers numero 9 version b\n',
+ 'vers numero 9 version c\n',
+ 'vers numero 9 version d\n',
+ 'vers numero 9 version e\n',
+ 'vers numero 9 version f\n',
+ 'vers numero 9 version g\n',
+ 'vers numero 9 version h\n',
+ 'vers numero 9 version i\n',
+ 'vers numero 9 version j\n',
+ '\n',
+ 'vers numero 10 version a\n',
+ 'vers numero 10 version b\n',
+ 'vers numero 10 version c\n',
+ 'vers numero 10 version d\n',
+ 'vers numero 10 version e\n',
+ 'vers numero 10 version f\n',
+ 'vers numero 10 version g\n',
+ 'vers numero 10 version h\n',
+ 'vers numero 10 version i\n',
+ 'vers numero 10 version j\n',
+ '\n',
+ 'vers numero 11 version a\n',
+ 'vers numero 11 version b\n',
+ 'vers numero 11 version c\n',
+ 'vers numero 11 version d\n',
+ 'vers numero 11 version e\n',
+ 'vers numero 11 version f\n',
+ 'vers numero 11 version g\n',
+ 'vers numero 11 version h\n',
+ 'vers numero 11 version i\n',
+ 'vers numero 11 version j\n',
+ '\n',
+ 'vers numero 12 version a\n',
+ 'vers numero 12 version b\n',
+ 'vers numero 12 version c\n',
+ 'vers numero 12 version d\n',
+ 'vers numero 12 version e\n',
+ 'vers numero 12 version f\n',
+ 'vers numero 12 version g\n',
+ 'vers numero 12 version h\n',
+ 'vers numero 12 version i\n',
+ 'vers numero 12 version j\n',
+ '\n',
+ 'vers numero 13 version a\n',
+ 'vers numero 13 version b\n',
+ 'vers numero 13 version c\n',
+ 'vers numero 13 version d\n',
+ 'vers numero 13 version e\n',
+ 'vers numero 13 version f\n',
+ 'vers numero 13 version g\n',
+ 'vers numero 13 version h\n',
+ 'vers numero 13 version i\n',
+ 'vers numero 13 version j\n',
+ '\n']
+
+In [3]: for ligne in ver
+vers      vers.txt  
+
+In [3]: for ligne in vers:
+   ...:     print ligne
+   ...:     if ligne == "\n":
+   ...:         break
+   ...:         
+   ...:         
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+
+In [4]: for elem in "abcdefghijklmno":
+   ...:     for 
+KeyboardInterrupt
+
+In [4]: for ligne in vers:
+    print ligne
+    if ligne == "\n":
+        break
+KeyboardInterrupt
+
+In [4]: liste = list("abcdefghijklmno")
+
+In [6]: liste
+Out[6]: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+
+In [7]: for num_vers in liste:
+   ...:         for ligne in vers:
+   ...:             print ligne
+   ...:         if ligne == "\n":
+   ...:                 print "Appel break"
+   ...:             break
+   ...: 
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+vers numero 0 version a
+
+vers numero 0 version b
+
+vers numero 0 version c
+
+vers numero 0 version d
+
+vers numero 0 version e
+
+vers numero 0 version f
+
+vers numero 0 version g
+
+vers numero 0 version h
+
+vers numero 0 version i
+
+vers numero 0 version j
+
+
+
+Appel break
+
+In [8]: ["a", 3] + ["c"]
+Out[8]: ['a', 3, 'c']
+
+In [9]: liste1=["a", 3]
+
+In [10]: liste1 + ["c"]
+Out[10]: ['a', 3, 'c']
+
+In [11]: liste1
+Out[11]: ['a', 3]
+
+In [12]: liste1.append("c")
+
+In [13]: liste1
+Out[13]: ['a', 3, 'c']
+
+In [14]: for num_vers in liste:
+   ....:         vers = []
+   ....:     for ligne in vers:
+   ....:             vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:                 print "Appel break"
+   ....:             break
+   ....: 
+
+In [15]: vers
+Out[15]: []
+
+In [16]: %autoindent
+Automatic indentation is: OFF
+
+In [17]: for num_vers in liste:
+   ....:     vers = []
+   ....:     for ligne in vers:
+   ....:         vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:             print "Appel break"
+   ....:             break
+   ....: 
+
+In [18]: vers
+Out[18]: []
+
+In [19]: vers = open("vers.
+vers.__add__           vers.__imul__          vers.__setslice__
+vers.__class__         vers.__init__          vers.__sizeof__
+vers.__contains__      vers.__iter__          vers.__str__
+vers.__delattr__       vers.__le__            vers.__subclasshook__
+vers.__delitem__       vers.__len__           vers.append
+vers.__delslice__      vers.__lt__            vers.count
+vers.__doc__           vers.__mul__           vers.extend
+vers.__eq__            vers.__ne__            vers.index
+vers.__format__        vers.__new__           vers.insert
+vers.__ge__            vers.__reduce__        vers.pop
+vers.__getattribute__  vers.__reduce_ex__     vers.remove
+vers.__getitem__       vers.__repr__          vers.reverse
+vers.__getslice__      vers.__reversed__      vers.sort
+vers.__gt__            vers.__rmul__          vers.txt
+vers.__hash__          vers.__setattr__       
+vers.__iadd__          vers.__setitem__       
+
+In [19]: vers = open("vers.txt").readlines()
+
+In [20]: for num_vers in liste:
+   ....:     liste_vers = []
+   ....:     for ligne in vers:
+   ....:         liste_vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:             print "Appel break"
+   ....:             break
+   ....: 
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+
+In [21]: liste_vers
+Out[21]: 
+['vers numero 0 version a\n',
+ 'vers numero 0 version b\n',
+ 'vers numero 0 version c\n',
+ 'vers numero 0 version d\n',
+ 'vers numero 0 version e\n',
+ 'vers numero 0 version f\n',
+ 'vers numero 0 version g\n',
+ 'vers numero 0 version h\n',
+ 'vers numero 0 version i\n',
+ 'vers numero 0 version j\n',
+ '\n']
+
+In [22]: for num_vers in liste:
+   ....:     liste_vers = []
+   ....:     for ligne in vers:
+   ....:         liste_vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:             print "Appel break"
+   ....:             break
+   ....: 
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+Appel break
+
+In [23]: for num_vers in liste:
+   ....:     liste_vers = []
+   ....:     for ligne in vers:
+   ....:         liste_vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:             print "Appel break"
+   ....:             print liste_vers
+   ....:             break
+   ....: 
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+
+In [24]: for num_vers in range(14):
+   ....:     liste_vers = []
+   ....:     for ligne in vers[num_vers*14: num_vers*14+13]:
+   ....:         liste_vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:             print "Appel break"
+   ....:             print liste_vers
+   ....:             break
+   ....: 
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 1 version d\n', 'vers numero 1 version e\n', 'vers numero 1 version f\n', 'vers numero 1 version g\n', 'vers numero 1 version h\n', 'vers numero 1 version i\n', 'vers numero 1 version j\n', '\n']
+Appel break
+['vers numero 2 version g\n', 'vers numero 2 version h\n', 'vers numero 2 version i\n', 'vers numero 2 version j\n', '\n']
+Appel break
+['vers numero 3 version j\n', '\n']
+Appel break
+['vers numero 5 version b\n', 'vers numero 5 version c\n', 'vers numero 5 version d\n', 'vers numero 5 version e\n', 'vers numero 5 version f\n', 'vers numero 5 version g\n', 'vers numero 5 version h\n', 'vers numero 5 version i\n', 'vers numero 5 version j\n', '\n']
+Appel break
+['vers numero 6 version e\n', 'vers numero 6 version f\n', 'vers numero 6 version g\n', 'vers numero 6 version h\n', 'vers numero 6 version i\n', 'vers numero 6 version j\n', '\n']
+Appel break
+['vers numero 7 version h\n', 'vers numero 7 version i\n', 'vers numero 7 version j\n', '\n']
+Appel break
+['\n']
+Appel break
+['vers numero 10 version c\n', 'vers numero 10 version d\n', 'vers numero 10 version e\n', 'vers numero 10 version f\n', 'vers numero 10 version g\n', 'vers numero 10 version h\n', 'vers numero 10 version i\n', 'vers numero 10 version j\n', '\n']
+Appel break
+['vers numero 11 version f\n', 'vers numero 11 version g\n', 'vers numero 11 version h\n', 'vers numero 11 version i\n', 'vers numero 11 version j\n', '\n']
+Appel break
+['vers numero 12 version i\n', 'vers numero 12 version j\n', '\n']
+
+In [25]: for num_vers in range(14):
+   ....:     liste_vers = []
+   ....:     for ligne in vers[num_vers*10: num_vers*10+9]:
+   ....:         liste_vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:             print "Appel break"
+   ....:             print liste_vers
+   ....:             break
+   ....: 
+Appel break
+['\n']
+Appel break
+['vers numero 1 version j\n', '\n']
+Appel break
+['vers numero 2 version i\n', 'vers numero 2 version j\n', '\n']
+Appel break
+['vers numero 3 version h\n', 'vers numero 3 version i\n', 'vers numero 3 version j\n', '\n']
+Appel break
+['vers numero 4 version g\n', 'vers numero 4 version h\n', 'vers numero 4 version i\n', 'vers numero 4 version j\n', '\n']
+Appel break
+['vers numero 5 version f\n', 'vers numero 5 version g\n', 'vers numero 5 version h\n', 'vers numero 5 version i\n', 'vers numero 5 version j\n', '\n']
+Appel break
+['vers numero 6 version e\n', 'vers numero 6 version f\n', 'vers numero 6 version g\n', 'vers numero 6 version h\n', 'vers numero 6 version i\n', 'vers numero 6 version j\n', '\n']
+Appel break
+['vers numero 7 version d\n', 'vers numero 7 version e\n', 'vers numero 7 version f\n', 'vers numero 7 version g\n', 'vers numero 7 version h\n', 'vers numero 7 version i\n', 'vers numero 7 version j\n', '\n']
+Appel break
+['vers numero 8 version c\n', 'vers numero 8 version d\n', 'vers numero 8 version e\n', 'vers numero 8 version f\n', 'vers numero 8 version g\n', 'vers numero 8 version h\n', 'vers numero 8 version i\n', 'vers numero 8 version j\n', '\n']
+Appel break
+['\n']
+Appel break
+['vers numero 11 version j\n', '\n']
+
+In [26]: num_vers = 0
+
+In [27]: vers[num_vers*10: num_vers*10+9]
+Out[27]: 
+['vers numero 0 version a\n',
+ 'vers numero 0 version b\n',
+ 'vers numero 0 version c\n',
+ 'vers numero 0 version d\n',
+ 'vers numero 0 version e\n',
+ 'vers numero 0 version f\n',
+ 'vers numero 0 version g\n',
+ 'vers numero 0 version h\n',
+ 'vers numero 0 version i\n']
+
+In [28]: for num_vers in range(14):
+   ....:     liste_vers = []
+   ....:     for ligne in vers[num_vers*10: num_vers*10+10]:
+   ....:         liste_vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:             print "Appel break"
+   ....:             print liste_vers
+   ....:             break
+   ....: 
+Appel break
+['\n']
+Appel break
+['vers numero 1 version j\n', '\n']
+Appel break
+['vers numero 2 version i\n', 'vers numero 2 version j\n', '\n']
+Appel break
+['vers numero 3 version h\n', 'vers numero 3 version i\n', 'vers numero 3 version j\n', '\n']
+Appel break
+['vers numero 4 version g\n', 'vers numero 4 version h\n', 'vers numero 4 version i\n', 'vers numero 4 version j\n', '\n']
+Appel break
+['vers numero 5 version f\n', 'vers numero 5 version g\n', 'vers numero 5 version h\n', 'vers numero 5 version i\n', 'vers numero 5 version j\n', '\n']
+Appel break
+['vers numero 6 version e\n', 'vers numero 6 version f\n', 'vers numero 6 version g\n', 'vers numero 6 version h\n', 'vers numero 6 version i\n', 'vers numero 6 version j\n', '\n']
+Appel break
+['vers numero 7 version d\n', 'vers numero 7 version e\n', 'vers numero 7 version f\n', 'vers numero 7 version g\n', 'vers numero 7 version h\n', 'vers numero 7 version i\n', 'vers numero 7 version j\n', '\n']
+Appel break
+['vers numero 8 version c\n', 'vers numero 8 version d\n', 'vers numero 8 version e\n', 'vers numero 8 version f\n', 'vers numero 8 version g\n', 'vers numero 8 version h\n', 'vers numero 8 version i\n', 'vers numero 8 version j\n', '\n']
+Appel break
+['vers numero 9 version b\n', 'vers numero 9 version c\n', 'vers numero 9 version d\n', 'vers numero 9 version e\n', 'vers numero 9 version f\n', 'vers numero 9 version g\n', 'vers numero 9 version h\n', 'vers numero 9 version i\n', 'vers numero 9 version j\n', '\n']
+Appel break
+['\n']
+Appel break
+['vers numero 11 version j\n', '\n']
+
+In [29]: vers[num_vers*10: num_vers*10+10]
+Out[29]: 
+['vers numero 11 version j\n',
+ '\n',
+ 'vers numero 12 version a\n',
+ 'vers numero 12 version b\n',
+ 'vers numero 12 version c\n',
+ 'vers numero 12 version d\n',
+ 'vers numero 12 version e\n',
+ 'vers numero 12 version f\n',
+ 'vers numero 12 version g\n',
+ 'vers numero 12 version h\n']
+
+In [30]: num_vers = 0
+
+In [31]: vers[num_vers*10: num_vers*10+10]
+Out[31]: 
+['vers numero 0 version a\n',
+ 'vers numero 0 version b\n',
+ 'vers numero 0 version c\n',
+ 'vers numero 0 version d\n',
+ 'vers numero 0 version e\n',
+ 'vers numero 0 version f\n',
+ 'vers numero 0 version g\n',
+ 'vers numero 0 version h\n',
+ 'vers numero 0 version i\n',
+ 'vers numero 0 version j\n']
+
+In [32]: for num_vers in range(14):
+   ....:     liste_vers = []
+   ....:     for ligne in vers[num_vers*11: num_vers*11+11]:
+   ....:         liste_vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:             print "Appel break"
+   ....:             print liste_vers
+   ....:             break
+   ....: 
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 1 version a\n', 'vers numero 1 version b\n', 'vers numero 1 version c\n', 'vers numero 1 version d\n', 'vers numero 1 version e\n', 'vers numero 1 version f\n', 'vers numero 1 version g\n', 'vers numero 1 version h\n', 'vers numero 1 version i\n', 'vers numero 1 version j\n', '\n']
+Appel break
+['vers numero 2 version a\n', 'vers numero 2 version b\n', 'vers numero 2 version c\n', 'vers numero 2 version d\n', 'vers numero 2 version e\n', 'vers numero 2 version f\n', 'vers numero 2 version g\n', 'vers numero 2 version h\n', 'vers numero 2 version i\n', 'vers numero 2 version j\n', '\n']
+Appel break
+['vers numero 3 version a\n', 'vers numero 3 version b\n', 'vers numero 3 version c\n', 'vers numero 3 version d\n', 'vers numero 3 version e\n', 'vers numero 3 version f\n', 'vers numero 3 version g\n', 'vers numero 3 version h\n', 'vers numero 3 version i\n', 'vers numero 3 version j\n', '\n']
+Appel break
+['vers numero 4 version a\n', 'vers numero 4 version b\n', 'vers numero 4 version c\n', 'vers numero 4 version d\n', 'vers numero 4 version e\n', 'vers numero 4 version f\n', 'vers numero 4 version g\n', 'vers numero 4 version h\n', 'vers numero 4 version i\n', 'vers numero 4 version j\n', '\n']
+Appel break
+['vers numero 5 version a\n', 'vers numero 5 version b\n', 'vers numero 5 version c\n', 'vers numero 5 version d\n', 'vers numero 5 version e\n', 'vers numero 5 version f\n', 'vers numero 5 version g\n', 'vers numero 5 version h\n', 'vers numero 5 version i\n', 'vers numero 5 version j\n', '\n']
+Appel break
+['vers numero 6 version a\n', 'vers numero 6 version b\n', 'vers numero 6 version c\n', 'vers numero 6 version d\n', 'vers numero 6 version e\n', 'vers numero 6 version f\n', 'vers numero 6 version g\n', 'vers numero 6 version h\n', 'vers numero 6 version i\n', 'vers numero 6 version j\n', '\n']
+Appel break
+['vers numero 7 version a\n', 'vers numero 7 version b\n', 'vers numero 7 version c\n', 'vers numero 7 version d\n', 'vers numero 7 version e\n', 'vers numero 7 version f\n', 'vers numero 7 version g\n', 'vers numero 7 version h\n', 'vers numero 7 version i\n', 'vers numero 7 version j\n', '\n']
+Appel break
+['vers numero 8 version a\n', 'vers numero 8 version b\n', 'vers numero 8 version c\n', 'vers numero 8 version d\n', 'vers numero 8 version e\n', 'vers numero 8 version f\n', 'vers numero 8 version g\n', 'vers numero 8 version h\n', 'vers numero 8 version i\n', 'vers numero 8 version j\n', '\n']
+Appel break
+['vers numero 9 version a\n', 'vers numero 9 version b\n', 'vers numero 9 version c\n', 'vers numero 9 version d\n', 'vers numero 9 version e\n', 'vers numero 9 version f\n', 'vers numero 9 version g\n', 'vers numero 9 version h\n', 'vers numero 9 version i\n', 'vers numero 9 version j\n', '\n']
+Appel break
+['vers numero 10 version a\n', 'vers numero 10 version b\n', 'vers numero 10 version c\n', 'vers numero 10 version d\n', 'vers numero 10 version e\n', 'vers numero 10 version f\n', 'vers numero 10 version g\n', 'vers numero 10 version h\n', 'vers numero 10 version i\n', 'vers numero 10 version j\n', '\n']
+Appel break
+['vers numero 11 version a\n', 'vers numero 11 version b\n', 'vers numero 11 version c\n', 'vers numero 11 version d\n', 'vers numero 11 version e\n', 'vers numero 11 version f\n', 'vers numero 11 version g\n', 'vers numero 11 version h\n', 'vers numero 11 version i\n', 'vers numero 11 version j\n', '\n']
+Appel break
+['vers numero 12 version a\n', 'vers numero 12 version b\n', 'vers numero 12 version c\n', 'vers numero 12 version d\n', 'vers numero 12 version e\n', 'vers numero 12 version f\n', 'vers numero 12 version g\n', 'vers numero 12 version h\n', 'vers numero 12 version i\n', 'vers numero 12 version j\n', '\n']
+Appel break
+['vers numero 13 version a\n', 'vers numero 13 version b\n', 'vers numero 13 version c\n', 'vers numero 13 version d\n', 'vers numero 13 version e\n', 'vers numero 13 version f\n', 'vers numero 13 version g\n', 'vers numero 13 version h\n', 'vers numero 13 version i\n', 'vers numero 13 version j\n', '\n']
+
+In [33]: liste_liste_vers = []
+
+In [34]: for num_vers in range(14):
+   ....:     liste_vers = []
+   ....:     for ligne in vers[num_vers*11: num_vers*11+11]:
+   ....:         liste_vers.append(ligne)
+   ....:         if ligne == "\n":
+   ....:             print "Appel break"
+   ....:             print liste_vers
+   ....:             liste_liste_vers.append(liste_vers)
+   ....:             break
+   ....: 
+Appel break
+['vers numero 0 version a\n', 'vers numero 0 version b\n', 'vers numero 0 version c\n', 'vers numero 0 version d\n', 'vers numero 0 version e\n', 'vers numero 0 version f\n', 'vers numero 0 version g\n', 'vers numero 0 version h\n', 'vers numero 0 version i\n', 'vers numero 0 version j\n', '\n']
+Appel break
+['vers numero 1 version a\n', 'vers numero 1 version b\n', 'vers numero 1 version c\n', 'vers numero 1 version d\n', 'vers numero 1 version e\n', 'vers numero 1 version f\n', 'vers numero 1 version g\n', 'vers numero 1 version h\n', 'vers numero 1 version i\n', 'vers numero 1 version j\n', '\n']
+Appel break
+['vers numero 2 version a\n', 'vers numero 2 version b\n', 'vers numero 2 version c\n', 'vers numero 2 version d\n', 'vers numero 2 version e\n', 'vers numero 2 version f\n', 'vers numero 2 version g\n', 'vers numero 2 version h\n', 'vers numero 2 version i\n', 'vers numero 2 version j\n', '\n']
+Appel break
+['vers numero 3 version a\n', 'vers numero 3 version b\n', 'vers numero 3 version c\n', 'vers numero 3 version d\n', 'vers numero 3 version e\n', 'vers numero 3 version f\n', 'vers numero 3 version g\n', 'vers numero 3 version h\n', 'vers numero 3 version i\n', 'vers numero 3 version j\n', '\n']
+Appel break
+['vers numero 4 version a\n', 'vers numero 4 version b\n', 'vers numero 4 version c\n', 'vers numero 4 version d\n', 'vers numero 4 version e\n', 'vers numero 4 version f\n', 'vers numero 4 version g\n', 'vers numero 4 version h\n', 'vers numero 4 version i\n', 'vers numero 4 version j\n', '\n']
+Appel break
+['vers numero 5 version a\n', 'vers numero 5 version b\n', 'vers numero 5 version c\n', 'vers numero 5 version d\n', 'vers numero 5 version e\n', 'vers numero 5 version f\n', 'vers numero 5 version g\n', 'vers numero 5 version h\n', 'vers numero 5 version i\n', 'vers numero 5 version j\n', '\n']
+Appel break
+['vers numero 6 version a\n', 'vers numero 6 version b\n', 'vers numero 6 version c\n', 'vers numero 6 version d\n', 'vers numero 6 version e\n', 'vers numero 6 version f\n', 'vers numero 6 version g\n', 'vers numero 6 version h\n', 'vers numero 6 version i\n', 'vers numero 6 version j\n', '\n']
+Appel break
+['vers numero 7 version a\n', 'vers numero 7 version b\n', 'vers numero 7 version c\n', 'vers numero 7 version d\n', 'vers numero 7 version e\n', 'vers numero 7 version f\n', 'vers numero 7 version g\n', 'vers numero 7 version h\n', 'vers numero 7 version i\n', 'vers numero 7 version j\n', '\n']
+Appel break
+['vers numero 8 version a\n', 'vers numero 8 version b\n', 'vers numero 8 version c\n', 'vers numero 8 version d\n', 'vers numero 8 version e\n', 'vers numero 8 version f\n', 'vers numero 8 version g\n', 'vers numero 8 version h\n', 'vers numero 8 version i\n', 'vers numero 8 version j\n', '\n']
+Appel break
+['vers numero 9 version a\n', 'vers numero 9 version b\n', 'vers numero 9 version c\n', 'vers numero 9 version d\n', 'vers numero 9 version e\n', 'vers numero 9 version f\n', 'vers numero 9 version g\n', 'vers numero 9 version h\n', 'vers numero 9 version i\n', 'vers numero 9 version j\n', '\n']
+Appel break
+['vers numero 10 version a\n', 'vers numero 10 version b\n', 'vers numero 10 version c\n', 'vers numero 10 version d\n', 'vers numero 10 version e\n', 'vers numero 10 version f\n', 'vers numero 10 version g\n', 'vers numero 10 version h\n', 'vers numero 10 version i\n', 'vers numero 10 version j\n', '\n']
+Appel break
+['vers numero 11 version a\n', 'vers numero 11 version b\n', 'vers numero 11 version c\n', 'vers numero 11 version d\n', 'vers numero 11 version e\n', 'vers numero 11 version f\n', 'vers numero 11 version g\n', 'vers numero 11 version h\n', 'vers numero 11 version i\n', 'vers numero 11 version j\n', '\n']
+Appel break
+['vers numero 12 version a\n', 'vers numero 12 version b\n', 'vers numero 12 version c\n', 'vers numero 12 version d\n', 'vers numero 12 version e\n', 'vers numero 12 version f\n', 'vers numero 12 version g\n', 'vers numero 12 version h\n', 'vers numero 12 version i\n', 'vers numero 12 version j\n', '\n']
+Appel break
+['vers numero 13 version a\n', 'vers numero 13 version b\n', 'vers numero 13 version c\n', 'vers numero 13 version d\n', 'vers numero 13 version e\n', 'vers numero 13 version f\n', 'vers numero 13 version g\n', 'vers numero 13 version h\n', 'vers numero 13 version i\n', 'vers numero 13 version j\n', '\n']
+
+In [35]: liste_vers
+Out[35]: 
+['vers numero 13 version a\n',
+ 'vers numero 13 version b\n',
+ 'vers numero 13 version c\n',
+ 'vers numero 13 version d\n',
+ 'vers numero 13 version e\n',
+ 'vers numero 13 version f\n',
+ 'vers numero 13 version g\n',
+ 'vers numero 13 version h\n',
+ 'vers numero 13 version i\n',
+ 'vers numero 13 version j\n',
+ '\n']
+
+In [36]: liste_liste_vers
+Out[36]: 
+[['vers numero 0 version a\n',
+  'vers numero 0 version b\n',
+  'vers numero 0 version c\n',
+  'vers numero 0 version d\n',
+  'vers numero 0 version e\n',
+  'vers numero 0 version f\n',
+  'vers numero 0 version g\n',
+  'vers numero 0 version h\n',
+  'vers numero 0 version i\n',
+  'vers numero 0 version j\n',
+  '\n'],
+ ['vers numero 1 version a\n',
+  'vers numero 1 version b\n',
+  'vers numero 1 version c\n',
+  'vers numero 1 version d\n',
+  'vers numero 1 version e\n',
+  'vers numero 1 version f\n',
+  'vers numero 1 version g\n',
+  'vers numero 1 version h\n',
+  'vers numero 1 version i\n',
+  'vers numero 1 version j\n',
+  '\n'],
+ ['vers numero 2 version a\n',
+  'vers numero 2 version b\n',
+  'vers numero 2 version c\n',
+  'vers numero 2 version d\n',
+  'vers numero 2 version e\n',
+  'vers numero 2 version f\n',
+  'vers numero 2 version g\n',
+  'vers numero 2 version h\n',
+  'vers numero 2 version i\n',
+  'vers numero 2 version j\n',
+  '\n'],
+ ['vers numero 3 version a\n',
+  'vers numero 3 version b\n',
+  'vers numero 3 version c\n',
+  'vers numero 3 version d\n',
+  'vers numero 3 version e\n',
+  'vers numero 3 version f\n',
+  'vers numero 3 version g\n',
+  'vers numero 3 version h\n',
+  'vers numero 3 version i\n',
+  'vers numero 3 version j\n',
+  '\n'],
+ ['vers numero 4 version a\n',
+  'vers numero 4 version b\n',
+  'vers numero 4 version c\n',
+  'vers numero 4 version d\n',
+  'vers numero 4 version e\n',
+  'vers numero 4 version f\n',
+  'vers numero 4 version g\n',
+  'vers numero 4 version h\n',
+  'vers numero 4 version i\n',
+  'vers numero 4 version j\n',
+  '\n'],
+ ['vers numero 5 version a\n',
+  'vers numero 5 version b\n',
+  'vers numero 5 version c\n',
+  'vers numero 5 version d\n',
+  'vers numero 5 version e\n',
+  'vers numero 5 version f\n',
+  'vers numero 5 version g\n',
+  'vers numero 5 version h\n',
+  'vers numero 5 version i\n',
+  'vers numero 5 version j\n',
+  '\n'],
+ ['vers numero 6 version a\n',
+  'vers numero 6 version b\n',
+  'vers numero 6 version c\n',
+  'vers numero 6 version d\n',
+  'vers numero 6 version e\n',
+  'vers numero 6 version f\n',
+  'vers numero 6 version g\n',
+  'vers numero 6 version h\n',
+  'vers numero 6 version i\n',
+  'vers numero 6 version j\n',
+  '\n'],
+ ['vers numero 7 version a\n',
+  'vers numero 7 version b\n',
+  'vers numero 7 version c\n',
+  'vers numero 7 version d\n',
+  'vers numero 7 version e\n',
+  'vers numero 7 version f\n',
+  'vers numero 7 version g\n',
+  'vers numero 7 version h\n',
+  'vers numero 7 version i\n',
+  'vers numero 7 version j\n',
+  '\n'],
+ ['vers numero 8 version a\n',
+  'vers numero 8 version b\n',
+  'vers numero 8 version c\n',
+  'vers numero 8 version d\n',
+  'vers numero 8 version e\n',
+  'vers numero 8 version f\n',
+  'vers numero 8 version g\n',
+  'vers numero 8 version h\n',
+  'vers numero 8 version i\n',
+  'vers numero 8 version j\n',
+  '\n'],
+ ['vers numero 9 version a\n',
+  'vers numero 9 version b\n',
+  'vers numero 9 version c\n',
+  'vers numero 9 version d\n',
+  'vers numero 9 version e\n',
+  'vers numero 9 version f\n',
+  'vers numero 9 version g\n',
+  'vers numero 9 version h\n',
+  'vers numero 9 version i\n',
+  'vers numero 9 version j\n',
+  '\n'],
+ ['vers numero 10 version a\n',
+  'vers numero 10 version b\n',
+  'vers numero 10 version c\n',
+  'vers numero 10 version d\n',
+  'vers numero 10 version e\n',
+  'vers numero 10 version f\n',
+  'vers numero 10 version g\n',
+  'vers numero 10 version h\n',
+  'vers numero 10 version i\n',
+  'vers numero 10 version j\n',
+  '\n'],
+ ['vers numero 11 version a\n',
+  'vers numero 11 version b\n',
+  'vers numero 11 version c\n',
+  'vers numero 11 version d\n',
+  'vers numero 11 version e\n',
+  'vers numero 11 version f\n',
+  'vers numero 11 version g\n',
+  'vers numero 11 version h\n',
+  'vers numero 11 version i\n',
+  'vers numero 11 version j\n',
+  '\n'],
+ ['vers numero 12 version a\n',
+  'vers numero 12 version b\n',
+  'vers numero 12 version c\n',
+  'vers numero 12 version d\n',
+  'vers numero 12 version e\n',
+  'vers numero 12 version f\n',
+  'vers numero 12 version g\n',
+  'vers numero 12 version h\n',
+  'vers numero 12 version i\n',
+  'vers numero 12 version j\n',
+  '\n'],
+ ['vers numero 13 version a\n',
+  'vers numero 13 version b\n',
+  'vers numero 13 version c\n',
+  'vers numero 13 version d\n',
+  'vers numero 13 version e\n',
+  'vers numero 13 version f\n',
+  'vers numero 13 version g\n',
+  'vers numero 13 version h\n',
+  'vers numero 13 version i\n',
+  'vers numero 13 version j\n',
+  '\n']]
+
+In [37]: liste_liste_vers[0]
+Out[37]: 
+['vers numero 0 version a\n',
+ 'vers numero 0 version b\n',
+ 'vers numero 0 version c\n',
+ 'vers numero 0 version d\n',
+ 'vers numero 0 version e\n',
+ 'vers numero 0 version f\n',
+ 'vers numero 0 version g\n',
+ 'vers numero 0 version h\n',
+ 'vers numero 0 version i\n',
+ 'vers numero 0 version j\n',
+ '\n']
+
+In [38]: liste_liste_vers[1]
+Out[38]: 
+['vers numero 1 version a\n',
+ 'vers numero 1 version b\n',
+ 'vers numero 1 version c\n',
+ 'vers numero 1 version d\n',
+ 'vers numero 1 version e\n',
+ 'vers numero 1 version f\n',
+ 'vers numero 1 version g\n',
+ 'vers numero 1 version h\n',
+ 'vers numero 1 version i\n',
+ 'vers numero 1 version j\n',
+ '\n']
+
+In [39]: del liste_liste_vers[1][-1]
+
+In [40]: liste_liste_vers[1]
+Out[40]: 
+['vers numero 1 version a\n',
+ 'vers numero 1 version b\n',
+ 'vers numero 1 version c\n',
+ 'vers numero 1 version d\n',
+ 'vers numero 1 version e\n',
+ 'vers numero 1 version f\n',
+ 'vers numero 1 version g\n',
+ 'vers numero 1 version h\n',
+ 'vers numero 1 version i\n',
+ 'vers numero 1 version j\n']
+
+In [41]: num_vers = 0
+
+In [42]: vers[num_vers*11: num_vers*11+11]
+Out[42]: 
+['vers numero 0 version a\n',
+ 'vers numero 0 version b\n',
+ 'vers numero 0 version c\n',
+ 'vers numero 0 version d\n',
+ 'vers numero 0 version e\n',
+ 'vers numero 0 version f\n',
+ 'vers numero 0 version g\n',
+ 'vers numero 0 version h\n',
+ 'vers numero 0 version i\n',
+ 'vers numero 0 version j\n',
+ '\n']
+
+In [43]: liste_liste_vers = []
+
+In [44]: for num_vers in range(14):
+   ....:     liste_vers = vers[num_vers*11: num_vers*11+11]
+   ....:     del liste_vers[-1]
+   ....:     liste_liste_vers.append(liste_vers)
+   ....: 
+
+In [45]: 
+
+In [46]: liste_liste_vers
+Out[46]: 
+[['vers numero 0 version a\n',
+  'vers numero 0 version b\n',
+  'vers numero 0 version c\n',
+  'vers numero 0 version d\n',
+  'vers numero 0 version e\n',
+  'vers numero 0 version f\n',
+  'vers numero 0 version g\n',
+  'vers numero 0 version h\n',
+  'vers numero 0 version i\n',
+  'vers numero 0 version j\n'],
+ ['vers numero 1 version a\n',
+  'vers numero 1 version b\n',
+  'vers numero 1 version c\n',
+  'vers numero 1 version d\n',
+  'vers numero 1 version e\n',
+  'vers numero 1 version f\n',
+  'vers numero 1 version g\n',
+  'vers numero 1 version h\n',
+  'vers numero 1 version i\n',
+  'vers numero 1 version j\n'],
+ ['vers numero 2 version a\n',
+  'vers numero 2 version b\n',
+  'vers numero 2 version c\n',
+  'vers numero 2 version d\n',
+  'vers numero 2 version e\n',
+  'vers numero 2 version f\n',
+  'vers numero 2 version g\n',
+  'vers numero 2 version h\n',
+  'vers numero 2 version i\n',
+  'vers numero 2 version j\n'],
+ ['vers numero 3 version a\n',
+  'vers numero 3 version b\n',
+  'vers numero 3 version c\n',
+  'vers numero 3 version d\n',
+  'vers numero 3 version e\n',
+  'vers numero 3 version f\n',
+  'vers numero 3 version g\n',
+  'vers numero 3 version h\n',
+  'vers numero 3 version i\n',
+  'vers numero 3 version j\n'],
+ ['vers numero 4 version a\n',
+  'vers numero 4 version b\n',
+  'vers numero 4 version c\n',
+  'vers numero 4 version d\n',
+  'vers numero 4 version e\n',
+  'vers numero 4 version f\n',
+  'vers numero 4 version g\n',
+  'vers numero 4 version h\n',
+  'vers numero 4 version i\n',
+  'vers numero 4 version j\n'],
+ ['vers numero 5 version a\n',
+  'vers numero 5 version b\n',
+  'vers numero 5 version c\n',
+  'vers numero 5 version d\n',
+  'vers numero 5 version e\n',
+  'vers numero 5 version f\n',
+  'vers numero 5 version g\n',
+  'vers numero 5 version h\n',
+  'vers numero 5 version i\n',
+  'vers numero 5 version j\n'],
+ ['vers numero 6 version a\n',
+  'vers numero 6 version b\n',
+  'vers numero 6 version c\n',
+  'vers numero 6 version d\n',
+  'vers numero 6 version e\n',
+  'vers numero 6 version f\n',
+  'vers numero 6 version g\n',
+  'vers numero 6 version h\n',
+  'vers numero 6 version i\n',
+  'vers numero 6 version j\n'],
+ ['vers numero 7 version a\n',
+  'vers numero 7 version b\n',
+  'vers numero 7 version c\n',
+  'vers numero 7 version d\n',
+  'vers numero 7 version e\n',
+  'vers numero 7 version f\n',
+  'vers numero 7 version g\n',
+  'vers numero 7 version h\n',
+  'vers numero 7 version i\n',
+  'vers numero 7 version j\n'],
+ ['vers numero 8 version a\n',
+  'vers numero 8 version b\n',
+  'vers numero 8 version c\n',
+  'vers numero 8 version d\n',
+  'vers numero 8 version e\n',
+  'vers numero 8 version f\n',
+  'vers numero 8 version g\n',
+  'vers numero 8 version h\n',
+  'vers numero 8 version i\n',
+  'vers numero 8 version j\n'],
+ ['vers numero 9 version a\n',
+  'vers numero 9 version b\n',
+  'vers numero 9 version c\n',
+  'vers numero 9 version d\n',
+  'vers numero 9 version e\n',
+  'vers numero 9 version f\n',
+  'vers numero 9 version g\n',
+  'vers numero 9 version h\n',
+  'vers numero 9 version i\n',
+  'vers numero 9 version j\n'],
+ ['vers numero 10 version a\n',
+  'vers numero 10 version b\n',
+  'vers numero 10 version c\n',
+  'vers numero 10 version d\n',
+  'vers numero 10 version e\n',
+  'vers numero 10 version f\n',
+  'vers numero 10 version g\n',
+  'vers numero 10 version h\n',
+  'vers numero 10 version i\n',
+  'vers numero 10 version j\n'],
+ ['vers numero 11 version a\n',
+  'vers numero 11 version b\n',
+  'vers numero 11 version c\n',
+  'vers numero 11 version d\n',
+  'vers numero 11 version e\n',
+  'vers numero 11 version f\n',
+  'vers numero 11 version g\n',
+  'vers numero 11 version h\n',
+  'vers numero 11 version i\n',
+  'vers numero 11 version j\n'],
+ ['vers numero 12 version a\n',
+  'vers numero 12 version b\n',
+  'vers numero 12 version c\n',
+  'vers numero 12 version d\n',
+  'vers numero 12 version e\n',
+  'vers numero 12 version f\n',
+  'vers numero 12 version g\n',
+  'vers numero 12 version h\n',
+  'vers numero 12 version i\n',
+  'vers numero 12 version j\n'],
+ ['vers numero 13 version a\n',
+  'vers numero 13 version b\n',
+  'vers numero 13 version c\n',
+  'vers numero 13 version d\n',
+  'vers numero 13 version e\n',
+  'vers numero 13 version f\n',
+  'vers numero 13 version g\n',
+  'vers numero 13 version h\n',
+  'vers numero 13 version i\n',
+  'vers numero 13 version j\n']]
+
+In [47]: liste_liste_vers[2]
+Out[47]: 
+['vers numero 2 version a\n',
+ 'vers numero 2 version b\n',
+ 'vers numero 2 version c\n',
+ 'vers numero 2 version d\n',
+ 'vers numero 2 version e\n',
+ 'vers numero 2 version f\n',
+ 'vers numero 2 version g\n',
+ 'vers numero 2 version h\n',
+ 'vers numero 2 version i\n',
+ 'vers numero 2 version j\n']
+
+In [48]: liste_liste_vers = []
+
+In [49]: for num_vers in range(14):
+   ....:     liste_vers = vers[num_vers*11: num_vers*11+10]
+   ....:     liste_liste_vers.append(liste_vers)
+   ....: 
+
+In [50]: liste_liste_vers[2]
+Out[50]: 
+['vers numero 2 version a\n',
+ 'vers numero 2 version b\n',
+ 'vers numero 2 version c\n',
+ 'vers numero 2 version d\n',
+ 'vers numero 2 version e\n',
+ 'vers numero 2 version f\n',
+ 'vers numero 2 version g\n',
+ 'vers numero 2 version h\n',
+ 'vers numero 2 version i\n',
+ 'vers numero 2 version j\n']
+
+In [51]: liste_liste_vers[3]
+Out[51]: 
+['vers numero 3 version a\n',
+ 'vers numero 3 version b\n',
+ 'vers numero 3 version c\n',
+ 'vers numero 3 version d\n',
+ 'vers numero 3 version e\n',
+ 'vers numero 3 version f\n',
+ 'vers numero 3 version g\n',
+ 'vers numero 3 version h\n',
+ 'vers numero 3 version i\n',
+ 'vers numero 3 version j\n']
+
+In [52]: liste_liste_vers[3][2]
+Out[52]: 'vers numero 3 version c\n'
+
+In [53]: liste_liste_vers[3][2][5]
+Out[53]: 'n'
+
+In [54]: help(random)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+
+/home/zhentao/winter2014/intropython/cours/<ipython console> in <module>()
+
+NameError: name 'random' is not defined
+
+In [55]: import random
+
+In [56]: help(random)
+
+
+In [57]: for num_vers in range(14):
+   ....:     alea = random.randint(0,9)
+   ....:     vers_alea = liste_liste_vers[num_vers][alea]
+   ....:     open("poeme.txt","a").write(vers_alea)
+   ....: 
+
+In [58]: print open("poeme").read()
+---------------------------------------------------------------------------
+IOError                                   Traceback (most recent call last)
+
+/home/zhentao/winter2014/intropython/cours/<ipython console> in <module>()
+
+IOError: [Errno 2] No such file or directory: 'poeme'
+
+In [59]: print open("poeme.txt").read()
+vers numero 0 version b
+vers numero 1 version c
+vers numero 2 version e
+vers numero 3 version b
+vers numero 4 version i
+vers numero 5 version b
+vers numero 6 version g
+vers numero 7 version d
+vers numero 8 version c
+vers numero 9 version a
+vers numero 10 version g
+vers numero 11 version f
+vers numero 12 version a
+vers numero 13 version g
+
+
+In [60]: def consecutifs(texte):
+   ....:     mots = texte.split()
+   ....:     liste = []
+   ....:     for i in range(len(mots)-1):
+   ....:         (avant, arriere) = (i, i+1)
+   ....:         liste.append((avant, arriere))
+   ....:         print (mots[avant], mots[arriere])
+   ....: 
+
+In [61]: def consecutifs(texte):
+   ....:     mots = texte.split()
+   ....:     liste = []
+   ....:     for i in range(len(mots)-1):
+   ....:         liste.append((i, i+1))
+   ....:         print (mots[i], mots[i+1])
+   ....: 
+                                                                        "
+s consecutifs d'un texte. Une autre phrase de ce texte. En une derniere." 
+In [63]: consecutifs(texte)
+('Ecrire', 'un')
+('un', 'programme')
+('programme', 'Python')
+('Python', 'qui')
+('qui', 'genere')
+('genere', 'une')
+('une', 'liste')
+('liste', 'des')
+('des', 'mots')
+('mots', 'consecutifs')
+('consecutifs', "d'un")
+("d'un", 'texte.')
+('texte.', 'Une')
+('Une', 'autre')
+('autre', 'phrase')
+('phrase', 'de')
+('de', 'ce')
+('ce', 'texte.')
+('texte.', 'En')
+('En', 'une')
+('une', 'derniere.')
+
+In [64]: def consecutifs(texte):
+   ....:     mots = texte.split()
+   ....:     liste = []
+   ....:     liste_paires = []
+   ....:     for i in range(len(mots)-1):
+   ....:         liste.append((i, i+1))
+   ....:         liste_paires.append((mots[i], mots[i+1]))
+   ....:     return liste_paires
+   ....: 
+
+In [65]: consecutifs(texte)
+Out[65]: 
+[('Ecrire', 'un'),
+ ('un', 'programme'),
+ ('programme', 'Python'),
+ ('Python', 'qui'),
+ ('qui', 'genere'),
+ ('genere', 'une'),
+ ('une', 'liste'),
+ ('liste', 'des'),
+ ('des', 'mots'),
+ ('mots', 'consecutifs'),
+ ('consecutifs', "d'un"),
+ ("d'un", 'texte.'),
+ ('texte.', 'Une'),
+ ('Une', 'autre'),
+ ('autre', 'phrase'),
+ ('phrase', 'de'),
+ ('de', 'ce'),
+ ('ce', 'texte.'),
+ ('texte.', 'En'),
+ ('En', 'une'),
+ ('une', 'derniere.')]
+
+In [66]: liste_paires = consecutifs(texte)
+
+In [67]: liste_paires[0]
+Out[67]: ('Ecrire', 'un')
+
+In [68]: liste_paires[1]
+Out[68]: ('un', 'programme')
+
+In [69]: liste_paires[1]
+Out[69]: ('un', 'programme')
+
+In [70]: 2
+Out[70]: 2
+
+In [71]: liste_paires[2]
+Out[71]: ('programme', 'Python')
+
+In [72]: 
+Do you really want to exit ([y]/n)? 
+zhentao@martagon:~/winter2014/intropython/cours$ www.di.ens.fr/~zhentao^C
+zhentao@martagon:~/winter2014/intropython/cours$ exit
+exit
+
+Script done on Wed 05 Mar 2014 07:08:59 PM CET

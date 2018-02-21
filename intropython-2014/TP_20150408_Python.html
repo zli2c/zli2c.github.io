@@ -1,0 +1,179 @@
+FF<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!-- Begin header --><title>Damien Vergnaud's Homepage</title>
+
+
+
+
+
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="imagetoolbar" content="no">
+    <link rel="stylesheet" type="text/css" href="css/greenStyle.css">
+    <meta name="Description" content="Initiation à la programmation en Python - Cours 5">
+</head><body>
+
+<div id="page">
+<a name="top"></a>
+
+<div id="header">
+<div class="begin_frame"></div> 
+  <h1>Zhentao Li's Homepage</h1>
+  <h2>Initiation à la programmation en Python</h2>
+  <h2>Cours 8</h2>
+<div class="end_frame"></div>
+</div>
+
+
+<ul class="menu">
+  <li><a href="../index.html" title="home">home</a><span class="access">&nbsp;;</span></li>
+  <li><a href="../publis.html" title="publications">publications</a><span class="access">&nbsp;;</span></li>
+  <li><a href="../research.html" title="research">research</a><span class="access">&nbsp;;</span></li>  
+  <li class="locked">teaching<span class="access">&nbsp;;</span></li>
+</ul>
+
+
+<div id="main">
+<div class="begin_main"></div>
+
+<!-- End header -->
+
+<p></p>
+
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Cours</h2>
+
+<p>Les transparents du cinquième cours sont disponibles <a href="CM_20150408_Python.pdf">ici</a>.
+</p>
+
+<p>Voir le chapitre <a href="http://python.developpez.com/cours/TutoSwinnen/?page=Chapitre8">8</a> du livre <a href="http://python.developpez.com/cours/TutoSwinnen/">Apprendre &agrave;
+programmer avec Python</a>.</p>
+
+
+<p>Les documents de référence les plus intéressants sont en anglais. 
+Ainsi le manuel de Fredrik Lundh, "<a href="http://www.pythonware.com/library/tkinter/introduction/">An Introduction 
+to Tkinter</a>" et celui de John Shipman, "<a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/">Tkinter 
+Reference</a>" détaillent l'ensemble des paramètres de configuration des 
+objets graphiques de la bibliothèque.</p>
+
+
+<p>Les exercices propos&eacute;s ci-dessous sont empruntés à <a href="http://www.labri.fr/perso/schlick/prog2/">Christophe Schlick</a>. </p>
+
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Exercice 1 - Compteur</h2>
+
+<p>&Eacute;rire un programme counter qui affiche une fen&ecirc;tre graphique
+permettant &agrave; l'utilisateur de contr&ocirc;ler un compteur
+num&eacute;rique dans un intervalle [-1000, 1000] par une s&eacute;rie de sept
+boutons de commande.</p>
+
+<p>Les trois boutons "|<", "0" et ">|" permettent d'aller directement
+&agrave;  la valeur minimale, la valeur nulle ou la valeur maximale du
+compteur. Les quatre boutons "<<", "<", ">" et ">>" permettent de modifier
+la valeur courante du compteur par pas de -10, -1, 1 et 10. &Agrave; tout
+moment, il faut v&eacute;rifier que la valeur du compteur se trouve bien
+dans l'intervalle autoris&eacute;. Le r&eacute;sultat graphique
+souhait&eacute; est repr&eacute;sent&eacute; dans l'image ci-dessous
+(widgets utilis&eacute;es : <tt>Frame</tt>, <tt>Label</tt>,
+<tt>Button</tt>) :</p> 
+
+<div style="text-align: center;">
+<img src="compteur.png">
+</div>
+
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Exercice 2 - Couleurs</h2>
+
+<p>&Eacute;crire un programme qui affiche une fen&ecirc;tre graphique
+permettant &agrave; l'utilisateur de cr&eacute;er interactivement une
+couleur dans le mode RGB (Red, Green, Blue).</p>
+
+<p>Pour cela, le programme doit fournir trois potentiom&egrave;tres (Widget <a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/scale.html"><tt>Scale</tt></a>)
+permettant de saisir une valeur entre 0 et 255, contr&ocirc;lant respectivement
+les intensit&eacute;s  de rouge, de vert et de bleu. Les valeurs de ces trois
+potentiom&egrave;tres  sont alors converties en hexad&eacute;cimal pour
+cr&eacute;er une cha&icirc;ne de caract&egrave;res de la forme "#RRGGBB"
+correspondant &agrave; la repr&eacute;sentation standard des couleurs de
+Tkinter.</p>
+
+<p>Cette couleur est ensuite utilis&eacute;e comme couleur de fond de la
+partie inf&eacute;rieure de la fen&ecirc;tre, ce qui permet &agrave; 
+l'utilisateur de visualiser le r&eacute;sultat de ses manipulations. Le
+r&eacute;sultat  graphique souhait&eacute;  est repr&eacute;sent&eacute; dans
+l'image ci-dessous (widgets utilis&eacute;es :<tt> Frame</tt>, <tt>Label</tt>, <tt>Button</tt>, <tt>Scale</tt>) :
+
+<div style="text-align: center;">
+<img src="couleurs.png">
+</div>
+
+
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Exercice 3 - Chasse au tr&eacute;sor</h2>
+
+<p>&Eacute;crire un programme qui affiche une fen&ecirc;tre graphique
+permettant &agrave; l'utilisateur de jouer au jeu classique de la chasse au tr&eacute;sor.</p> 
+
+<ul>
+<li><p>Le programme s&eacute;lectionne al&eacute;atoirement l'une des cases d'un tableau 15x15 qui repr&eacute;sentera l'emplacement du tr&eacute;sor (la taille du
+tableau doit &ecirc;tre un param&egrave;tre de configuration modifiable dans le code
+source).</p></li>
+<li><p>&Agrave; chaque tour, l'utilisateur clique sur une case et le
+programme y affiche un code de couleur relatif &agrave; la distance entre
+cette case et la case au tr&eacute;sor (rouge pour une distance < 3, jaune
+pour une distance < 6, vert pour une distance < 9, bleu pour une distance <
+12, et gris pour toutes les distances au-del&agrave;).</p></li>
+<li><p>Attention, il ne s'agit pas d'une distance euclidienne, mais d'une
+distance dite de Manhattan, correspondant au nombre de d&eacute;placements
+horizontaux ou verticaux n&eacute;cessaires pour rejoindre la case au
+tr&eacute;sor.</p></li> 
+</ul>
+
+<p>Le but du jeu est &eacute;videmment de trouver le t&eacute;sor en un
+minimum de tours. Le r&eacute;sultat graphique souhait&eacute;  est
+repr&eacute;sent&eacute; dans l'image ci-dessous (widgets utilis&eacute;es
+:<tt> Frame</tt>, <tt>Button</tt>) :</p>
+
+<div style="text-align: center;">
+<img src="tresor.png">
+</div>
+
+<a class="top" href="#top">top</a>
+
+
+<div class="end_frame"></div>
+</div>
+
+
+
+
+<!-- Begin footer -->
+
+
+<div class="end_main"></div>
+</div> <!-- end main div -->
+
+<div class="hr"></div>
+
+
+</div> <!-- end page div -->
+
+</body></html>

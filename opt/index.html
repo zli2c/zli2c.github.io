@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>Optimisation combinatoire et convexe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+            <div class="headbox">Liens</div>
+	    <div>
+              <a class="leftmenu" href="..">Retour</a>
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr> 
+                <td width="10"></td>
+                <td valign="top" class="mainbox"> 
+<h1>Optimisation combinatoire et convexe</h1>
+
+<p>Ce cours est une introduction aux problèmes et concepts en optimisation combinatoire et convexe. Le but est d'apprendre à reconnaitre, transformer et résoudre ces problèmes d'optimisation.</p>
+
+<p>Nous regarderons de manière plus approfondie les notions de théorie des graphes, de programmation linéaire et de flots vus dans le cours Algorithmique et Programmation.</p>
+
+<p>Une partie du cours traitera de l'analyse convexe, de la dualité et de la théorie des couplages et ses applications. L'autre moitié se porte sur les algorithmes, notamment les algorithmes de premier ordre et les méthodes de point intérieur, du simplexe et de l'ellipsoïde.</p>
+
+<p>Plusieurs applications illustreront les techniques vus dans ce cours.</p>
+
+<ul>
+<li><a href="http://www.di.ens.fr/~aspremon/ENSM1.html">Première partie du cours</a></li>
+<li>Deuxième partie du cours (ici)</li>
+</ul>
+
+<h2>Description</h2>
+
+<p>Étude de problèmes combinatoire, leur formulation en terme de programmes linéaires en nombres entiers et leur résolution par un mélange de techniques combinatoire et programmation linéaire. Algorithmes de résolution de programmes linéaires.</p>
+
+<ul>
+<li>Couplage général <a href="notes/matchings-notes.pdf">notes</a> [1, p.137-141] ou <a href="http://ocw.mit.edu/courses/mathematics/18-433-combinatorial-optimization-fall-2003/lecture-notes/l123.pdf">ici</a></li>
+<li>Polytope de couplages d'Edmonds <a href="notes/edmonds-polytope-notes.pdf">notes</a>. Une preuves un peu différentes du cours: [1, p.208-209, p.214-215] ou bien <a href="http://ocw.mit.edu/courses/mathematics/18-433-combinatorial-optimization-fall-2003/lecture-notes/l5.pdf">ici</a> et <a href="http://ocw.mit.edu/courses/mathematics/18-433-combinatorial-optimization-fall-2003/lecture-notes/l6.pdf">ici</a>])</li>
+<li>L'algorithme du simplexe <a href="http://jeffe.cs.illinois.edu/teaching/algorithms/notes/27-simplex.pdf">version géométrique</a> et version algébrique [2, p.129-130] <a href="scan_simplex.pdf">scan de ces pages</a> (avec <a href="http://ocw.mit.edu/courses/mathematics/18-433-combinatorial-optimization-fall-2003/lecture-notes/l1314.pdf">exemple</a>).</li>
+<li><a href="http://ocw.mit.edu/courses/mathematics/18-433-combinatorial-optimization-fall-2003/lecture-notes/l1617.pdf">L'algorithme de l'ellipsoide</a> (ou [2, p.163-164] ou <a href="http://math.mit.edu/~goemans/18433S15/ellipsoid-notes.pdf">ici</a>).</li>
+<li>Oracle de séparation pour couplage parfait maximum <a href="notes/weighted_matching_notes.pdf">notes</a></li>
+<li>T-joins et problème du postier <a href="notes/tjoin-notes.pdf">notes</a> [1, p.166-173]</li>
+<li>T-coupes et polytope des T-joins [1, p.177-179] ou <a href="http://homepages.cwi.nl/~monique/files/binary.ps">ici</a> p.8-13</li>
+<li>Arbre des coupes minimums Gomory-Hu <a href="notes/minimum_cut_trees_notes.pdf">notes</a> ou <a href="https://courses.engr.illinois.edu/cs598csc/sp2010/Lectures/Lecture6.pdf">ici</a> ou [1, p.78-83]</li>
+<li>Algorithme primal-dual [2, p.151-152] ou <a href="http://ocw.mit.edu/courses/mathematics/18-433-combinatorial-optimization-fall-2003/lecture-notes/l15.pdf">ici</a> (mais nous allons d'abord voir un exemple: <a href="https://courses.engr.illinois.edu/cs598csc/sp2010/Lectures/Lecture10.pdf">couplage parfait biparti maximum</a> (ou [1, p.145-147]))</li>
+</ul>
+
+<h2>Cours</h2>
+
+<p>Enseignants: Alexandre d'Aspremont et Zhentao Li</p>
+
+<p>Horaires: Jeudi, 9h15 - 12h15, salle R.</p>
+
+<h3>Plan</h3>
+
+<p>Planification provisoire:</p>
+
+<ul>
+<li><strong>03/11:</strong> Introduction. Rappel sur le couplage. Polytope des couplages d'Edmonds.</li>
+<li><strong>10/11:</strong> Fin polytope des couplages.</li>
+<li><strong>17/11:</strong> Pas de cours</li>
+<li><strong>24/11:</strong> Simplex géométrique et algébrique. Conséquences de l'algorithme de l'Ellipsoïde. Oracle de séparation.</li>
+<li><strong>1/12:</strong> Fin oracle de séparation. T-joins et problème du postier.</li>
+<li><strong>8/12:</strong> T-coupes et polytope des T-joins.</li>
+<li><strong>1/5:</strong> Fin T-coupes et polytope des T-joins. Algorithmes primal-dual.</li>
+</ul>
+
+<h3>TD</h3>
+
+<ul>
+<li><a href="td/td1n.pdf">TD 1</a> <a href="td/td1.pdf">correction</a> Note: L'ordre des arêtes utilisé dans la correction est différent de celui vu en TD.</li>
+<li><a href="td/td2n.pdf">TD 2</a> <a href="td/td2.pdf">correction</a></li>
+<li><a href="td/td3n.pdf">TD 3</a></li>
+<li><a href="td/td4n.pdf">TD 4</a></li>
+<li><a href="td/td5n.pdf">TD 5</a> <a href="td/td5.pdf">correction</a></li>
+</ul>
+
+<h3>Evalution</h3>
+
+<p>DM1 0.1 <br />
+DM2 0.1 <br />
+Projet 0.3 <br />
+Examen 0.5  </p>
+
+<h2>Devoir</h2>
+
+<p><a href="dm2v2.pdf">DM2</a> pour le 9/12. Veuillez m'envoyer vos solutions <strong>tapés</strong> par mail. (Vous pouvez inclure des scans de figures (uniquement de figures).)</p>
+
+<p><strong>06/12</strong> Exercice 2, question 2 et 3 ont été mis à jours.</p>
+
+<h2>Projet</h2>
+
+<p>Vous devez compléter un projet parmis les suivants, en binôme.</p>
+
+<ul>
+<li><a href="projet.html">Le voyageur de commerce</a></li>
+<li><a href="http://www.di.ens.fr/~aspremon/PDF/ENS/SVM-ProjectM1.pdf">Classification problem using Support Vector Machines</a></li>
+<li><a href="http://www.di.ens.fr/~aspremon/PDF/ENS/SDP-ProjectM1.pdf">Semidefinite programming solver</a></li>
+</ul>
+
+<p>SVP, nous envoyer le nom de binôme et projet chosis à zhentao li ens fr <strong>et</strong> aspremon ens fr (avec les ponctuations ajoutés à ces adresses), <strong>au plus tard le 17/11</strong>.</p>
+
+<h2>Dates importantes</h2>
+
+<ul>
+<li>17/11/2016 Choix de projet</li>
+<li>04/01/2017 Remise du rapport et code par mail <strong>avant 16h</strong></li>
+<li>12/01/2017 Soutenances</li>
+<li>19/01/2017 Examen</li>
+</ul>
+
+<h2>Soutenances</h2>
+
+<p>Matin du 12/01/2017 en salle R</p>
+
+<p>Présentation de 15-20 minutes suivi de questions. Projecteur disponible, apportez votre ordinateur pour l'utiliser.</p>
+
+<p>Planification provisoire. Les lettres intermédiair
+es des noms ont été permutés pour déjouer des robots du web.</p>
+
+<ul>
+<li>9:15 Jseoph de Vraimeslt, Juels Pnoadrd, SVM</li>
+<li>9:40 Koaiwsrn Kuatme, Cmléncee Rdéa, SVM</li>
+<li>10:05 Rméi Jéqzeéul, Mihai Dumansu, SDP</li>
+<li>10:30 Noliacs Nploan, Cméelnt Basruser, voyageur de commerce</li>
+<li>10:55 Ncilaos Aoussad, voyageur de commerce</li>
+<li>11:20 Ntnëahaal Coanrut, David Salipuc, voyageur de commerce</li>
+<li>11:45 Alaimue Loepz, Gataën Duenoeau, voyageur de commerce</li>
+</ul>
+
+<h2>Examen</h2>
+
+<p>En Salle R, 9h15 - 12h15 (même créneau que le cours).</p>
+
+<p>Vous avez droit à une feuille de notes. Aucun autre matériel permis.</p>
+
+<h2>Références</h2>
+
+<ul>
+<li>[1] Combinatorial Optimization, <em>W. J. Cook, W. H. Cunningham, W. R. Pulleyblank and A. Schrijver</em>, Wiley</li>
+<li>[2] Theory of linear and integer programming, <em>A. Schrijver</em>, Wiley</li>
+<li>[3] <a href="http://ocw.mit.edu/courses/mathematics/18-433-combinatorial-optimization-fall-2003/lecture-notes/">Combinatorial Optimization</a> MIT Opencourseware</li>
+</ul>
+
+<p>Autre sources de notes en ligne:</p>
+
+<ul>
+<li><a href="http://www-math.mit.edu/~goemans/18433S15/18433.html">Combinatorial Optimization</a> cours de <em>Michel Goemans</em></li>
+<li><a href="https://courses.engr.illinois.edu/cs598csc/sp2010/">Combinatorial Optimization</a> cours de <em>Chandra Chekuri</em></li>
+</ul>
+
+<h2>Ancienne page</h2>
+
+<ul>
+<li><a href="2015">2015-2016</a></li>
+</ul>
+
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

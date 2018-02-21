@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "max:0;" > duallpcert
+grep -v ^free duallpall >> duallpcert
+sed -e 's/$/\>1\;/g' reducible >> duallpcert
+grep ^free duallpall >> duallpcert
+lp_solve duallpcert | grep ^cy

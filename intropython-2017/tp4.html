@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Zhentao Li" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="CM-web.pdf">Cours 6</a> 
+              <a class="leftmenu" href="nltk.pdf">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="10"></td>
+                <td valign="top" class="mainbox">
+
+<h2 id="cours">Cours</h2>
+<p>Les transparents du quatrième cours sont disponibles <a href="dictionnaires_et_classes-transp.pdf">ici</a>.</p>
+<p>La version longue des transparents est <a href="dictionnaires_et_classes">ici</a></p>
+<p><a href="http://chat.efnet.org:9090/?randomnick=1&amp;channels=intropython&amp;prompt=1&amp;uio=MT11bmRlZmluZWQb1">Communiquer ici</a> (pour copier des ligne de programmes)</p>
+<h2 id="exercice-1---générateur-de-texte">Exercice 1 - Générateur de texte</h2>
+<p>Continuer à la deuxième question avec votre fonction de la question 1 du cours précédent.</p>
+<ol style="list-style-type: decimal">
+<li><p>Écrire une fonction Python qui génère une liste des mots consécutifs d'un texte.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> texte <span class="op">=</span> <span class="st">&quot;Ecrire un programme Python qui genere une liste des mots consecutifs d&#39;un</span>
+<span class="st">texte. Une autre phrase de ce texte. En une derniere.&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> consecutifs(texte)
+[(<span class="st">&#39;Ecrire&#39;</span>, <span class="st">&#39;un&#39;</span>), (<span class="st">&#39;un&#39;</span>, <span class="st">&#39;programme&#39;</span>), (<span class="st">&#39;programme&#39;</span>, <span class="st">&#39;Python&#39;</span>), (<span class="st">&#39;Python&#39;</span>, <span class="st">&#39;qui&#39;</span>),
+(<span class="st">&#39;qui&#39;</span>, <span class="st">&#39;genere&#39;</span>), (<span class="st">&#39;genere&#39;</span>, <span class="st">&#39;une&#39;</span>), (<span class="st">&#39;une&#39;</span>, <span class="st">&#39;liste&#39;</span>), (<span class="st">&#39;liste&#39;</span>, <span class="st">&#39;des&#39;</span>), (<span class="st">&#39;des&#39;</span>,
+<span class="co">&#39;mots&#39;</span>), (<span class="st">&#39;mots&#39;</span>, <span class="st">&#39;consecutifs&#39;</span>), (<span class="st">&#39;consecutifs&#39;</span>, <span class="st">&quot;d&#39;un&quot;</span>), (<span class="st">&quot;d&#39;un&quot;</span>, <span class="st">&#39;texte.&#39;</span>), 
+(<span class="st">&#39;texte.&#39;</span>, <span class="st">&#39;Une&#39;</span>), (<span class="st">&#39;Une&#39;</span>, <span class="st">&#39;autre&#39;</span>), (<span class="st">&#39;autre&#39;</span>, <span class="st">&#39;phrase&#39;</span>), (<span class="st">&#39;phrase&#39;</span>, <span class="st">&#39;de&#39;</span>),
+(<span class="st">&#39;de&#39;</span>, <span class="st">&#39;ce&#39;</span>), (<span class="st">&#39;ce&#39;</span>, <span class="st">&#39;texte.&#39;</span>), (<span class="st">&#39;texte.&#39;</span>, <span class="st">&#39;En&#39;</span>), (<span class="st">&#39;En&#39;</span>, <span class="st">&#39;une&#39;</span>), (<span class="st">&#39;une&#39;</span>, <span class="st">&#39;derniere.&#39;</span>)]</code></pre></div>
+<p>(Supposer que &quot;mots&quot; veux dire des chaines de caractères séparés d'espaces.)</p>
+<p>Sauvegarder cette fonction dans un module. Importer ce module. Écrire un programme Python qui prends le nom d'un fichier en entrée, lit le texte dans ce fichier et affiche les paires de mots consécutifs, une par ligne.</p></li>
+<li><p>Ajouter à votre module une fonction Python qui prends un texte et génère un dictionnaire où les clés sont les mots du texte et les valeurs pour un mot sont les mots qui peuvent le suivre dans le texte.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> suivant <span class="op">=</span> mot_suivant(texte)
+<span class="op">&gt;&gt;&gt;</span> suivant[<span class="st">&quot;une&quot;</span>]
+[<span class="st">&#39;liste&#39;</span>, <span class="st">&#39;derniere.&#39;</span>]</code></pre></div></li>
+<li><p>Écrire un programme Python qui prends le nom d'un fichier en entrée, lit le texte dans ce fichier et écrit dans un deuxième fichier un texte dont tous les mots qui se suivent apparaissent comme mots consécutifs dans le texte original.</p>
+<p>Ce deuxième texte devrait être générer de façon aléatoire (de sorte qu'on obtienne très probablement un texte différent à chaque lancée du programme sur un même texte).</p>
+<p>Vous pouvez essayer votre programme avec <a href="Poe.txt">ce fichier</a> comme entrée, par exemple.</p></li>
+<li><p>* Changer le programme (et module) précédent pour que le texte en sortie et le texte en entrée ont les même triplets consécutifs.</p></li>
+</ol>
+<h2 id="exercice-2---classe-point">Exercice 2 - Classe Point</h2>
+<p>Pour cet exercice, nous allons ajouter des attributs et méthodes à la classe <code>Point</code> vu en cours.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Point:
+    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x, y):
+        <span class="va">self</span>.x <span class="op">=</span> x
+        <span class="va">self</span>.y <span class="op">=</span> y
+
+    <span class="kw">def</span> distance(<span class="va">self</span>, autre_point):
+        distance_carre <span class="op">=</span> (<span class="va">self</span>.x <span class="op">-</span> autre_point.x)<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> (<span class="va">self</span>.y <span class="op">-</span> autre_point.y)<span class="op">**</span><span class="dv">2</span>
+        <span class="cf">return</span> distance_carre<span class="op">**</span><span class="fl">0.5</span></code></pre></div>
+<ol style="list-style-type: decimal">
+<li><p>Écrire une méthode <code>tuple</code> qui retourne un <code>tuple</code> de des coordonnées du point.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> p <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)
+<span class="op">&gt;&gt;&gt;</span> p.<span class="bu">tuple</span>()
+(<span class="dv">3</span>, <span class="dv">4</span>)</code></pre></div></li>
+<li><p>Écrire une méthode <code>copy</code> qui retourne une copie du point (ensuite, lorsqu'on modifie un des deux point, l'autre point ne devrait pas être modifiée).</p></li>
+<li><p>Écrire une méthode <code>translater</code> qui prends deux nombres <code>x</code> et <code>y</code> en paramètre (en plus du <code>Point</code>) et déplace le point de <code>(x, y)</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> p <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)
+<span class="op">&gt;&gt;&gt;</span> p.translater(<span class="dv">1</span>, <span class="dv">3</span>)
+<span class="op">&gt;&gt;&gt;</span> p.<span class="bu">tuple</span>()
+(<span class="dv">4</span>, <span class="dv">7</span>)</code></pre></div></li>
+<li><p>Écrire une méthode <code>agrandir</code> qui prends un nombres <code>facteur</code> en paramètre (en plus du <code>Point</code>) et donne le nouvel emplacement du point si agrandi le plan d'un facteur <code>facteur</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> p <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)
+<span class="op">&gt;&gt;&gt;</span> p.agrandir(<span class="fl">2.5</span>)
+<span class="op">&gt;&gt;&gt;</span> p.<span class="bu">tuple</span>()
+(<span class="fl">7.5</span>, <span class="fl">10.0</span>)</code></pre></div></li>
+<li><p>Écrire une fonction (pas un méthode cette fois-ci) qui prends une liste de points, les considèrent comme vecteur et retourne la position finale si on suivait ces vecteurs les unes à la suite des autres (en commençant à l'origine).</p>
+<p>Écrire une autre fonction <code>points_intermediaires</code> qui renvoie les points intermédiaires visitées de cette façon.</p></li>
+</ol>
+<p>Sauvegarder le tout dans un module <code>point.py</code> et tester vos fonctions avec le script suivant.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> point <span class="im">import</span> Point, points_intermediaires
+<span class="im">import</span> turtle
+
+points <span class="op">=</span> [Point(<span class="dv">140</span>, <span class="dv">0</span>),
+          Point(<span class="op">-</span><span class="dv">60</span>, <span class="dv">100</span>),
+          Point(<span class="op">-</span><span class="dv">80</span>, <span class="dv">20</span>),
+          Point(<span class="op">-</span><span class="dv">80</span>, <span class="op">-</span><span class="dv">20</span>),
+          Point(<span class="op">-</span><span class="dv">60</span>, <span class="op">-</span><span class="dv">100</span>),
+          Point(<span class="dv">140</span>, <span class="dv">0</span>),
+          Point(<span class="dv">0</span>, <span class="op">-</span><span class="dv">140</span>),
+          Point(<span class="op">-</span><span class="dv">20</span>, <span class="op">-</span><span class="dv">20</span>),
+          Point(<span class="op">-</span><span class="dv">20</span>, <span class="dv">20</span>)]
+stops <span class="op">=</span> points_intermediaires(points)
+
+t <span class="op">=</span> turtle.Turtle()
+<span class="cf">for</span> point <span class="op">in</span> stops:
+    t.goto(point.<span class="bu">tuple</span>())</code></pre></div>
+<p>Réessayer en agrandissant le plan (c'est-à-dire tous les points) d'un facteur 2.</p>
+<p>Quel est la distance totale parcourue?</p>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

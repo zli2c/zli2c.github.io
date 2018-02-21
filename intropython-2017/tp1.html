@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Zhentao Li" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="CM-web.pdf">Cours 6</a> 
+              <a class="leftmenu" href="nltk.pdf">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="10"></td>
+                <td valign="top" class="mainbox">
+
+<h2 id="cours">Cours</h2>
+<p>Les transparents du premier cours sont disponibles <a href="intro-transp.pdf">ici</a>.</p>
+<p>La version longue des transparents est <a href="intro">ici</a></p>
+<p><a href="http://chat.efnet.org:9090/?randomnick=1&amp;channels=intropython&amp;prompt=1&amp;uio=MT11bmRlZmluZWQb1">Communiquer ici</a> (pour copier des ligne de programmes)</p>
+<p>Le corrigé du TP est <a href="tp1c">ici</a>.</p>
+<h2 id="exercice-1---hello-world">Exercice 1 - Hello world!</h2>
+<ol style="list-style-type: decimal">
+<li>Écrire un programme qui affiche la chaîne de caractères &quot;Hello world!&quot;</li>
+</ol>
+<h2 id="exercice-2---un-peu-de-maths">Exercice 2 - Un peu de maths</h2>
+<ol style="list-style-type: decimal">
+<li><p>Écrire un programme qui affiche la table de multiplication par 7. Le résultat devra être affiché sous la forme :</p>
+<pre><code>7 fois 1 font  7
+7 fois 2 font 14
+7 fois 3 font 21
+7 fois 4 font 28
+7 fois 5 font 35
+7 fois 6 font 42
+7 fois 7 font 49
+7 fois 8 font 56
+7 fois 9 font 63</code></pre></li>
+<li><p>Modifier votre programme pour afficher toutes les tables de multiplication de 1 à 9, avec un saut de ligne entre chaque.</p></li>
+<li><p>Un nombre est premier si il est divisible uniquement par 1 et par lui-même. Une méthode naïve pour tester si un nombre <em>n</em> &gt; 2 est premier est donc de vérifier que, pour chaque <em>x</em> entre 2 et <em>n</em> - 1, n n'est pas divisible par <em>x</em> (c'est-à-dire, le reste de la division de n par x n'est pas nul).</p>
+<p>Écrire un programme qui affiche tous les nombres premiers inférieurs à 10000.</p></li>
+<li><p>La suite de Fibonacci est définie par <em>F</em><sub>0</sub> = <em>F</em><sub>1</sub> = 1 et <em>F</em><sub>n+2</sub> = <em>F</em><sub>n+1</sub> + <em>F</em><sub>n</sub> (i.e. chaque nouvel élément est la somme des deux précédents).</p>
+<p>Écrire un programme qui calcule les 30 premiers éléments de la suite de Fibonacci.</p></li>
+</ol>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

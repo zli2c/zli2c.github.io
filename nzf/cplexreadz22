@@ -1,0 +1,2 @@
+#!/bin/bash
+grep Unb $1 -A4 | grep CPLEX | cut -f 2 -d\' > reducible

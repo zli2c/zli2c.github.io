@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>Initiation à la programmation pour non-informaticiens en Python</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="CM-web.pdf">Cours 6</a> 
+              <a class="leftmenu" href="nltk.pdf">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr> 
+                <td width="10"></td>
+                <td valign="top" class="mainbox"> 
+<h1 id="structure-du-cours">Structure du cours</h1>
+<ul>
+<li>11 cours de 2h: CM et TP</li>
+<li>Évaluation: Projet (pas d'examen) pour 3 ECTS.</li>
+<li>Aucune connaissance préalable en programmation n'est requise.</li>
+</ul>
+<h1 id="projet">Projet</h1>
+<ul>
+<li>Créer un programme python (qui peut être pour votre recherche, pour des loisirs, pour simplifier des tâches répétitives, etc).</li>
+<li>Doit être approuvé par l'enseignant.</li>
+<li>Réfléchissez-y dès maintenant!</li>
+<li>Le cours sera adapté à vos besoins. Une fois choisi, je vais vous montrer des composantes utiles pour votre projet.</li>
+</ul>
+<p>C'est principalement un cours pour vous faire découvrir un outil utile (ou développer vos habiletés à l'utiliser selon le cas).</p>
+<h1 id="apprendre-à-programmer">Apprendre à programmer</h1>
+<p>Beaucoup de gain pour peu de travail au début (si on réussit à adopter en partie la nouvelle méthode de réflexion).</p>
+<p>Ça prends un peu de temps pour s'habituer (au langage et aux outils). Passer un peu de temps à utiliser le langage (pour n'importe quel raison) au début aide beaucoup à apprivoiser le langage. (Normalement, une étape pas très difficile avec le Python.)</p>
+<h1 id="contexte">Contexte</h1>
+<p>Au début de chaque cours, je vais vous parler du contexte dans lequel se place la programmation, c'est à dire l'informatique.</p>
+<p>Ces informations ne sont pas nécessairement utiles immédiatement dans de but de réaliser un projet de programmation (ou même dans le but d'apprendre à programmer). Mais peut vous aider à comprendre et aussi donner un aperçu des outils de l'informatique qui pourraient vous être utile.</p>
+<p>Aujourd'hui je vais vous parler des langages de programmation.</p>
+<h1 id="langage">Langage</h1>
+<p>Ce cours vous introduit au langage de programmation <strong>Python</strong>. Mais pourquoi avons nous besoin de langages de programmation, différent des langages naturels? Voici une explication possible.</p>
+<p>Nous voulons qu'un ordinateur (ou même un humain) suive des instructions précise.</p>
+<p>Il y a trop d'ambiguïté dans les langages naturels.</p>
+<blockquote> 
+<em>Elle emporte les clefs de la maison au garage.</em>
+</blockquote>
+
+<p>(Les clef de la maison ou bien emportés de la maison.)</p>
+<p>Cela mène à la création de langage adapter à des descriptions et des instructions: les langages de programmation.</p>
+<p>Les programmes, ce sont des textes (notamment des fichiers textes) que vous écrivez contenant des instructions.</p>
+<p>Ils seront exécutés ligne par ligne (et en ordre des priorités des opérations pour chaque ligne).</p>
+<p><strong>Remarque:</strong> Le langage est là pour vous aider à vous exprimer. Il a l'avantage d'être lisible par un ordinateur mais n'oubliez pas l'idée que vous voulez exprimer à cause des contraintes du langage (ou des outils)!</p>
+<p>(Autre raisons: redondance, facilité d'apprentissage (pour les gens qui connaissent un autre langage (de programmation)). Beaucoup moins de vocabulaire et syntaxe.)</p>
+<h2 id="autre-différence-entre-langage-de-programmation-et-langages-naturels">Autre différence entre langage de programmation et langages naturels</h2>
+<p>Un langage de programmation a typiquement</p>
+<ul>
+<li>Moins de vocabulaire (beaucoup d'expressivité même en connaissant une petite partie du langage).</li>
+<li>Grammaire plus rigide (moins de possibilité pour des phrases structurés différemment).</li>
+<li>Plus de ponctuations.</li>
+</ul>
+<h2 id="python-avantages-du-langage">Python (avantages du langage)</h2>
+<ul>
+<li>Un langage <em>interprété</em></li>
+<li>Misant sur la <em>lisibilité</em> (votre programme sera lu par humain tout autant que des ordinateurs)</li>
+<li>Facile à apprendre pour les débutants.</li>
+<li>Donne la possibilité de programmer avec des styles et « niveaux » différents. (Nous allons surtout couvrir le style dit <em>impératif</em>. « Fait ci! Fait ça! »)</li>
+<li>Langage fortement <em>introspectif</em>. (<code>dir</code>, <code>globals</code>, <code>locals</code>, <code>hasattr</code>, <code>inspect</code>, <code>pdb</code>, etc)</li>
+<li>Grand nombre de fonctions déjà inclus (dans des <em>modules</em> que nous allons voir au 3e cours).</li>
+</ul>
+<h2 id="instructions">Instructions</h2>
+<p>But: amener un programme à un état voulu (ce sera plus évident avec des exemples plus complexe).</p>
+<p>Comment? Décrire exactement ce qu'il faut faire pour arriver au résultat voulu à partir d'un état de départ (qui est souvent le &quot;vide&quot; ou l'état qui a seulement les données chargées).</p>
+<p>La modification de l'état de départ se fait étape par étape.</p>
+<p>Une telle description est un <em>programme</em>.</p>
+<p>D'abord, regardons des objectifs où il y a une seule étape.</p>
+<p><strong>Remarque (avancée):</strong> Écrire des instructions étape par étape n'est pas la seule façon de programmer.</p>
+<h1 id="utilisation-console">Utilisation (console)</h1>
+<p>Commençons! Lancer l'interpréteur Python (un programme qui comprends le langage Python et exécute les énoncés dans ce langage).</p>
+<p>Selon votre système d'exploitation, vous verrez sans doute quelque chose comme suit.</p>
+<img src="images/idle-start.png" alt="Python sous Windows" style="width: 300px;"/> <img src="images/python-linux.png" alt="Python sous Linux" style="width: 300px;"/> <img src="images/python-mac-scale.png" alt="Python sous Mac" style="width: 300px;"/>
+<p>Après un peu de texte, vous êtes accueilli par l'invité de commande</p>
+<pre><code>&gt;&gt;&gt;</code></pre>
+<p>Vous êtes maintenant dans l'interpréteur.</p>
+<p>Vous pouvez taper directement ici pour entrer votre première ligne de python (et tapez entrée après).</p>
+<pre><code>&gt;&gt;&gt; print &quot;Hello world&quot;
+Hello world
+&gt;&gt;&gt;</code></pre>
+<p>Vous pouvez taper la prochain ligne et ainsi de suite.</p>
+<pre><code>&gt;&gt;&gt; print &quot;Hello world&quot;
+Hello world
+&gt;&gt;&gt; print 2+3*3
+11
+&gt;&gt;&gt;</code></pre>
+<p>Pour quitter l'interpréteur, appuyez sur <code>ctrl-d</code> (appuyez sur <code>ctrl</code> et sans lâcher <code>ctrl</code>, appuyez sur <code>d</code>). Sous Windows, c'est <code>ctrl-z</code>.</p>
+<h2 id="un-point-pratique-python-2-et-python-3">Un point pratique: Python 2 et Python 3</h2>
+<p>Dans ce cours, nous allons utiliser Python 2 (c'est-à-dire 2.7, 2.6, 2.5, etc) qui diffère légèrement de Python 3.</p>
+<p>En Python 2</p>
+<pre><code>&gt;&gt;&gt; print &quot;Hello world&quot;
+Hello world</code></pre>
+<p>En Python 3</p>
+<pre><code>&gt;&gt;&gt; print(&quot;Hello world&quot;)
+Hello world</code></pre>
+<h1 id="utilisation-éditeur-texte">Utilisation (éditeur texte)</h1>
+<p>Au lieu de lancer l'interpréteur, vous pouvez</p>
+<ul>
+<li>écrire vos lignes directement dans un fichier texte,</li>
+<li>sauvegarder ce fichier (par ex sous le nom <code>test.py</code>) et</li>
+<li>le lancer avec <code>python test.py</code>.</li>
+</ul>
+<p>L'interpréteur exécute le contenu de <code>test.py</code> ligne par ligne.</p>
+<p>Un exemple de ce que pourrait contenir <code>test.py</code></p>
+<pre><code>print &quot;Hello world&quot;
+print 2+3*3</code></pre>
+<p>Remplacer <code>test.py</code> par le nom de votre fichier. Il faut d'abord se placer dans le répertoire où vous avez sauvegardé votre fichier (en utilisant <code>cd</code> suivi du nom du répertoire).</p>
+<p><code>test.py</code> est appelé un <em>script</em> Python.</p>
+<p><strong>Astuce:</strong> Vous pouvez écrire vos ligne dans l'interpréteur et ensuite recopier les lignes que vous voulez garder dans l'éditeur de texte.</p>
+<h1 id="utilisation-combiné">Utilisation (combiné)</h1>
+<p>Au lieu de lancer l'interpréteur, vous pouvez</p>
+<ul>
+<li>écrire vos lignes directement dans un fichier texte,</li>
+<li>sauvegarder ce fichier (par ex sous le nom <code>test.py</code>) et</li>
+<li>le lancer avec <code>python -i test.py</code>. <strong>Notez l'ajout du <code>-i</code>!</strong></li>
+</ul>
+<p>Cela exécute le contenu de <code>test.py</code> <strong>et</strong> vous donne un invité de commende</p>
+<pre><code>&gt;&gt;&gt;</code></pre>
+<p>à l'arrêt (qui arrive soit à la fin de la dernière ligne ou lors d'une erreur).</p>
+<h1 id="erreur">Erreur</h1>
+<p>Une des première choses que vous allez rencontrer est une erreur, qui est soit de <em>syntaxe</em></p>
+<pre><code>&gt;&gt;&gt; pas du python
+  File &quot;&lt;stdin&gt;&quot;, line 1
+    pas du python
+         ^
+SyntaxError: invalid syntax</code></pre>
+<p>ou <em>d'exécution</em>.</p>
+<pre><code>&gt;&gt;&gt; print 2/0
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ZeroDivisionError: integer division or modulo by zero</code></pre>
+<p>Dans chaque cas, vous avez un peu d'information sur l'endroit et la nature de l'erreur.</p>
+<p>Pas de panique. Corrigez et re-essayez.</p>
+<p>(Ces exemples sont ici uniquement pour vous aider à distinguer entre les erreurs d'une exécution normale.)</p>
+<p><a href="https://perso.limsi.fr/pointal/python:problemeshabituels">Voir cette liste de problème habituels</a></p>
+<h1 id="mode-dapprentissage">Mode d'apprentissage</h1>
+<blockquote>
+<p><em>Quel est le prochain chiffre dans cette suite?</p>
+1, 4, 9, 16, 25, ?</em>
+</blockquote>
+
+<p>Au tout début, il est normalement beaucoup plus rapide d'apprendre par déduction qu'en écoutant une description.</p>
+<p>Lancez l'interpréteur et tapez des lignes que vous pensez être valide dans l'interpréteur. Ce n'est pas grave s'il y a beaucoup d'erreurs générés (tant qu'il y a quelques lignes de bonne). En observant ces résultats, vous déduirez le fonctionnement du langage et de l'interpréteur (en partie).</p>
+<p>Vous pouvez aussi prendre une ligne correcte (que vous comprenez) et la modifier petit à petit.</p>
+<p><strong>Astuce:</strong> Vous pouvez appuyer sur les flèches haut et bas pour parcourir l'historique des lignes entrées. Cela vous permet de corriger plus facilement une ligne sans perdre le travail effectué. (Une autre raison pour tenter d'entrer des lignes dont vous êtes incertain au début.)</p>
+<p>Les description et grammaires formelles seront mis en annexe, mais le texte principale contiendra seulement des exemples.</p>
+<p>Pour tard, vous devrez faire exactement inverse: comprendre sans trop déduire (parce que le fonctionnement que l'on déduit à première vu sera faux).</p>
+<h1 id="opérations-arithmétiques">Opérations arithmétiques</h1>
+<p><strong>Remarque:</strong> L'interpréteur imprime automatiquement la valeur évaluée même sans <code>print</code> (mais cette impression n'arrive pas dans un script).</p>
+<p>Vous pouvez utiliser Python pour de longs calculs.</p>
+<pre><code>&gt;&gt;&gt; 5*5
+25
+&gt;&gt;&gt; (3*3) + (4*4)
+25</code></pre>
+<p>Deuxième exemple: Conversion de 44 degrés Fahrenheit en Celsius</p>
+<pre><code>&gt;&gt;&gt; (44 - 32)*5/9
+6
+&gt;&gt;&gt; (44 - 32)*5/9
+6.666666666666667</code></pre>
+<p>Troisième exemple: Trouver les racines de <code>2x^2 - 11x + 3</code>.</p>
+<pre><code>&gt;&gt;&gt; (-11)*(-11) - 4*2*3
+97
+&gt;&gt;&gt; ( -(-11) + 97**0.5 ) / (2.0*2)
+5.212214450449026</code></pre>
+<p>La principale différence avec la notation mathématique est la multiplication explicite (par <code>*</code>) et le résultat tronqué si on divise deux entier.</p>
+<p>Il y a aussi une opération de modulo.</p>
+<pre><code>&gt;&gt;&gt; 20 % 3
+2</code></pre>
+<h1 id="variables">Variables</h1>
+<p>Dans ce deuxième exemple, on aurait bien voulu avoir des variables comme en mathématiques. On peut.</p>
+<pre><code>&gt;&gt;&gt; a = 2
+&gt;&gt;&gt; b = -11
+&gt;&gt;&gt; c = 3
+&gt;&gt;&gt; d = b*b - 4*a*c
+&gt;&gt;&gt; ( -b + d**0.5 ) / (2.0*a)
+5.212214450449026
+&gt;&gt;&gt; ( -b - d**0.5 ) / (2.0*a)
+0.28778554955097402</code></pre>
+<p>Mais attention, les variables n'ont pas le même sens (d'inconnu) qu'en maths.</p>
+<ul>
+<li>Les variables sont des <em>noms</em> (que vous choisissez) associé à des <em>valeur</em>.</li>
+<li>Écrire son nom dans un expression le remplace par sa valeur <em>à ce moment</em>.</li>
+<li>Associer une deuxième <em>valeur</em> au même <em>nom</em> remplace l'ancienne valeur associée.</li>
+<li>Il y a d'autre façon de modifier des valeurs déjà associées.</li>
+<li>Quelques restrictions s'appliquent aux noms qu'on peut utiliser. (Dans ce cours, nous allons normalement utiliser que les lettres et <code>_</code> dans les noms.)</li>
+<li>Pour des <em>types</em> plus complexes, la valeur est en fait un emplacement dans la mémoire (mais nous n'avons pas encore vu ce qu'est un type).</li>
+</ul>
+<p>L'association (ou l'<em>assignation</em>) se fait avec <code>=</code> par la syntaxe <code>nom = expression</code>.</p>
+<p>Nous verrons que les variables ont beaucoup plus d'utilité qu'une simplement fonction de mémoire comme dans une calculatrice.</p>
+<p>Plus tard, il faudra aussi faire attention à bien choisir les noms de variables pour représenter leur contenu.</p>
+<h1 id="chargement-des-données">Chargement des données</h1>
+<p>À chaque nouveau lancement, les assignations sont remis à zéros. Si nous voulons faire les même calculs avec des entrées différentes. Pour cela, vous pouvez utiliser l'instruction <code>input()</code>.</p>
+<p>Si le fichier <code>exemple_lecture.py</code> contient</p>
+<pre><code>a = input(&quot;Entrez la valeur de a: &quot;)
+b = input(&quot;Entrez la valeur de b: &quot;)
+c = input(&quot;Entrez la valeur de c: &quot;)
+d = b*b - 4*a*c
+print &quot;Les deux racines sont&quot;
+print ( -b + d**0.5 ) / (2.0*a)
+print ( -b - d**0.5 ) / (2.0*a)</code></pre>
+<p>Au lancement, vous verrez</p>
+<pre><code>$ python exemple_lecture.py
+Entrez la valeur de a: </code></pre>
+<p>Tapez la valeur voulue et appuyez sur entrée.</p>
+<pre><code>Entrez la valeur de a: 2
+Entrez la valeur de b: -11
+Entrez la valeur de c: 3
+Les deux racines sont
+5.21221445045
+0.287785549551</code></pre>
+<h1 id="quelques-types">Quelques types</h1>
+<p>Implicitement nous avons déjà vu les deux types</p>
+<ul>
+<li><code>int</code> pour des entiers (comme <code>1</code>, <code>-11</code> et <code>3</code>)</li>
+<li><code>float</code> pour des nombre à virgule (comme <code>0.5</code> et <code>3.141592653589793</code>)</li>
+</ul>
+<p><strong>Attention:</strong> Les <code>float</code>s ne sont pas des fractions exactes.</p>
+<pre><code>&gt;&gt;&gt; 0.1 + 0.1 + 0.1
+0.30000000000000004</code></pre>
+<p>La fonction <code>type</code> permet d'obtenir le type d'une expression.</p>
+<pre><code>&gt;&gt;&gt; type(3)
+&lt;type &#39;int&#39;&gt;
+&gt;&gt;&gt; x = 1/2.0
+&gt;&gt;&gt; type(x)
+&lt;type &#39;float&#39;&gt;
+&gt;&gt;&gt; type(0.1 + 0.1 + 0.1)
+&lt;type &#39;float&#39;&gt;</code></pre>
+<p>Cette fonction est peu utilisée hors de l'interpréteur et typiquement utilisée pour examinée le type d'une variable.</p>
+<h1 id="conversion-de-types">Conversion de types</h1>
+<p>Nous avons déjà vu comment créer des constantes d'un type (par ex <code>3</code> et <code>0.1</code>). Voici une autre façon.</p>
+<p>Nous pouvons appeler la fonction du nom du type (comme <code>int</code> et <code>float</code>) pour convertir une valeur en ce type.</p>
+<p>Convertir le int 9 en un float et le float 3.2 en un int.</p>
+<pre><code>&gt;&gt;&gt; float(9) 
+9.0
+&gt;&gt;&gt; int(3.2) 
+3</code></pre>
+<p>C'est aussi une autre façon d'obtenir une valeur de ce type.</p>
+<pre><code>&gt;&gt;&gt; x = int()
+&gt;&gt;&gt; x
+0</code></pre>
+<h1 id="le-type-booléen-bool">Le type booléen <code>bool</code></h1>
+<p>Un autre type qui prends seulement deux valeurs différentes est <code>bool</code>.</p>
+<p>Les deux valeurs sont <code>True</code> et <code>False</code> (et les constantes <code>bool</code> sont créés ainsi).</p>
+<p>Ils sont utilisé pour l'exécution conditionelle d'instructions. Beaucoup d'opérations retournent un <code>bool</code>.</p>
+<p>Quelques exemples</p>
+<pre><code>&gt;&gt;&gt; 2 &gt; 8
+False
+&gt;&gt;&gt; 3 == 3
+True
+&gt;&gt;&gt; x = (5 &lt; 7)
+&gt;&gt;&gt; x
+True</code></pre>
+<p>Il existe plusieurs opération booléennes dont <code>or</code>, <code>and</code> et <code>not</code>.</p>
+<pre><code>&gt;&gt;&gt; (2 &gt; 8) or (3 == 3)
+True
+&gt;&gt;&gt; not (2 &gt; 8)
+True
+&gt;&gt;&gt; (2 &gt; 8) and x
+False
+&gt;&gt;&gt; (9 &gt; 24) and inexistant
+False</code></pre>
+<p><strong>Remarque:</strong> Python utiliser une évaluation paresseuse: si le premier élément de <code>and</code> évalue à <code>True</code> alors, il n'évalue pas le deuxième élément. (<code>inexistant</code> est un nom auquel aucune valeur n'est associé et qui aurait donné une erreur si l'évaluation n'est pas paresseuse.)</p>
+<pre><code>&gt;&gt;&gt; inexistant
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name &#39;inexistant&#39; is not defined</code></pre>
+<p>À quoi servent les <code>bool</code>s? Nous allons le voir maintenant.</p>
+<h1 id="contrôle-du-flux-des-instructions">Contrôle du flux des instructions</h1>
+<p>L'interpréteur Python exécute les instructions ligne par ligne. Mais nous allons maintenant voir des instructions qui peut guider son exécution. Notamment en sautant des instructions ou en répétant des lignes.</p>
+<pre><code>&gt;&gt;&gt; x = 3
+&gt;&gt;&gt; if x &lt; 0:
+...     print &quot;x est négatif&quot;
+... 
+&gt;&gt;&gt; x = -1
+&gt;&gt;&gt; if x &lt; 0:
+...     print &quot;x est négatif&quot;
+... 
+x est négatif
+&gt;&gt;&gt;</code></pre>
+<p>La ligne <code>print &quot;x est négatif&quot;</code> est exécutée seulement si <code>x &lt; 0</code> évalue à <code>True</code>.</p>
+<p>C'est le premier exemple d'une <em>instruction composée</em>.</p>
+<h1 id="instructions-composées">Instructions composées</h1>
+<p>Exemple:</p>
+<pre><code>if x &lt;= 0:
+    print &quot;x est négatif&quot;
+    y = 3</code></pre>
+<p>Une instruction composée contient</p>
+<ul>
+<li>une ligne d’en-tête terminée par deux-points <code>:</code></li>
+<li>un <strong>bloc d’instructions</strong> indenté au même niveau.</li>
+</ul>
+<p>Les instructions avec la même indentation (nombre d'espace en début de ligne) appartiennent au même bloc.</p>
+<p>On peut imbriquer des instructions composées pour réaliser des structures de décision complexes.</p>
+<h1 id="contrôle-du-flux-des-instructions-if-elif-et-else">Contrôle du flux des instructions: <code>if</code>, <code>elif</code> et <code>else</code></h1>
+<p><code>elif</code> et <code>else</code> permettent une organisation de plusieurs tests successifs (on passe au prochain test lorsque ceux d'avant sont évalués à <code>False</code>).</p>
+<pre><code>if x &lt;= 0:
+    print &quot;x est négatif&quot;
+elif x % 2 == 1:
+    print &quot;x est positif et impair&quot;
+else:
+    print &quot;x n’est pas négatif et est pair&quot;</code></pre>
+<p><a href="http://www.pythontutor.com/visualize.html#code=x+%3D+7%0Aif+x+%3C%3D+0%3A%0A++++print+%22x+est+n%C3%A9gatif%22%0Aelif+x+%25+2+%3D%3D+1%3A%0A++++print+%22x+est+positif+et+impair%22%0Aelse%3A%0A++++print+%22x+n%E2%80%99est+pas+n%C3%A9gatif+et+est+pair%22%0A&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Vous pouvez visualiser les lignes exécutés ici.</a></p>
+<p>Essayez de changer la valeur de <code>x</code> sur la première ligne.</p>
+<h1 id="exécution-contionnelle-syntaxe">Exécution contionnelle: syntaxe</h1>
+<pre><code>if expression1:
+    instruction1
+elif expression2:
+    instruction2
+else:
+    instruction3</code></pre>
+<p>Lorsque nous arrivons sur la ligne <code>if expression1:</code>,</p>
+<ul>
+<li><code>expression1</code> est évaluée et si sa valeur est <code>True</code> le bloc <code>instruction1</code> est exécuté.</li>
+<li>Sinon (<code>expression1</code> évaluée à <code>False</code>), <code>expression2</code> est évaluée et si sa valeur est <code>True</code> le bloc <code>instruction2</code> est exécuté.</li>
+<li>Sinon (<code>expression1</code> et <code>expression2</code> sont tous les deux <code>False</code>), <code>instruction3</code> est évalué.</li>
+</ul>
+<p><strong>Remarque (avancée):</strong> Des variables de type différent de <code>bool</code> peuvent aussi être mis comme condition. Ils sont normalement considérés comme <code>False</code> lorsqu'ils sont vides (et <code>True</code> sinon).</p>
+<h1 id="boucle-while">Boucle <code>while</code></h1>
+<p>Pour re-exécuter les mêmes lignes plusieurs fois, nous pouvons utiliser l'instruction <code>while</code>.</p>
+<pre><code>&gt;&gt;&gt; x = 257
+&gt;&gt;&gt; compte = 0
+&gt;&gt;&gt; while x &gt; 1:
+...     x = x / 2
+...     compte = compte + 1
+... 
+&gt;&gt;&gt; compte
+8</code></pre>
+<p>Cet exemple calcul le log en base 2 de <code>x</code> arrondi vers le bas.</p>
+<p>Les deux lignes du bloc indenté sont exécutés tant que <code>x &gt; 1</code> évalue à <code>True</code>.</p>
+<p><a href="http://pythontutor.com/visualize.html#code=x+%3D+257%0Acompte+%3D+0%0Awhile+x+%3E+1%3A%0A++++x+%3D+x+/+2%0A++++compte+%3D+compte+%2B+1%0Aprint+compte&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualisation ici</a></p>
+<p>Ces lignes sont exécutés tant que la condition de la boucle est satisfaite.</p>
+<p><strong>Remarque:</strong> À la ligne <code>x = x / 2</code> nous avons un exemple d'une assignation à <code>x</code> d'une valeur obtenue de la valeur de <code>x</code> avant l'assignation.</p>
+<h1 id="syntaxe-de-while">Syntaxe de <code>while</code></h1>
+<pre><code>while expression:
+    instructions</code></pre>
+<ul>
+<li>Tant que <code>expression</code> évalue à True, le bloc <code>instructions</code> est exécuté</li>
+<li><code>expression</code> est reévaluée avant chaque exécution du bloc <code>instructions</code>.</li>
+</ul>
+<h1 id="interrompre-une-boucle">Interrompre une boucle</h1>
+<p>Nous pouvons aussi sortir d'une boucle avec l'instruction <code>break</code>.</p>
+<pre><code>&gt;&gt;&gt; x = 257
+&gt;&gt;&gt; compte = 0
+&gt;&gt;&gt; while True:
+...     x = x / 2
+...     compte = compte + 1
+...     if x &lt;= 1:
+...         break
+...
+&gt;&gt;&gt; compte
+8</code></pre>
+<p>Cette version est <em>presque</em> équivalent à la boucle précédente. Qu'arrive-t-il si on met <code>x = 0</code> en première ligne?</p>
+<h1 id="les-chaînes-de-caractères-str">Les chaînes de caractères <code>str</code></h1>
+<p>Un autre type que nous avons d'ailleurs déjà utilisé sont les <em>chaînes de caractères</em>.</p>
+<pre><code>&gt;&gt;&gt; print &quot;Hello world&quot;
+Hello world
+&gt;&gt;&gt; type(&quot;Hello world&quot;)
+&lt;type &#39;str&#39;&gt;
+&gt;&gt;&gt; &quot;Hello world&quot;
+&#39;Hello world&#39;</code></pre>
+<p><code>&quot;Hello world&quot;</code> est une chaîne de longueur 11.</p>
+<pre><code>&gt;&gt;&gt; len(&quot;Hello world&quot;)
+11</code></pre>
+<p>Comme son nom l'indique, ce sont les caractères suivants les unes après les autres <code>'H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'</code>.</p>
+<p>Les chaînes de caractères sont un peu plus complexe que les <code>int</code>, <code>float</code> et <code>bool</code> déjà vu pour cette raison.</p>
+<p>Voici trois syntaxes différentes pour créer des chaînes de caractères.</p>
+<pre><code>&gt;&gt;&gt; s1 = &quot;Hello world&quot;
+&gt;&gt;&gt; s2 = &#39;Hello world&#39;
+&gt;&gt;&gt; s3 = &quot;&quot;&quot;Hello world&quot;&quot;&quot;</code></pre>
+<p>Elles peuvent être incluses entre simples quotes (apostrophes) ou doubles quotes (guillemets) ou triple quotes (triple guillemets).</p>
+<h2 id="caractère-déchappement">Caractère d'échappement</h2>
+<p>À priori, nous voulons être capable de représenter tout caractère. Comment peut-on créer une chaîne avec un seul caractère: <code>&quot;</code> ?</p>
+<pre><code>&gt;&gt;&gt; &#39;&quot;&#39;
+&#39;&quot;&#39;
+&gt;&gt;&gt; &quot;\&quot;&quot;
+&#39;&quot;&#39;</code></pre>
+<p><code>\</code> est un <em>caractère d'échappement</em>. Le caractère qui vient après est interprété différament.</p>
+<p>(Réfléchissez à comment est-ce que vous aurez conçu un système pour représenter toute chaîne de caractère sans ambiguïté. Selon votre solution, les caractères d'échappement et les différentes syntaxe peuvent s'expliquer en soi.)</p>
+<p>Quelques combinaisons courantes sont</p>
+<ul>
+<li><code>\\</code> donne <code>\</code></li>
+<li><p><code>\n</code> donne une fin de ligne</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>print &quot;Ligne 123&quot; Ligne 1 Ligne 2 Ligne 3</p>
+</blockquote>
+</blockquote>
+</blockquote></li>
+</ul>
+<p>La syntaxe à trois guillemets permet aussi d'obtenir des chaînes multi-lignes.</p>
+<pre><code>&gt;&gt;&gt; s = &quot;&quot;&quot;Ligne 1
+... Ligne 2
+... Ligne 3&quot;&quot;&quot;
+&gt;&gt;&gt; s
+&#39;Ligne 1\nLigne 2\nLigne 3&#39;
+&gt;&gt;&gt; print s
+Ligne 1
+Ligne 2
+Ligne 3</code></pre>
+<h2 id="opérations-courantes">Opérations courantes</h2>
+<ul>
+<li><p>Concaténation</p>
+<pre><code>&gt;&gt;&gt; s + s
+&#39;Ligne 1\nLigne 2\nLigne 3Ligne 1\nLigne 2\nLigne 3&#39;</code></pre></li>
+<li><p>Répétition</p>
+<pre><code>&gt;&gt;&gt; &quot;oysters &quot;*3 + &quot;eat &quot;*3
+&#39;oysters oysters oysters eat eat eat &#39;</code></pre></li>
+<li><p>Élimination d'espaces blancs (espace, fin de ligne, etc)</p>
+<pre><code>&gt;&gt;&gt; &quot;    ab cd  \n&quot;.strip()
+&#39;ab cd&#39;</code></pre></li>
+<li><p>Séparation et recombinaison (interaction avec le type <code>list</code>, à voir au prochain cours). Très utile pour charger des données.</p>
+<pre><code>&gt;&gt;&gt; s = &quot;Des mots separes d&#39;espaces&quot;
+&gt;&gt;&gt; liste_de_mots = s.split()
+&gt;&gt;&gt; liste_de_mots
+[&#39;Des&#39;, &#39;mots&#39;, &#39;separes&#39;, &quot;d&#39;espaces&quot;]
+&gt;&gt;&gt; s_virgule = &quot;,&quot;.join(liste_de_mots)
+&gt;&gt;&gt; s_virgule</code></pre></li>
+<li><p>Remplacement</p>
+<pre><code>&gt;&gt;&gt; s_virgule.replace(&quot;d&#39;espaces&quot;, &quot;de,virgules&quot;)
+&#39;Des,mots,separes,de,virgules&#39;</code></pre></li>
+<li><p>Tests</p>
+<pre><code>&gt;&gt;&gt; s_virgule.startswith(&quot;Des,&quot;)
+True
+&gt;&gt;&gt; s_virgule.endswith(&quot;x&quot;)
+False</code></pre></li>
+<li><p>Sous-chaîne (nous verrons la syntaxe plus en détails lors de la discussion des <code>list</code>)</p>
+<pre><code>&gt;&gt;&gt; s_virgule[2:21]
+&quot;s,mots,separes,d&#39;es&quot;</code></pre></li>
+</ul>
+<p>Ici nous voyons aussi un premier exemple d'appel de fonctions.</p>
+<ul>
+<li><code>len(s)</code> (appel <code>nom_de_fonction(parametre1, parametre2, ...)</code>)</li>
+<li><code>s.replace(&quot;a&quot;, &quot;b&quot;)</code> (appel <code>variable.nom_de_fonction(parametre1, parametre2, ...)</code>)</li>
+</ul>
+<p>C'est une syntaxe que nous allons souvent revoir.</p>
+<h2 id="sortie-et-chaînes-formatées">Sortie et chaînes formatées</h2>
+<p>Nous avons déjà utilisé plusieurs fois l'instruction <code>print</code>. Voici quelques (autres) forme de son utilisation.</p>
+<pre><code>&gt;&gt;&gt; a = 2
+&gt;&gt;&gt; b = 5
+&gt;&gt;&gt; print &quot;La somme de&quot;, a, &quot;et&quot;, b, &quot;est&quot;, a + b</code></pre>
+<p>On passe ici une liste de 6 arguments à <code>print</code> (séparés de virgules):</p>
+<ul>
+<li>&quot;La somme de&quot;</li>
+<li>a</li>
+<li>&quot;et&quot;</li>
+<li>b</li>
+<li>&quot;est&quot;</li>
+<li>a + b</li>
+</ul>
+<p>Deux alternatives plus &quot;modernes&quot;.</p>
+<pre><code>print &quot;La somme de %s et %s est %s&quot; % (a, b, a + b)
+print &quot;La somme de {} et {} est {}&quot;.format(a, b, a + b)</code></pre>
+<p><code>%</code> est un autre caractère d'échappement pour les chaînes de caractères.</p>
+<h1 id="commentaires">Commentaires</h1>
+<p><strong>Rappel:</strong> Vos programmes seront constamment lu par des humains, incluant vous même lors de sa modification.</p>
+<p>Les commentaires sont des morceaux de texte qui ne sont pas exécutés. Ils permettent d'ajouter de l'information supplémentaire lorsque le fonctionnement n'est pas évident.</p>
+<pre><code>&gt;&gt;&gt; x = 3 # Ceci est un commentaire
+&gt;&gt;&gt; # Ceci est un autre commentaire</code></pre>
+<p>Tout ce qui est après <code>#</code> sur une ligne est ignoré par l'interpréteur.</p>
+<p>Les chaînes de caractères multi-lignes servent aussi de commentaires. Rappel qu'ils ne sont pas affichés s'ils sont exécuté à l'intérieur d'un script.</p>
+<pre><code>&quot;&quot;&quot; Ceci est
+un commentaire sur
+plusieurs lignes
+&quot;&quot;&quot;</code></pre>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

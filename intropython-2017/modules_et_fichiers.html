@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Zhentao Li" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="CM-web.pdf">Cours 6</a> 
+              <a class="leftmenu" href="nltk.pdf">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="10"></td>
+                <td valign="top" class="mainbox">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="table.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title">Initiation à la programmation</h1>
+</div>
+<h1 id="les-modules">Les modules</h1>
+<h2 id="modules">Modules</h2>
+<ul>
+<li><p>On peut ranger les définitions de fonctions se rapportant à une même application au sein d’un script commun baptisé red module.</p></li>
+<li><p>Un module est sauvegardé sous forme d’un fichier dont le nom a la forme <code>&lt;nom du module&gt;.py</code>.</p></li>
+<li><p>Pour utiliser un module, il faut se servir de l’instruction <code>import &lt;nom du module&gt;</code>.</p></li>
+<li><p>L’exécution de cette instruction consiste à exécuter le script définissant le module (ce script peut contenir des instructions autres que des définitions de fonctions).</p></li>
+<li><p>Pour importer un module, Python a besoin de connaître le chemin qui permet d’accéder au fichier correspondant. Ce chemin doit apparaître dans la liste des chemins possibles stockés dans la variable <code>path</code> du module <code>sys</code>.</p></li>
+</ul>
+<h2 id="modules---première-méthode-dimportation">Modules - Première méthode d’importation</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> random
+<span class="op">&gt;&gt;&gt;</span> random.randint(<span class="dv">0</span>, <span class="dv">10</span>)
+<span class="dv">9</span></code></pre></div>
+<p>Regardons de plus près cet exemple :</p>
+<ul>
+<li><p>L’instruction <code>import</code> vous permet d’importer toutes les fonctions du module <code>random</code></p></li>
+<li><p>Ensuite, nous utilisons la fonction <code>randint(a, b)</code> du module <code>random</code>. Cette fonction renvoie un nombre entier aléatoirement entre <code>a</code> inclus et <code>b</code> inclus.</p></li>
+</ul>
+<h2 id="modules---deuxième-méthode-dimportation">Modules - Deuxième méthode d’importation</h2>
+<ul>
+<li><p>Pour disposer d’une fonction du module:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> random <span class="im">import</span> randint
+<span class="op">&gt;&gt;&gt;</span> random.randint(<span class="dv">0</span>, <span class="dv">10</span>)
+<span class="dv">9</span></code></pre></div></li>
+<li><p>Pour disposer de toutes les fonctions d’un module:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> math <span class="im">import</span> <span class="op">*</span>
+racine <span class="op">=</span> sqrt(<span class="dv">49</span>)
+angle <span class="op">=</span> pi<span class="op">/</span><span class="dv">6</span>
+<span class="bu">print</span> sin(angle)</code></pre></div>
+<p><a href="http://pythontutor.com/visualize.html#code=from+math+import+*%0Aracine+%3D+sqrt%2849%29%0Aangle+%3D+pi/6%0Aprint+sin%28angle%29&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a></p>
+<p>Normalement, <code>from module import *</code> est seulement utilisé dans l'interpréteur et déconseillé dans les scripts. C'est pour aider le lecteur à trouver la provenance des variables et fonctions du programme.</p></li>
+</ul>
+<h2 id="modules-courants">Modules courants</h2>
+<ul>
+<li><p><code>math</code> : fonctions et constantes mathématiques de base (sin, cos, exp, pi...).</p></li>
+<li><p><code>sys</code> : passage d’arguments, gestion de l’entrée/sortie standard etc...</p></li>
+<li><p><code>os</code> : dialogue avec le système d’exploitation.</p></li>
+<li><p><code>random</code> : génération de nombres aléatoires.</p></li>
+<li><p><code>time</code> : permet d’accéder aux fonctions gérant le temps.</p></li>
+<li><p><code>profile</code> : permet d’évaluer le temps d’exécution de chaque fonction dans un programme (profiling en anglais).</p></li>
+<li><p><code>urllib</code> : permet de récupérer des données sur internet depuis python.</p></li>
+<li><p><code>Tkinter</code> : interface python avec Tk (permet de créer des objets graphiques; nécessite d’installer Tk).</p></li>
+<li><p><code>re</code> : gestion des expressions régulières.</p></li>
+<li><p><code>pickle</code> : écriture et lecture de structures python (comme les dictionnaires par exemple).</p></li>
+<li><p><code>fraction</code> : pour des calculs avec fractions exactes.</p></li>
+<li><p>...</p></li>
+</ul>
+<h2 id="quelques-fonctions-des-modules-courants">Quelques fonctions des modules courants</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> math.<span class="bu">pow</span>(<span class="dv">2</span>,<span class="dv">10</span>)   <span class="co">#Exposant</span>
+<span class="fl">1024.0</span>
+<span class="op">&gt;&gt;&gt;</span> code_retour <span class="op">=</span> os.system(<span class="st">&quot;echo 123&quot;</span>)  <span class="co">#Executer une commande externe</span>
+<span class="dv">123</span>
+<span class="op">&gt;&gt;&gt;</span> random.randint(<span class="dv">0</span>, <span class="dv">10</span>)  <span class="co">#Choisis un entier au hasard</span>
+<span class="dv">2</span>
+<span class="op">&gt;&gt;&gt;</span> random.choice([<span class="st">&quot;a&quot;</span>, <span class="st">&quot;b&quot;</span>, <span class="dv">3</span>, <span class="st">&quot;d&quot;</span>])  <span class="co">#Choisis un element d&#39;une liste</span>
+<span class="co">&#39;d&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> time.time()  <span class="co"># Nombre de secondes depuis 1970-01-01</span>
+<span class="fl">1393935277.116552</span>
+<span class="op">&gt;&gt;&gt;</span> time.sleep(<span class="dv">3</span>)  <span class="co"># Attendre 3 seconds</span>
+<span class="op">&gt;&gt;&gt;</span> profile.run(<span class="st">&quot;time.sleep(3)&quot;</span>)  <span class="co"># Calcule le temps d&#39;excution</span>
+         <span class="dv">4</span> function calls <span class="op">in</span> <span class="fl">0.000</span> seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        <span class="dv">1</span>    <span class="fl">0.000</span>    <span class="fl">0.000</span>    <span class="fl">0.000</span>    <span class="fl">0.000</span> :<span class="dv">0</span>(setprofile)
+        <span class="dv">1</span>    <span class="fl">0.000</span>    <span class="fl">0.000</span>    <span class="fl">0.000</span>    <span class="fl">0.000</span> :<span class="dv">0</span>(sleep)
+[...]</code></pre></div>
+<h2 id="quelques-fonctions-des-modules-courants-1">Quelques fonctions des modules courants</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> handle <span class="op">=</span> urllib.urlopen(<span class="st">&quot;http://www.google.com&quot;</span>)
+<span class="op">&gt;&gt;&gt;</span> html <span class="op">=</span> handle.read()  <span class="co"># Lire le contenu d&#39;une page comme un fichier (que nous allons voir prochainement)</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> html
+<span class="co">&#39;&lt;!doctype html&gt;&lt;html itemscope=&quot;&quot; itemtype=&quot;http://schema.org/WebPage&quot;&gt;</span>
+<span class="co">&lt;head&gt;&lt;meta itemprop=&quot;image&quot; content=&quot;/images/google_favicon_128.png&quot;&gt;&lt;ti</span>
+<span class="co">tle&gt;Google&lt;/title&gt;&lt;script&gt;(function(){\nwindow.google={kEI:&quot;i8QVU8ejFqTt4</span>
+<span class="co">gTBvIDIAw&quot;,getEI:function(a){for(var b;a&amp;&amp;(!a.getAttribute||!(b=a.getAttr</span>
+<span class="co">[...]</span>
+<span class="co">&gt;&gt;&gt; # Recherche des chaines de caractere dans un texte.</span>
+<span class="co">&gt;&gt;&gt; # Dans cet exemple, on trouve les liens sur la page web&#39;</span>.
+<span class="op">&gt;&gt;&gt;</span> re.findall(<span class="st">&#39;href=&quot;(.*?)&quot;&#39;</span>, html)
+[<span class="st">&#39;/search?&#39;</span>, <span class="st">&#39;http://www.google.fr/imghp?hl=fr&amp;tab=wi&#39;</span>, <span class="st">&#39;http://maps.</span>
+<span class="st">google.fr/maps?hl=fr&amp;tab=wl&#39;</span>, <span class="st">&#39;https://play.google.com/?hl=fr&amp;tab=w8&#39;</span>,
+<span class="co">&#39;http://www.youtube.com/?gl=FR&amp;tab=w1&#39;</span>, <span class="st">&#39;http://news.google.fr/nwshp?</span>
+<span class="st">[...]</span>
+<span class="st">&gt;&gt;&gt; # Sauvegarde de variables dans des fichiers et lecture</span>
+<span class="st">&gt;&gt;&gt; pickle.dump(liste, open(&quot;sauvegarde.pkl&quot;, &quot;w&quot;))</span>
+<span class="st">&gt;&gt;&gt; listelue = pickle.load(open(&quot;sauvegarde.pkl&quot;))</span>
+<span class="st">&gt;&gt;&gt; listelue</span>
+<span class="st">[&#39;</span>a<span class="st">&#39;, &#39;</span>b<span class="st">&#39;, &#39;</span>c<span class="st">&#39;]</span></code></pre></div>
+<p><a href="exemple_modules.py">Télécharger ces exemples dans un script</a></p>
+<h2 id="obtenir-de-laide">Obtenir de l’aide</h2>
+<ul>
+<li><p>Pour obtenir de l’aide sur un module rien de plus simple, il suffit d’invoquer la commande help :</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> random
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(random)</code></pre></div></li>
+<li><p>Il est aussi possible d’invoquer de l’aide sur une fonction particulière d’un module en la précisant de la manière suivante :</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(random.randint)</code></pre></div></li>
+<li><p>Ça marche même sur des variables et des types.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> liste <span class="op">=</span> [<span class="dv">10</span>, <span class="dv">20</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(liste)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">help</span>(<span class="bu">str</span>)</code></pre></div></li>
+</ul>
+<h1 id="les-fichiers">Les fichiers</h1>
+<h2 id="fichiers-utilisation-courante">Fichiers: utilisation courante</h2>
+<pre class="text"><code>$ cat exemple.txt 
+Ceci est la premiere ligne
+Ceci est la deuxieme ligne
+Ceci est la troisieme ligne
+Ceci est la quatrieme et derniere ligne</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> nom_fichier <span class="op">=</span> <span class="st">&quot;exemple.txt&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> contenu_fichier <span class="op">=</span> <span class="bu">open</span>(nom_fichier).read()
+<span class="op">&gt;&gt;&gt;</span> contenu_fichier
+<span class="co">&#39;Ceci est la premiere ligne\nCeci est la deuxieme ligne\nCeci est la</span>
+<span class="co">troisieme ligne\nCeci est la quatrieme et derniere ligne\n&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> contenu_a_ecrire <span class="op">=</span> <span class="st">&quot;hello world</span><span class="ch">\n</span><span class="st">&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">open</span>(<span class="st">&quot;exemple2.txt&quot;</span>, <span class="st">&quot;w&quot;</span>).write(contenu_a_ecrire)
+
+$ cat exemple2.txt
+hello world</code></pre></div>
+<h2 id="autre-exemple">Autre exemple</h2>
+<p>Créez un fichier dans un éditeur de texte que vous sauverez dans votre répertoire avec le nom <code>exemple.txt</code>, par exemple :</p>
+<pre class="text"><code>Ceci est la premiere ligne
+Ceci est la deuxieme ligne
+Ceci est la troisieme ligne
+Ceci est la quatrieme et derniere ligne</code></pre>
+<h2 id="exemple-readlines">Exemple <code>readlines</code></h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> file_in <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;exemple.txt&#39;</span>,<span class="st">&#39;r&#39;</span>)
+<span class="op">&gt;&gt;&gt;</span> file_in
+<span class="op">&lt;</span><span class="bu">open</span> <span class="bu">file</span> <span class="st">&#39;exemple.txt&#39;</span>, mode <span class="st">&#39;r&#39;</span> at <span class="bn">0x40155b20</span><span class="op">&gt;</span>
+<span class="op">&gt;&gt;&gt;</span> lignes <span class="op">=</span> file_in.readlines()
+<span class="op">&gt;&gt;&gt;</span> lignes
+[<span class="st">&#39;Ceci est la premiere ligne</span><span class="ch">\n</span><span class="st">&#39;</span>, <span class="st">&#39;Ceci est la deuxieme ligne</span><span class="ch">\n</span><span class="st">&#39;</span>, 
+<span class="co">&#39;Ceci est la troisieme ligne\n&#39;</span>, <span class="st">&#39;Ceci est la quatrieme et derniere ligne</span><span class="ch">\n</span><span class="st">&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="cf">for</span> i <span class="op">in</span> lignes:
+...   <span class="bu">print</span> i
+...
+Ceci est la premiere ligne
+ 
+Ceci est la deuxieme ligne
+ 
+Ceci est la troisieme ligne
+ 
+Ceci est la quatrieme et derniere ligne
+<span class="op">&gt;&gt;&gt;</span> file_in.close()
+<span class="op">&gt;&gt;&gt;</span> file_in
+<span class="op">&lt;</span>closed <span class="bu">file</span> <span class="st">&#39;exemple.txt&#39;</span>, mode <span class="st">&#39;r&#39;</span> at <span class="bn">0x40155b20</span><span class="op">&gt;</span>
+<span class="op">&gt;&gt;&gt;</span> file_in.close()</code></pre></div>
+<h2 id="exemple-read">Exemple <code>read</code></h2>
+<pre class="text"><code>Ceci est la premiere ligne
+Ceci est la deuxieme ligne
+Ceci est la troisieme ligne
+Ceci est la quatrieme et derniere ligne</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> file_in <span class="op">=</span> <span class="bu">open</span>(<span class="st">&quot;exemple.txt&quot;</span>, <span class="st">&quot;r&quot;</span>)
+<span class="op">&gt;&gt;&gt;</span> file_in.read()
+<span class="co">&#39;Ceci est la premiere ligne\nCeci est la deuxieme ligne\nCeci est la troisieme ligne\nCeci est la quatrieme et derniere ligne\n&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> file_in.close()</code></pre></div>
+<h2 id="exemple-tell">Exemple <code>tell</code></h2>
+<pre class="text"><code>Ceci est la premiere ligne
+Ceci est la deuxieme ligne
+Ceci est la troisieme ligne
+Ceci est la quatrieme et derniere ligne</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> file_in <span class="op">=</span> <span class="bu">open</span>(<span class="st">&quot;exemple.txt&quot;</span>, <span class="st">&quot;r&quot;</span>)
+<span class="op">&gt;&gt;&gt;</span> file_in.tell()
+0L
+<span class="op">&gt;&gt;&gt;</span> file_in.readline()
+<span class="co">&#39;Ceci est la premiere ligne\n&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> file_in.tell()
+27L
+<span class="op">&gt;&gt;&gt;</span> file_in.seek(<span class="dv">0</span>)
+<span class="op">&gt;&gt;&gt;</span> file_in.tell()
+0L
+<span class="op">&gt;&gt;&gt;</span> file_in.readline()
+<span class="co">&#39;Ceci est la premiere ligne\n&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> file_in.close()</code></pre></div>
+<h2 id="exemple-write">Exemple <code>write</code></h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span> , <span class="st">&#39;ornithorynque&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> file_out <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;exemple2.txt&#39;</span>,<span class="st">&#39;w&#39;</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="cf">for</span> i <span class="op">in</span> animaux:
+...   file_out.write(i)
+...
+<span class="op">&gt;&gt;&gt;</span> file_out.close()
+<span class="op">&gt;&gt;&gt;</span>
+$ cat exemple2.txt
+girafehippopotamesingedahuornithorynque
+$</code></pre></div>
+<h2 id="utilisation-de-fichiers">Utilisation de fichiers</h2>
+<ul>
+<li><p>Il est important de dissocier les données des programmes qui les utilisent en rangeant ces données dans des fichiers séparés.</p></li>
+<li><p>Pour utiliser un fichier dans Python, il faut commencer par l’ouvrir</p>
+<p>ce qui retourne un objet de type <code>file</code>.</p></li>
+<li><p>Le paramètre facultatif <code>&lt;mode&gt;</code> indique le mode d’ouverture du fichier :</p>
+<ul>
+<li><p><code>r</code> : mode lecture (le fichier doit exister préalablement)</p></li>
+<li><p><code>w</code> : mode écriture (si le fichier existe, les données sont écrasées, sinon le fichier est créé)</p></li>
+<li><p><code>a</code> : mode ajout (si le fichier existe, les données écrites vont l’être après celles existantes, sinon le fichier est créé)</p></li>
+</ul></li>
+<li><p>Si le mode est omis, le mode par défaut est <code>r</code>.</p></li>
+</ul>
+<h2 id="utilisation-de-fichiers-1">Utilisation de fichiers</h2>
+<ul>
+<li><p>un objet de type <code>file</code> est associé à des attributs et des méthodes. En voici quelques-unes :</p>
+<ul>
+<li><p><code>read([&lt;n&gt;])</code> : Retourne la chaîne des <code>&lt;n&gt;</code> caractères restants.</p></li>
+<li><p><code>write(&lt;ch&gt;)</code> : Ecrit la chaîne de caractères <code>&lt;ch&gt;</code>.</p></li>
+<li><p><code>close()</code> : Ferme le fichier quand il est fini d’être utilisé.</p></li>
+<li><p><code>seek(&lt;n&gt;)</code> : Choisit le caractère <code>&lt;n&gt;</code> comme position courante du fichier.</p></li>
+<li><p><code>tell()</code>: Retourne le caractère en position courante.</p></li>
+</ul></li>
+</ul>
+</body>
+</html>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<!-- Begin header --><title>Zhentao Li's Homepage</title>
+
+
+
+
+
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="imagetoolbar" content="no">
+    <link rel="stylesheet" type="text/css" href="css/greenStyle.css">
+    <meta name="Description" content="Initiation à la programmation en Python - Cours 3">
+</head><body>
+
+<div id="page">
+<a name="top"></a>
+
+<div id="header">
+<div class="begin_frame"></div> 
+  <h1>Zhentao Li's Homepage</h1>
+  <h2>Initiation à la programmation en Python</h2>
+  <h2>Cours 3</h2>
+<div class="end_frame"></div>
+</div>
+
+
+
+<div id="main">
+<div class="begin_main"></div>
+
+<div class="frame">
+<div class="begin_frame"></div>
+<h2>Encodage</h2>
+
+Chaque chaîne de caractères a une représentation numérique (on peut voir cette représentation en appellant la fonction <code>repr</code>). Cette numérisation (transformation utilisant un dictionnaire de chaque caractère vers un chiffre et vice versa) peut varier pour les lettres à accents: é, à, ê, etc. Ce qui peut causer des erreurs d'affichage (dans l'interpréteur Python, par exemple).
+
+<image src="poe-iso.png">
+
+Ces dictionnaires sont appelés <em>encodage</em> et si vous connaissez le nom de l'encodage utlisé, c'est possible de le traduire dans un autre encodage qui va être représenté sur l'écran correctement.
+
+<image src="poe-decode.png">
+
+Pour ce faire, nous appellons <code>code.decode</code> avec le nom de l'encodage en paramètre. Pour déterminer l'encodage, il est possible d'utiliser un module comme <a href="https://pypi.python.org/pypi/chardet">chardet</a>.
+
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">chardet</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chardet</span><span class="o">.</span><span class="n">detect</span><span class="p">(</span><span class="n">texte</span><span class="p">)</span>
+<span class="go">{&#39;confidence&#39;: 0.99, &#39;encoding&#39;: &#39;ISO-8859-8&#39;}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoding</span> <span class="o">=</span> <span class="n">chardet</span><span class="o">.</span><span class="n">detect</span><span class="p">(</span><span class="n">texte</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">texte</span><span class="p">[:</span><span class="mi">200</span><span class="p">]</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">encoding</span><span class="p">[</span><span class="s">&quot;encoding&quot;</span><span class="p">])</span>
+</pre></div>
+
+<a class="top" href="#top">top</a>
+<div class="end_frame"></div>
+</div>
+
+<!-- Begin footer -->
+
+
+<div class="end_main"></div>
+</div> <!-- end main div -->
+
+<div class="hr"></div>
+
+
+</div> <!-- end page div -->
+
+</body></html>

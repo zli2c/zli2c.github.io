@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Zhentao Li" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="tp6.html">Cours 6</a> 
+              <a class="leftmenu" href="tp6c.html">Corrigé 6</a> 
+              <a class="leftmenu" href="tp7.html">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="10"></td>
+                <td valign="top" class="mainbox">
+
+<p>Programmes vus en TP: <a href="./fichiers-tp3c/q1.py">q1.py</a> <a href="./fichiers-tp3c/q2.py">q2.py</a> <a href="./fichiers-tp3c/q3.py">q3.py</a></p>
+<p><a href="./fichiers-tp3c/tri.py">Exemple de programme pour le tri</a></p>
+<h2 id="exercice---la-crypto-cest-rigolo">Exercice - La crypto c'est rigolo</h2>
+<p><strong>Cryptographie</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Dans un interpréteur Python créez la chaîne de caractères <code>message</code> contenant la valeur <code>'ceci est mon message a chiffrer'</code>. A l'aide d'une boucle <code>for</code> sur cette chaîne, chiffrer la par un décalage de 3 (chiffre de César). Par exemple la lettre <code>a</code> sera chiffrée en la lettre <code>d</code> (et la lettre <code>x</code> en la lettre <code>a</code>).</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> message <span class="op">=</span> <span class="st">&#39;ceci est mon message a chiffrer&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> 
+<span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> decalage(caractere, valeur):
+...     indice <span class="op">=</span> <span class="bu">ord</span>(caractere) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>)
+...     nouvel_indice <span class="op">=</span> (indice <span class="op">+</span> valeur) <span class="op">%</span> <span class="dv">26</span>
+...     <span class="cf">return</span> <span class="bu">chr</span>(nouvel_indice <span class="op">+</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>))
+... 
+<span class="op">&gt;&gt;&gt;</span> chiffre<span class="op">=</span><span class="st">&#39;&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="cf">for</span> lettre <span class="op">in</span> message.lower():
+...     <span class="cf">if</span> lettre.isalpha():
+...         chiffre <span class="op">=</span> chiffre <span class="op">+</span> decalage(lettre, <span class="dv">3</span>)
+...     <span class="cf">else</span>:
+...         chiffre <span class="op">=</span> chiffre <span class="op">+</span> lettre
+... 
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> chiffre
+fhfl hvw prq phvvdjh d fkliiuhu</code></pre></div>
+<p><a href="http://www.pythontutor.com/visualize.html#code=message+%3D+&#39;ceci+est+mon+message+a+chiffrer&#39;%0A%0Adef+decalage%28caractere,+valeur%29%3A%0A++++indice+%3D+ord%28caractere%29+-+ord%28&#39;a&#39;%29%0A++++nouvel_indice+%3D+%28indice+%2B+valeur%29+%25+26%0A++++return+chr%28nouvel_indice+%2B+ord%28&#39;a&#39;%29%29%0A%0Achiffre%3D&#39;&#39;%0Afor+lettre+in+message.lower%28%29%3A%0A++++if+lettre.isalpha%28%29%3A%0A++++++++chiffre+%3D+chiffre+%2B+decalage%28lettre,+3%29%0A++++else%3A%0A++++++++chiffre+%3D+chiffre+%2B+lettre%0A%0Aprint+chiffre&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a></p></li>
+<li><p>Écrire un script Python qui chiffre (ou déchiffre selon le choix de l'utilisateur) une chaîne de caractères entrée au clavier avec une clé (<em>i.e.</em>un décalage) choisi aussi par l'utilisateur. On définira les fonctions <code>chiffrer</code> et <code>dechiffrer</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> decalage(caractere, valeur):
+    indice <span class="op">=</span> <span class="bu">ord</span>(caractere) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>)
+    nouvel_indice <span class="op">=</span> (indice <span class="op">+</span> valeur) <span class="op">%</span> <span class="dv">26</span>
+    <span class="cf">return</span> <span class="bu">chr</span>(nouvel_indice <span class="op">+</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>))
+
+<span class="kw">def</span> chiffrer(texte, cle):
+    chiffre <span class="op">=</span> <span class="st">&#39;&#39;</span>
+
+    <span class="cf">for</span> lettre <span class="op">in</span> texte.lower():
+        <span class="cf">if</span> lettre.isalpha():
+            chiffre <span class="op">=</span> chiffre <span class="op">+</span> decalage(lettre, cle)
+        <span class="cf">else</span>:
+            chiffre <span class="op">=</span> chiffre <span class="op">+</span> lettre
+    <span class="cf">return</span> chiffre
+
+<span class="kw">def</span> dechiffrer(texte, cle):
+    <span class="cf">return</span> chiffrer(texte, <span class="dv">26</span><span class="op">-</span>cle)
+
+message <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer le texte a chiffrer/dechiffrer : &quot;</span>)
+cle <span class="op">=</span> <span class="bu">int</span>(<span class="bu">raw_input</span>(<span class="st">&quot;Entrer le decalage (0 a 26) : &quot;</span>))
+operation <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer &#39;c&#39; pour chiffrer ou &#39;d&#39; pour dechiffrer : &quot;</span>)
+
+<span class="cf">if</span> operation <span class="op">==</span> <span class="st">&#39;c&#39;</span>:
+    <span class="bu">print</span> chiffrer(message, cle)
+<span class="cf">elif</span> operation <span class="op">==</span> <span class="st">&#39;d&#39;</span>:
+    <span class="bu">print</span> dechiffrer(message, cle)
+<span class="cf">else</span>:
+    <span class="cf">raise</span> <span class="pp">Exception</span>(<span class="st">&quot;Operation &#39;</span><span class="sc">%s</span><span class="st">&#39; inconnue&quot;</span> <span class="op">%</span> operation)</code></pre></div>
+<p><a href="http://www.pythontutor.com/visualize.html#code=def+decalage%28caractere,+valeur%29%3A%0A++++indice+%3D+ord%28caractere%29+-+ord%28&#39;a&#39;%29%0A++++nouvel_indice+%3D+%28indice+%2B+valeur%29+%25+26%0A++++return+chr%28nouvel_indice+%2B+ord%28&#39;a&#39;%29%29%0A%0Adef+chiffrer%28texte,+cle%29%3A%0A++++chiffre+%3D+&#39;&#39;%0A%0A++++for+lettre+in+texte.lower%28%29%3A%0A++++++++if+lettre.isalpha%28%29%3A%0A++++++++++++chiffre+%3D+chiffre+%2B+decalage%28lettre,+cle%29%0A++++++++else%3A%0A++++++++++++chiffre+%3D+chiffre+%2B+lettre%0A++++return+chiffre%0A%0Adef+dechiffrer%28texte,+cle%29%3A%0A++++return+chiffrer%28texte,+26-cle%29%0A%0Amessage+%3D+raw_input%28%22Entrer+le+texte+a+chiffrer/dechiffrer+%3A+%22%29%0Acle+%3D+int%28raw_input%28%22Entrer+le+decalage+%280+a+26%29+%3A+%22%29%29%0Aoperation+%3D+raw_input%28%22Entrer+&#39;c&#39;+pour+chiffrer+ou+&#39;d&#39;+pour+dechiffrer+%3A+%22%29%0A%0Aif+operation+%3D%3D+&#39;c&#39;%3A%0A++++print+chiffrer%28message,+cle%29%0Aelif+operation+%3D%3D+&#39;d&#39;%3A%0A++++print+dechiffrer%28message,+cle%29%0Aelse%3A%0A++++raise+Exception%28%22Operation+&#39;%25s&#39;+inconnue%22+%25+operation%29&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a></p></li>
+<li><p>Modifier le script précédent pour qu'il utilise la méthode de chiffrement de Vigenère : la clé est désormais une chaîne de caractères et le chiffrement se fait en décalant la i-ème lettre du message gràce à la i-ème lettre de la clé (on reprend au début de la clef quand on a fini de lire celle-ci) suivant la règle naturelle A=1,B=2,...,Z=26(=0).</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> decalage(caractere, valeur):
+    indice <span class="op">=</span> <span class="bu">ord</span>(caractere) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>)
+    nouvel_indice <span class="op">=</span> (indice <span class="op">+</span> valeur) <span class="op">%</span> <span class="dv">26</span>
+    <span class="cf">return</span> <span class="bu">chr</span>(nouvel_indice <span class="op">+</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>))
+
+<span class="kw">def</span> chiffrer(texte, cle, mode):
+    chiffre<span class="op">=</span><span class="st">&#39;&#39;</span>
+
+    i <span class="op">=</span> <span class="dv">0</span>
+    <span class="cf">for</span> lettre <span class="op">in</span> texte.lower():
+        <span class="cf">if</span> lettre.isalpha():
+            clei <span class="op">=</span> <span class="bu">ord</span>(cle[i]) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>) <span class="op">+</span> <span class="dv">1</span>
+            <span class="cf">if</span> mode <span class="op">==</span> <span class="st">&#39;d&#39;</span>:
+                clei <span class="op">=</span> <span class="dv">26</span> <span class="op">-</span> clei
+            chiffre <span class="op">=</span> chiffre <span class="op">+</span> decalage(lettre, clei)
+        <span class="cf">else</span>:
+            chiffre <span class="op">=</span> chiffre <span class="op">+</span> lettre
+        i <span class="op">=</span> (i<span class="dv">+1</span>) <span class="op">%</span> <span class="bu">len</span>(cle)
+    <span class="cf">return</span> chiffre
+
+<span class="kw">def</span> alpha(cle):
+    cle_alpha <span class="op">=</span> <span class="st">&quot;&quot;</span>
+    <span class="cf">for</span> lettre <span class="op">in</span> cle:
+        <span class="cf">if</span> lettre.isalpha():
+            cle_alpha <span class="op">+=</span> lettre.lower()
+    <span class="cf">return</span> cle_alpha
+
+message <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer le texte a chiffrer/dechiffrer : &quot;</span>)
+cle <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer la cle : &quot;</span>)
+operation <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer &#39;c&#39; pour chiffrer ou &#39;d&#39; pour dechiffrer : &quot;</span>)
+
+cle_alpha <span class="op">=</span> alpha(cle)
+
+<span class="bu">print</span> chiffrer(message, cle_alpha, operation)
+
+nom_fichier <span class="op">=</span> <span class="st">&quot;Poe.txt&quot;</span>
+contenu_fichier <span class="op">=</span> <span class="bu">open</span>(nom_fichier).read()</code></pre></div></li>
+<li><p>Modifier le script précédent pour qu'il chiffre/déchiffre un fichier dont le chemin est entré par l'utilisateur. On pourra utiliser cette <a href="Poe.txt">nouvelle</a> de Edgar Poe pour tester le script.</p>
+<p>Pour obtenir le contenu d'un fichier a partir de son nom, vous pouvez utiliser. Nous verrons plus en détail les fonctions reliés aux fichiers au prochain cours.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">nom_fichier <span class="op">=</span> <span class="st">&quot;Poe.txt&quot;</span>
+contenu_fichier <span class="op">=</span> <span class="bu">open</span>(nom_fichier).read()</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> decalage(caractere, valeur):
+    indice <span class="op">=</span> <span class="bu">ord</span>(caractere) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>)
+    nouvel_indice <span class="op">=</span> (indice <span class="op">+</span> valeur) <span class="op">%</span> <span class="dv">26</span>
+    <span class="cf">return</span> <span class="bu">chr</span>(nouvel_indice <span class="op">+</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>))
+
+<span class="kw">def</span> chiffrer(texte, cle, mode):
+    chiffre<span class="op">=</span><span class="st">&#39;&#39;</span>
+
+    i <span class="op">=</span> <span class="dv">0</span>
+    <span class="cf">for</span> lettre <span class="op">in</span> texte.lower():
+        <span class="cf">if</span> lettre.isalpha():
+            clei <span class="op">=</span> <span class="bu">ord</span>(cle[i]) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>) <span class="op">+</span> <span class="dv">1</span>
+            <span class="cf">if</span> mode <span class="op">==</span> <span class="st">&#39;d&#39;</span>:
+                clei <span class="op">=</span> <span class="dv">26</span> <span class="op">-</span> clei
+            chiffre <span class="op">=</span> chiffre <span class="op">+</span> decalage(lettre, clei)
+        <span class="cf">else</span>:
+            chiffre <span class="op">=</span> chiffre <span class="op">+</span> lettre
+        i <span class="op">=</span> (i<span class="dv">+1</span>) <span class="op">%</span> <span class="bu">len</span>(cle)
+    <span class="cf">return</span> chiffre
+
+<span class="kw">def</span> alpha(cle):
+    cle_alpha <span class="op">=</span> <span class="st">&quot;&quot;</span>
+    <span class="cf">for</span> lettre <span class="op">in</span> cle:
+        <span class="cf">if</span> lettre.isalpha():
+            cle_alpha <span class="op">+=</span> lettre.lower()
+    <span class="cf">return</span> cle_alpha
+
+message <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer le texte a chiffrer/dechiffrer : &quot;</span>)
+nom_fichier <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer le nom du fichier cle : &quot;</span>)
+cle <span class="op">=</span> <span class="bu">open</span>(nom_fichier).read()
+operation <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer &#39;c&#39; pour chiffrer ou &#39;d&#39; pour dechiffrer : &quot;</span>)
+
+cle_alpha <span class="op">=</span> alpha(cle)
+
+<span class="bu">print</span> chiffrer(message, cle_alpha, operation)</code></pre></div></li>
+</ol>
+<p><strong>Cryptanalyse</strong></p>
+<p>Comme expliqué dans la nouvelle de E. Poe, les chiffrements par substitution alphabétique peuvent être <em>casser</em> facilement par une analyse fréquentielle. Par exemple, dans un texte écrit en langue française, la lettre la plus fréquente est généralement le &quot;E&quot; et puisqu'un chiffrement de César ne modifie pas les fréquences, la lettre qui apparaît le plus fréquemment dans le texte chiffré correspond vraisemblablement à &quot;E&quot; et si c'est le cas le décalage entre les deux lettres donne la clé et permet de retrouver l'intégralité du message clair.</p>
+<ol style="list-style-type: decimal">
+<li><p>Écrire une fonction Python qui prenant en entrée une chaîne de caractères (ou un fichier texte) affiche la fréquence des caractères qui le composent.</p></li>
+<li><p>Modifier le programme précédent pour qu'il affiche la lettre qui apparaît le plus de fois.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">nom_fichier <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer le nom du fichier : &quot;</span>)
+texte <span class="op">=</span> <span class="bu">open</span>(nom_fichier).read()
+compteur <span class="op">=</span> [<span class="dv">0</span>] <span class="op">*</span> <span class="dv">26</span>
+
+<span class="cf">for</span> lettre <span class="op">in</span> texte.lower():
+    <span class="cf">if</span> lettre.isalpha():
+        compteur[<span class="bu">ord</span>(lettre) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>)] <span class="op">+=</span> <span class="dv">1</span>
+
+indice_max <span class="op">=</span> <span class="dv">0</span>
+<span class="cf">for</span> indice <span class="op">in</span> <span class="bu">range</span>(<span class="dv">26</span>):
+    <span class="bu">print</span> <span class="st">&quot;&#39;</span><span class="sc">%s</span><span class="st">&#39; apparait </span><span class="sc">%s</span><span class="st"> fois&quot;</span> <span class="op">%</span> (<span class="bu">chr</span>(indice<span class="op">+</span><span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>)), compteur[indice])
+    <span class="cf">if</span> (compteur[indice] <span class="op">&gt;</span> compteur[indice_max]): 
+        indice_max <span class="op">=</span> indice
+
+<span class="bu">print</span> <span class="st">&quot;&#39;</span><span class="sc">%s</span><span class="st">&#39; apparait le plus de fois&quot;</span> <span class="op">%</span> <span class="bu">chr</span>(indice_max<span class="op">+</span><span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>))</code></pre></div></li>
+<li><p>Utiliser cette fonction pour créer une fonction qui prend en entrée un texte chiffré avec le chiffrement de César (mais pas la clé) et retourne un texte clair associé. On pourra demander à l'utilisateur de valider que ce texte est correct (et si ce n'est pas le cas proposer un nouveau texte clair probable).</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> decalage(caractere, valeur):
+    indice <span class="op">=</span> <span class="bu">ord</span>(caractere) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>)
+    nouvel_indice <span class="op">=</span> (indice <span class="op">+</span> valeur) <span class="op">%</span> <span class="dv">26</span>
+    <span class="cf">return</span> <span class="bu">chr</span>(nouvel_indice <span class="op">+</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>))
+
+<span class="kw">def</span> chiffrer(texte, cle):
+    chiffre<span class="op">=</span><span class="st">&#39;&#39;</span>
+
+    <span class="cf">for</span> lettre <span class="op">in</span> texte.lower():
+        <span class="cf">if</span> lettre.isalpha():
+            chiffre <span class="op">=</span> chiffre <span class="op">+</span> decalage(lettre, cle)
+        <span class="cf">else</span>:
+            chiffre <span class="op">=</span> chiffre <span class="op">+</span> lettre
+    <span class="cf">return</span> chiffre
+
+<span class="kw">def</span> dechiffrer(texte, cle):
+    <span class="cf">return</span> chiffrer(texte, <span class="dv">26</span><span class="op">-</span>cle)
+
+<span class="kw">def</span> compte_lettres(texte):
+    compteur <span class="op">=</span> [<span class="dv">0</span>] <span class="op">*</span> <span class="dv">26</span>
+    <span class="cf">for</span> lettre <span class="op">in</span> texte.lower():
+        <span class="cf">if</span> lettre.isalpha():
+            compteur[<span class="bu">ord</span>(lettre) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&#39;a&#39;</span>)] <span class="op">+=</span> <span class="dv">1</span>
+
+    indice_max <span class="op">=</span> <span class="dv">0</span>
+    <span class="cf">for</span> indice <span class="op">in</span> <span class="bu">range</span>(<span class="dv">26</span>):
+        <span class="cf">if</span> (compteur[indice] <span class="op">&gt;</span> compteur[indice_max]): 
+            indice_max <span class="op">=</span> indice
+
+    <span class="cf">return</span> (compteur, indice_max)
+
+nom_fichier <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Entrer le nom du fichier : &quot;</span>)
+texte <span class="op">=</span> <span class="bu">open</span>(nom_fichier).read()
+compteur, indice_max <span class="op">=</span> compte_lettres(texte)
+
+indice_e <span class="op">=</span> <span class="dv">4</span>
+<span class="cf">for</span> indice <span class="op">in</span> <span class="bu">range</span>(indice_max, <span class="dv">26</span>) <span class="op">+</span> <span class="bu">range</span>(<span class="dv">0</span>, indice_max):
+    cle <span class="op">=</span> (indice <span class="op">-</span> indice_e) <span class="op">%</span> <span class="dv">26</span>
+    <span class="bu">print</span> dechiffrer(texte, cle)
+    <span class="bu">print</span> <span class="st">&quot;Cle : </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> cle
+    verification <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&quot;Est-ce que ce texte semble etre le texte decrypte? Entrer &#39;o&#39;ui ou &#39;n&#39;on : &quot;</span>)
+    <span class="cf">if</span> verification <span class="op">==</span> <span class="st">&quot;o&quot;</span> <span class="op">or</span> verification <span class="op">==</span> <span class="st">&#39;oui&#39;</span>:
+        <span class="cf">break</span></code></pre></div>
+<p>Exemple de lancement, supposant que nous avons écrit un message chiffré dans le fichier chiffre.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">$ cat chiffre
+fhfl hvw xq phvvdjh d fkliiuhu
+$ python dechiffreur<span class="op">-</span>auto.py
+Entrer le nom du fichier : chiffre
+ceci est un message a chiffrer
+
+Cle : <span class="dv">3</span>
+Est<span class="op">-</span>ce que ce texte semble etre le texte decrypte? Entrer <span class="st">&#39;o&#39;</span>ui ou <span class="st">&#39;n&#39;</span>on : o</code></pre></div></li>
+<li><p>**L'encyclopédie Wikipedia propose un article expliquant une méthode de cryptanalyse du <a href="http://fr.wikipedia.org/wiki/Cryptanalyse_du_chiffre_de_Vigen%C3%A8re">chiffrement de Vigenère</a> reposant sur les mêmes principes. Écrire une fonction Python qui prend un entrée un texte chiffré avec le chiffrement de Vigenère (mais pas la clé) et retourne un texte clair associé possible.</p></li>
+</ol>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+cat duallp duallpsetcols > duallpall
+for v in `cat ccomplement`
+do
+ #echo $v
+ echo max:cy$v\; | cat - duallpall | lp_solve | grep ^Val || echo cy$v
+done > reducible

@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Zhentao Li" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="tp6.html">Cours 6</a> 
+              <a class="leftmenu" href="tp6c.html">Corrigé 6</a> 
+              <a class="leftmenu" href="tp7.html">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="10"></td>
+                <td valign="top" class="mainbox">
+
+<h1 id="les-listes">Les listes</h1>
+<h2 id="type-list">Type <code>list</code></h2>
+<p>Comme les chaînes de caractères, parfois nous voulons une chaîne de <code>int</code> ou une chaîne d'autre chose. En Python ces « chaînes » sont des <strong>listes</strong> (de type <code>list</code>), une suite de valeurs quelconque.</p>
+<p>Les valeurs contenus ne sont pas forcément du même type.</p>
+<p>Une liste est crée par une série de valeurs séparées par des virgules, et le tout encadré par des crochets:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> taille <span class="op">=</span> [<span class="fl">5.0</span>, <span class="fl">1.0</span>, <span class="fl">0.7</span>, <span class="fl">2.0</span>]
+<span class="op">&gt;&gt;&gt;</span> mix <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>, <span class="fl">5.0</span>, <span class="st">&#39;dahu&#39;</span>, <span class="dv">2</span>]
+<span class="op">&gt;&gt;&gt;</span> animaux
+[<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> animaux
+[<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> taille
+[<span class="fl">5.0</span>, <span class="fl">1.0</span>, <span class="fl">0.7</span>, <span class="fl">2.0</span>]
+<span class="op">&gt;&gt;&gt;</span> mix
+[<span class="st">&#39;girafe&#39;</span>, <span class="fl">5.0</span>, <span class="st">&#39;dahu&#39;</span>, <span class="dv">2</span>]</code></pre></div>
+<p><a href="http://www.pythontutor.com/visualize.html#code=animaux+%3D+%5B&#39;girafe&#39;,+&#39;hippopotame&#39;,+&#39;singe&#39;,+&#39;dahu&#39;%5D%0Ataille+%3D+%5B5.0,+1.0,+0.7,+2.0%5D%0Amix+%3D+%5B&#39;girafe&#39;,+5.0,+&#39;dahu&#39;,+2%5D%0Aprint+animaux%5B0%5D%0Aprint+animaux%5B1%5D%0Aprint+animaux%5B3%5D%0Adeux_animaux+%3D+%5B&#39;aigle&#39;,&#39;ecureuil&#39;%5D%0Aprint+deux_animaux+%2B+deux_animaux%0Aprint+deux_animaux+*+3%0Aprint+animaux%5B-4%5D%0Aprint+animaux%5B-2%5D%0Aprint+animaux%5B-1%5D%0Aanimaux+%3D+%5B&#39;girafe&#39;,+&#39;hippopotame&#39;,+&#39;singe&#39;,+&#39;dahu&#39;+,+&#39;ornithorynque&#39;%5D%0Aprint+animaux%5B0%3A2%5D%0Aprint+animaux%5B0%3A3%5D%0Aprint+animaux%5B%3A%5D%0Aprint+animaux%5B1%3A%5D%0Aprint+animaux%5B1%3A-1%5D%0Aprint+len%28animaux%29&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a></p>
+<h2 id="les-listes-1">Les listes</h2>
+<ul>
+<li>On peut rappeler ses éléments par leur numéro de position <strong>indice</strong>.</li>
+<li>Les indice d'une liste de <span class="math inline"><em>n</em></span> éléments commence à <span class="math inline">0</span> et se termine à <span class="math inline"><em>n</em> − 1</span></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>,<span class="st">&#39;hippopotame&#39;</span>,<span class="st">&#39;singe&#39;</span>,<span class="st">&#39;dahu&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> animaux[<span class="dv">0</span>]
+<span class="co">&#39;girafe&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> animaux[<span class="dv">1</span>]
+<span class="co">&#39;hippopotame&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> animaux[<span class="dv">3</span>]
+<span class="co">&#39;dahu&#39;</span></code></pre></div>
+<h2 id="les-listes-2">Les listes</h2>
+<p>Tout comme les chaînes de caractères les listes supportent l'opérateur <code>+</code> de concaténation, ainsi que <code>*</code> pour la duplication.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;aigle&#39;</span>,<span class="st">&#39;ecureuil&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> animaux <span class="op">+</span> animaux
+[<span class="st">&#39;aigle&#39;</span>, <span class="st">&#39;ecureuil&#39;</span>, <span class="st">&#39;aigle&#39;</span>, <span class="st">&#39;ecureuil&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> animaux <span class="op">*</span> <span class="dv">3</span>
+[<span class="st">&#39;aigle&#39;</span>, <span class="st">&#39;ecureuil&#39;</span>, <span class="st">&#39;aigle&#39;</span>, <span class="st">&#39;ecureuil&#39;</span>, <span class="st">&#39;aigle&#39;</span>, <span class="st">&#39;ecureuil&#39;</span>]</code></pre></div>
+<h2 id="indiçage-négatif">Indiçage négatif</h2>
+<p>La liste peut également être indexée avec des nombres négatifs selon le modèle suivant :</p>
+<pre class="text"><code>liste         : [&#39;girafe&#39;, &#39;hippopotame&#39;, &#39;singe&#39;, &#39;dahu&#39;]
+index positif :        0              1        2       3
+index négatif :       -4             -3       -2      -1</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>,<span class="st">&#39;hippopotame&#39;</span>,<span class="st">&#39;singe&#39;</span>,<span class="st">&#39;dahu&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> animaux[<span class="op">-</span><span class="dv">4</span>]
+<span class="co">&#39;girafe&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> animaux[<span class="op">-</span><span class="dv">2</span>]
+<span class="co">&#39;singe&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> animaux[<span class="op">-</span><span class="dv">1</span>]
+<span class="co">&#39;dahu&#39;</span></code></pre></div>
+<h2 id="tranches">Tranches</h2>
+<p>Un autre avantage des listes est que l’on peut en sélectionner une <strong>partie</strong> en utilisant un indiçage construit sur le modèle <code>[m:n+1]</code></p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">    <span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span> , <span class="st">&#39;ornithorynque&#39;</span>]
+    <span class="op">&gt;&gt;&gt;</span> animaux[<span class="dv">0</span>:<span class="dv">2</span>]
+    [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>]
+    <span class="op">&gt;&gt;&gt;</span> animaux[<span class="dv">0</span>:<span class="dv">3</span>]
+    [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>]
+    <span class="op">&gt;&gt;&gt;</span> animaux[<span class="dv">0</span>:]
+    [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span>, <span class="st">&#39;ornithorynque&#39;</span>]
+    <span class="op">&gt;&gt;&gt;</span> animaux[:]
+    [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span>, <span class="st">&#39;ornithorynque&#39;</span>]
+    <span class="op">&gt;&gt;&gt;</span> animaux[<span class="dv">1</span>:]
+    [<span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span>, <span class="st">&#39;ornithorynque&#39;</span>]
+    <span class="op">&gt;&gt;&gt;</span> animaux[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>]
+    [<span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span>]</code></pre></div>
+<h2 id="les-instructions-range-et-len">Les instructions <code>range()</code> et <code>len()</code></h2>
+<ul>
+<li><p>L’instruction <code>range</code> vous permet de créer des listes d’entiers de manière simple et rapide.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">range</span>(<span class="dv">10</span>)
+[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">5</span>)
+[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">range</span>(<span class="dv">15</span>,<span class="dv">21</span>)
+[<span class="dv">15</span>, <span class="dv">16</span>, <span class="dv">17</span>, <span class="dv">18</span>, <span class="dv">19</span>, <span class="dv">20</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">1000</span>,<span class="dv">100</span>)
+[<span class="dv">0</span>, <span class="dv">100</span>, <span class="dv">200</span>, <span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>, <span class="dv">900</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="op">-</span><span class="dv">10</span>,<span class="op">-</span><span class="dv">1</span>)
+[<span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">2</span>, <span class="op">-</span><span class="dv">3</span>, <span class="op">-</span><span class="dv">4</span>, <span class="op">-</span><span class="dv">5</span>, <span class="op">-</span><span class="dv">6</span>, <span class="op">-</span><span class="dv">7</span>, <span class="op">-</span><span class="dv">8</span>, <span class="op">-</span><span class="dv">9</span>]</code></pre></div>
+<p><a href="http://www.pythontutor.com/visualize.html#code=print+range%2810%29%0Aprint+range%280,+5%29%0Aprint+range%2815,+21%29%0Aprint+range%280,+1000,+100%29%0Aprint+range%280,+-10,+-1%29&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a></p></li>
+<li><p>L’instruction <code>len</code> vous permet de connaître la longueur d’une liste.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>, <span class="st">&#39;dahu&#39;</span> , <span class="st">&#39;ornithorynque&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(animaux)
+<span class="dv">5</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(<span class="bu">range</span>(<span class="dv">10</span>))
+<span class="dv">10</span></code></pre></div></li>
+</ul>
+<h2 id="linstruction-for">L’instruction <code>for</code></h2>
+<p>Il arrive souvent que nous voulons une boucle pour traverser les éléments d'une liste ou chaîne. L'instruction <code>for</code> permet de simplifier</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">l <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>]
+indice <span class="op">=</span> <span class="dv">0</span>
+<span class="cf">while</span> indice <span class="op">&lt;</span> <span class="bu">len</span>(l):
+    element <span class="op">=</span> l[indice]
+    <span class="co"># Faire quelque chose avec l&#39;element</span>
+    indice <span class="op">=</span> indice <span class="op">+</span> <span class="dv">1</span></code></pre></div>
+<p>à</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">l <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>]
+<span class="cf">for</span> element <span class="op">in</span> l:
+    <span class="co"># Faire quelque chose avec l&#39;element</span></code></pre></div>
+<h2 id="autre-exemple-for">Autre exemple <code>for</code></h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="cf">for</span> lettre <span class="op">in</span> <span class="st">&quot;ciao&quot;</span>:
+    <span class="bu">print</span> lettre <span class="co"># c i a o</span>
+
+<span class="cf">for</span> x <span class="op">in</span> [<span class="dv">2</span>, <span class="st">&#39;a&#39;</span>, <span class="fl">3.14</span>]:
+    <span class="bu">print</span> x <span class="co"># 2 a 3.14</span>
+
+<span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="dv">5</span>):
+    <span class="bu">print</span> i <span class="co"># 0 1 2 3 4</span></code></pre></div>
+<p>Syntaxe</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="cf">for</span> variable <span class="op">in</span> <span class="bu">list</span>:
+    instruction1
+    instruction2</code></pre></div>
+<h2 id="linstruction-break">L’instruction <code>break</code></h2>
+<p>L’instruction <code>break</code> interrompt les boucles <code>for</code> comme pour les boucles <code>while</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="cf">for</span> x <span class="op">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>):
+   <span class="cf">if</span> x <span class="op">==</span> <span class="dv">5</span>:
+      <span class="cf">break</span>
+   <span class="bu">print</span> x,
+
+<span class="bu">print</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">Boucle interrompue pour x =&quot;</span>, x</code></pre></div>
+<p><a href="http://www.pythontutor.com/visualize.html#code=for+x+in+range%281,+11%29%3A%0A+++if+x+%3D%3D+5%3A%0A++++++break%0A+++print+x,%0A%0Aprint+%22%5CnBoucle+interrompue+pour+x+%3D%22,+x&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a></p>
+<p>Résultat</p>
+<pre class="text"><code>1 2 3 4 
+Boucle interrompue pour x = 5</code></pre>
+<h2 id="linstruction-continue">L’instruction <code>continue</code></h2>
+<p>L’instruction <code>continue</code> fait passer à l’itération suivante les instructions <code>while</code> ou <code>for</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="cf">for</span> x <span class="op">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>):
+   <span class="cf">if</span> x <span class="op">==</span> <span class="dv">5</span>:
+      <span class="cf">continue</span>
+   <span class="bu">print</span> x,
+
+<span class="bu">print</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">La boucle a sauté la valeur 5&quot;</span></code></pre></div>
+<p><a href="http://www.pythontutor.com/visualize.html#code=for+x+in+range%281,+11%29%3A%0A+++if+x+%3D%3D+5%3A%0A++++++continue%0A+++print+x,%0A%0Aprint+%22%5CnLa+boucle+a+saut%C3%A9+la+valeur+5%22%0A&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a></p>
+<p>Résultat</p>
+<pre class="text"><code>1 2 3 4 6 7 8 9 10
+La boucle a sauté la valeur 5</code></pre>
+<h2 id="mutation">Mutation</h2>
+<p>Les <code>list</code>s sont <em>mutable</em>: la valeur d'une variable peut changer sans réassignation.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> liste1 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]
+<span class="op">&gt;&gt;&gt;</span> liste2 <span class="op">=</span> liste1
+<span class="op">&gt;&gt;&gt;</span> liste2
+[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]
+<span class="op">&gt;&gt;&gt;</span> liste2[<span class="dv">2</span>] <span class="op">=</span> <span class="dv">0</span>
+<span class="op">&gt;&gt;&gt;</span> liste1
+[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">0</span>]</code></pre></div>
+<p><a href="http://pythontutor.com/visualize.html#code=liste1+%3D+%5B1,+2,+3%5D%0Aliste2+%3D+liste1%0Aprint+liste2%0Aliste2%5B2%5D+%3D+0%0Aprint+liste1&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a> et observer où pointent les flèches.</p>
+<p><code>liste2</code> a été réassignée mais pas <code>liste1</code> alors que sa valeur a changée! Essayez le même exercice avec d'autre types, <code>str</code> par exemple.</p>
+<p><strong>Attention:</strong> certaines opérations renvoient des nouvelles listes alors que d'autre modifient la variable.</p>
+<h2 id="type-tuple">Type <code>tuple</code></h2>
+<p>Un cousin des <code>list</code>s sont les <code>tuple</code>s. La différence entre les deux est que les <code>tuple</code>s ne sont pas mutable. Sinon leur fonctionnement est presque identique.</p>
+<p>Un <code>tuple</code> est créé par des parenthèses au lieu de crochets.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> t <span class="op">=</span> (<span class="dv">1</span>, <span class="st">&#39;a&#39;</span>, <span class="dv">2</span>)
+<span class="op">&gt;&gt;&gt;</span> t
+(<span class="dv">1</span>, <span class="st">&#39;a&#39;</span>, <span class="dv">2</span>)
+<span class="op">&gt;&gt;&gt;</span> t[<span class="dv">1</span>]
+<span class="co">&#39;a&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> t2 <span class="op">=</span> (<span class="dv">1</span>,)
+<span class="op">&gt;&gt;&gt;</span> t2
+(<span class="dv">1</span>,)</code></pre></div>
+<p>Il faut au moins une virgule pour créer un <code>tuple</code>.</p>
+<h2 id="unpacking">Unpacking</h2>
+<p>Pour des <code>list</code>s et surtout des <code>tuple</code>s qui sont courts, on cherche souvent à stocker les entrées dans des variables séparées.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> animaux[<span class="dv">0</span>]
+<span class="op">&gt;&gt;&gt;</span> b <span class="op">=</span> animaux[<span class="dv">1</span>]
+<span class="op">&gt;&gt;&gt;</span> c <span class="op">=</span> animaux[<span class="dv">2</span>]</code></pre></div>
+<p>Le même résultat peut être obtenu par un déballage (unpacking).</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> animaux <span class="op">=</span> [<span class="st">&#39;girafe&#39;</span>, <span class="st">&#39;hippopotame&#39;</span>, <span class="st">&#39;singe&#39;</span>]
+<span class="op">&gt;&gt;&gt;</span> a, b, c <span class="op">=</span> animaux</code></pre></div>
+<h2 id="opérations-sur-list-et-tuple-avancé">Opérations sur <code>list</code> et <code>tuple</code> (avancé)</h2>
+<p>D'autre opérations qui sont des mutations les <code>list</code>s: <code>append</code>, <code>extend</code>, <code>insert</code>, <code>pop</code>, <code>remove</code>, <code>reverse</code> et <code>sort</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">l <span class="op">=</span> <span class="bu">range</span>(<span class="dv">5</span>)
+l.append(<span class="dv">10</span>)
+l2 <span class="op">=</span> (<span class="st">&#39;a&#39;</span>, <span class="dv">1</span>)
+l.extend(l2)
+l.remove(<span class="dv">1</span>)
+element <span class="op">=</span> l.pop()
+premier_element <span class="op">=</span> l.pop(<span class="dv">0</span>)
+l.reverse()
+l.sort()</code></pre></div>
+<p><a href="http://pythontutor.com/visualize.html#code=l+%3D+range%285%29%0Al.append%2810%29%0Al2+%3D+%28&#39;a&#39;,+1%29%0Al.extend%28l2%29%0Al.remove%281%29%0Aelement+%3D+l.pop%28%29%0Apremier_element+%3D+l.pop%280%29%0Al.reverse%28%29%0Al.sort%28%29&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a> et observer la valeur de <code>l</code> à chaque étape.</p>
+<p><strong>Attention:</strong> Ces opérations évaluent à rien (<code>None</code>). Une erreur récurrente est d'appeler <code>l2 = l.append(10)</code>. Cela met <code>l2</code> à <code>None</code>. Et l'erreur inverse: <code>l1 + l2</code> (érroné) au lieu de <code>l1 = l1 + l2</code> (correcte).</p>
+<p>D'autre opérations sur les <code>list</code>s et <code>tuple</code>s: <code>index</code> et <code>count</code>.</p>
+<h2 id="compréhension-de-liste-très-avancé">Compréhension de liste (très? avancé)</h2>
+<p>Un motif récurrent d'initialisation d'une liste est sa création par une boucle.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">carres <span class="op">=</span> []
+<span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="dv">10</span>):
+    carres.append(i<span class="op">*</span>i)</code></pre></div>
+<p>Dans l'intérêt de la lisibilité du programme, une nouvelle syntaxe a été ajoutée.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">carres <span class="op">=</span> [i<span class="op">*</span>i <span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="dv">10</span>)]
+carres_impairs <span class="op">=</span> [i<span class="op">*</span>i <span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="dv">10</span>) <span class="cf">if</span> i<span class="op">%</span><span class="dv">2</span> <span class="op">==</span> <span class="dv">1</span>]</code></pre></div>
+<p>Cette notation ressemble à la notation d'ensemble en mathématiques.</p>
+<h1 id="les-fonctions">Les fonctions</h1>
+<h2 id="définition-dune-fonction">Définition d’une fonction</h2>
+<p><strong>Rappel:</strong> Nous avons déjà vu comment faire appel à des fonctions eixstantes.</p>
+<ul>
+<li><code>len(s)</code> (appel <code>nom_de_fonction(parametre1, parametre2, ...)</code>)</li>
+<li><code>s.replace(&quot;a&quot;, &quot;b&quot;)</code> (appel <code>variable.nom_de_fonction(parametre1, parametre2, ...)</code>)</li>
+</ul>
+<p>Nous allons maintenant voir comment définir de nouvelles fonctions.</p>
+<p>Les <strong>fonctions</strong> est un autre outil de contrôle du flux d'instructions. Ils permettent de décomposer les programmes en sous-programmes et de réutiliser des morceaux de programmes.</p>
+<h2 id="exemple-de-définition-dune-fonction">Exemple de définition d’une fonction</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> compter_lettre(lettre, texte):
+    n<span class="op">=</span><span class="dv">0</span>
+    <span class="cf">for</span> c <span class="op">in</span> texte :
+        <span class="cf">if</span> c <span class="op">==</span> lettre :
+            n <span class="op">+=</span> <span class="dv">1</span>
+    <span class="cf">return</span> <span class="st">&quot;nombre d&#39;occurences de la lettre </span><span class="sc">%s</span><span class="st"> : </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">\</span>
+               <span class="op">%</span> (lettre, n)
+
+<span class="bu">print</span> compter_lettre(<span class="st">&#39;e&#39;</span>, <span class="st">&#39;je reviens&#39;</span>)</code></pre></div>
+<p><a href="http://www.pythontutor.com/visualize.html#code=def+compter_lettre%28lettre,+texte%29%3A%0A++++n%3D0%0A++++for+c+in+texte+%3A%0A++++++++if+c+%3D%3D+lettre+%3A%0A++++++++++++n+%2B%3D+1%0A++++return+%22nombre+d&#39;occurences+de+la+lettre+%25s+%3A+%25s%22+%5C%0A+++++++++++++++%25+%28lettre,+n%29%0A%0Aprint+compter_lettre%28&#39;e&#39;,+&#39;je+reviens&#39;%29%0A&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a></p>
+<p>Résultat</p>
+<pre class="text"><code>nombre d&#39;occurrences de la lettre e : 3 </code></pre>
+<p><strong>Question (avancé):</strong> Comment peut-on érire l'intérieur de cette fonction avec la compréhension de liste?</p>
+<h2 id="syntaxe">Syntaxe</h2>
+<ul>
+<li><p>Une fonction est un programme Python défini à partir de paramètres d’entrées qui retourne éventuellement une valeur de sortie.</p></li>
+<li><p>La syntaxe d’une fonction Python est la suivante :</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> nom_de_la_fonction(parametre1, parametre2, ...):
+    instruction1
+    instruction2
+    ...</code></pre></div></li>
+<li><p>Une instruction <code>return valeur</code> dans le bloc d’instructions définissant une fonction provoque la fin d’exécution de la fonction avec le retour de la valeur de l’expression qui suit.</p></li>
+</ul>
+<p><strong>Remarque(avancée):</strong> Une fois définie, une fonction peut être manipulée comme tout autre variable!</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> compter_lettre
+<span class="op">&lt;</span>function compter_lettre at <span class="bn">0x7f485e9d45f0</span><span class="op">&gt;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(compter_lettre)
+<span class="op">&lt;</span><span class="bu">type</span> <span class="st">&#39;function&#39;</span><span class="op">&gt;</span></code></pre></div>
+<h2 id="appel-dune-fonction">Appel d’une fonction</h2>
+<ul>
+<li><p>Une fois qu’une fonction <code>f</code> a été définie, elle peut être utilisée dans une expression particulière qu’on nomme un appel de fonction et qui a la forme <code>f(v1,v2,...,vn)</code>, où <code>v1</code>, <code>v2</code>, …, <code>vn</code> sont des expressions dont la valeur est transmise au paramètres.</p></li>
+<li><p>Cela veut dire que d'abord <code>parametre1</code> est assigné la valeur <code>v1</code>, <code>parametre2</code> est assigné la valeur <code>v2</code>, et ainsi de suite. Ensuite le bloc d'instruction est exécuté ligne par ligne, jusqu'à la fin du bloc ou une instruction <code>return</code>.</p></li>
+<li><p>Si la fin du bloc est atteint, la valeur <code>None</code> est retournée.</p></li>
+</ul>
+<h2 id="paramètres-par-défaut">Paramètres par défaut</h2>
+<p>Python offre un mécanisme d’instanciation des paramètres par défaut. On peut écrire la liste des paramètres en entête d’une définition de fonction. Par exemple</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> pluriel(mot, famille <span class="op">=</span> <span class="st">&#39;standard&#39;</span>):
+...     <span class="cf">if</span> famille <span class="op">==</span> <span class="st">&#39;standard&#39;</span>:
+...         <span class="cf">return</span> mot <span class="op">+</span> <span class="st">&#39;s&#39;</span>
+...     <span class="cf">if</span> famille <span class="op">==</span> <span class="st">&#39;s&#39;</span>:
+...         <span class="cf">return</span> mot
+...     <span class="cf">if</span> famille <span class="op">==</span> <span class="st">&#39;oux&#39;</span>:
+...         <span class="cf">return</span> mot <span class="op">+</span> <span class="st">&#39;x&#39;</span>
+...     <span class="cf">if</span> famille <span class="op">==</span> <span class="st">&#39;al&#39;</span>:
+...         <span class="cf">return</span> mot[:<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span><span class="st">&#39;ux&#39;</span>
+
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> pluriel(<span class="st">&#39;maison&#39;</span>)
+<span class="co">&#39;maisons&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> pluriel(<span class="st">&#39;souris&#39;</span>, <span class="st">&#39;s&#39;</span>)
+<span class="co">&#39;souris&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> pluriel(<span class="st">&#39;chou&#39;</span>, <span class="st">&#39;oux&#39;</span>)
+<span class="co">&#39;choux&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> pluriel(<span class="st">&#39;cheval&#39;</span>, <span class="st">&#39;al&#39;</span>)
+<span class="co">&#39;chevaux&#39;</span></code></pre></div>
+<p><a href="http://www.pythontutor.com/visualize.html#code=def+pluriel%28mot,+famille+%3D+&#39;standard&#39;%29%3A%0A++++if+famille+%3D%3D+&#39;standard&#39;%3A%0A++++++++return+mot+%2B+&#39;s&#39;%0A++++if+famille+%3D%3D+&#39;s&#39;%3A%0A++++++++return+mot%0A++++if+famille+%3D%3D+&#39;oux&#39;%3A%0A++++++++return+mot+%2B+&#39;x&#39;%0A++++if+famille+%3D%3D+&#39;al&#39;%3A%0A++++++++return+mot%5B%3A-1%5D+%2B&#39;ux&#39;%0A%0Aprint+pluriel%28&#39;maison&#39;%29%0Aprint+pluriel%28&#39;souris&#39;,+&#39;s&#39;%29%0Aprint+pluriel%28&#39;chou&#39;,+&#39;oux&#39;%29%0Aprint+pluriel%28&#39;cheval&#39;,+&#39;al&#39;%29&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a></p>
+<p><strong>Question 1:</strong> Que se passe-t-il si on appel <code>pluriel</code> avec une <code>famille</code> autre que <code>'standard'</code>, <code>'s'</code>, <code>'oux'</code> ou <code>'al'</code>?</p>
+<p><strong>Question 2:</strong> Que se passe-t-il si on remplace les <code>if</code> par des <code>elif</code> (sauf le premier)?</p>
+<h2 id="paramètres-par-défaut-1">Paramètres par défaut</h2>
+<ul>
+<li><p>Syntaxe</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> nom_de_la_fonction(p_1, ..., p_k, d_1<span class="op">=</span>expr_1,..., d_n<span class="op">=</span>expr_n):
+    instruction1
+    instruction2
+    ...</code></pre></div></li>
+<li><p>Les <em>k</em> premiers paramètres doivent obligatoirement être précisés à l’appel de fonction mais pas les <em>n</em> derniers. L’appel de fonction se fait donc avec <em>k</em> arguments au minimum et <em>k+n</em> arguments au maximum. Si un paramètre <code>d_i</code> n’est pas instancié explicitement, il prend la valeur par défaut de <code>expr_i</code>.</p></li>
+<li><p>Il est possible d'instancier certain paramètre et pas d'autre. Par exemple, avec un appel <code>pluriel(p_1, ..., p_k, d_4 = 10)</code>. <code>d_4</code> prends la valeur <code>10</code> au lieu de <code>expr_4</code>.</p></li>
+</ul>
+<h2 id="variables-locales-et-variables-globales">Variables locales et variables globales</h2>
+<ul>
+<li><p>Les variables qui sont introduites dans la définition d’une fonction peuvent être utilisées dans la suite de la définition mais <strong>pas à l’extérieur de la fonction</strong>.</p></li>
+<li><p>Ces variables sont dites <strong>locales</strong> par opposition aux variables <strong>globales</strong> qui sont introduites à l’extérieur de la définition d’une fonction et qui peuvent être utilisées à l’intérieur comme à l’extérieur de cette définition.</p></li>
+<li><p>Lorsque le même nom est utilisé pour introduire une variable locale et une variable globale, Python distingue bien deux variables différentes mais à l’intérieur de la définition de la fonction, c’est à la variable locale auquel le nom réfère.</p></li>
+</ul>
+<h2 id="variables-locales-et-variables-globales-1">Variables locales et variables globales</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> f(x):
+...     y<span class="op">=</span><span class="dv">2</span>
+...     <span class="cf">return</span> x <span class="op">+</span> y
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> f(<span class="dv">3</span>)
+<span class="dv">5</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> y
+Traceback (most recent call last):
+  File <span class="st">&quot;&lt;pyshell#5&gt;&quot;</span>, line <span class="dv">1</span>, <span class="op">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span>
+    <span class="bu">print</span> y
+<span class="pp">NameError</span>: name <span class="st">&#39;y&#39;</span> <span class="op">is</span> <span class="op">not</span> defined
+<span class="op">&gt;&gt;&gt;</span> u <span class="op">=</span> <span class="dv">7</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> g(v):
+...     <span class="cf">return</span> u <span class="op">*</span> v
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> g(<span class="dv">2</span>)
+<span class="dv">14</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> h(u):
+...     <span class="cf">return</span> u
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> h(<span class="dv">3</span>)
+<span class="dv">3</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> u
+<span class="dv">7</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> k(w):
+...     u <span class="op">=</span> <span class="dv">5</span>
+...     <span class="cf">return</span> w<span class="op">+</span>u
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> k(<span class="dv">3</span>)
+<span class="dv">8</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> u
+<span class="dv">7</span></code></pre></div>
+<p><a href="http://pythontutor.com/visualize.html#code=def+f%28x%29%3A%0A++++y%3D2%0A++++return+x+%2B+y%0Aprint+f%283%29%0A%23+Cette+ligne+g%C3%A9n%C3%A8re+une+erreur%0A%23+print+y%0Au+%3D+7%0Adef+g%28v%29%3A%0A++++return+u+*+v%0Aprint+g%282%29%0Adef+h%28u%29%3A%0A++++return+u%0Aprint+h%283%29%0Aprint+u%0Adef+k%28w%29%3A%0A++++u+%3D+5%0A++++return+w%2Bu%0Aprint+k%283%29%0Aprint+u&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;textReferences=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0">Visualiser l'exécution</a> et observer les variables et leurs valeurs à chaque étape.</p>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

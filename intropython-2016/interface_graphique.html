@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Zhentao Li" />
+  <title>Initiation à la programmation</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+
+
+<body>
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr> 
+    <td colspan="3" class="pos1" height="55" valign="middle"> 
+			<div class="topbox">
+			<table width="100%"><tr><td>
+				<h2>Zhentao Li's Homepage</h2>
+			<td align="right"><h4><b>email:</b>zl zli2 com</h4></td></tr></table>
+			</div>
+    </td>
+  </tr>
+  <tr> 
+  <td>
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="topnav">
+    <tr>
+  	      <td align="left" class="head">
+		  	&nbsp;// <a href="../index.html">home</a> 
+           		   
+		  </td>
+	</tr>
+   </table>
+   </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" width="150"> <br />
+	    <div>
+              <div class="headbox">Liens utiles</div>
+              <a class="leftmenu" href="http://www.pythontutor.com/visualize.html#mode=edit">Python tutor</a>
+	      <a class="leftmenu" href="https://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python">Wikibook</a>
+	      <a class="leftmenu" href="https://python.org">Site officiel Python</a>
+              <div class="headbox">Cours</div>
+              <a class="leftmenu" href=".">Page d'accueil</a> 
+              <a class="leftmenu" href="tp1.html">Cours 1</a> 
+              <a class="leftmenu" href="tp1c.html">Corrigé 1</a> 
+              <a class="leftmenu" href="tp2.html">Cours 2</a> 
+              <a class="leftmenu" href="tp2c.html">Corrigé 2</a> 
+              <a class="leftmenu" href="tp3.html">Cours 3</a> 
+              <a class="leftmenu" href="tp3c.html">Corrigé 3</a> 
+              <a class="leftmenu" href="tp4.html">Cours 4</a> 
+              <a class="leftmenu" href="tp4c.html">Corrigé 4</a> 
+              <a class="leftmenu" href="tp5.html">Cours 5</a> 
+              <a class="leftmenu" href="tp5c.html">Corrigé 5</a> 
+              <a class="leftmenu" href="tp6.html">Cours 6</a> 
+              <a class="leftmenu" href="tp6c.html">Corrigé 6</a> 
+              <a class="leftmenu" href="tp7.html">Cours 7</a> 
+          </td>
+
+
+          <td valign="top"> <br />
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td width="10"></td>
+                <td valign="top" class="mainbox">
+
+<h1 id="interface-graphique">Interface graphique</h1>
+<h2 id="module-tkinter">Module <code>Tkinter</code></h2>
+<p>Plusieurs modules existe pour la créations d'interfaces graphiques. Parmis ceux-ci, <code>Tkinter</code> est inclus dans toutes les versions de Python et n'a donc pas besoin d'installation séparée.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> Tkinter <span class="im">as</span> tk</code></pre></div>
+<p>Si vous avez IPython (normalement inclus dans l'installation de Jupyter du cours dernier), il est possible de voir l'interface créée à fur et mesure, ligne par ligne. Sinon, il faut attendre la dernière ligne avant de voir le tout se matérialiser.</p>
+<p>Un exemple:</p>
+<pre class="small"><code>In [1]: import Tkinter as tk
+In [2]: racine = tk.Tk()</code></pre>
+<div class="figure">
+<img src="tkinter1.png" />
+
+</div>
+<pre class="small"><code>In [3]: etiquette = tk.Label(racine, text=&#39;Bonjour&#39;)
+In [4]: etiquette.pack()</code></pre>
+<div class="figure">
+<img src="tkinter2.png" />
+
+</div>
+<pre class="small"><code>In [5]: bouton = tk.Button(racine, text=&#39;Quitter&#39;, command = racine.destroy)
+In [6]: bouton.pack()</code></pre>
+<div class="figure">
+<img src="tkinter3.png" />
+
+</div>
+<pre class="small"><code>In [7]: racine.mainloop()</code></pre>
+<h2 id="widgets-tkinter">Widgets Tkinter</h2>
+<p>Tkinter inclut les composantes à partir duquel vous pouvez construire votre interface, chacun représenté par une classe. Il est conseillé de lire les ressources sur la page du TP plutôt que le <code>help</code> de ces classes.</p>
+<p>Ces morceaux d'interface sont appellés « widgets ».</p>
+<p><strong>Button:</strong> Button qui exécute un fonction lorsqu'on appui dessus.</p>
+<p><strong>Checkbutton:</strong> Case à cocher.</p>
+<p><strong>Entry:</strong> Champs d'entrée texte.</p>
+<p><strong>Menu:</strong> Un menu déroulant ou bien un menu pop up</p>
+<p><strong>Label:</strong> Étiquette contenant du texte (ou une image).</p>
+<p><strong>Radiobutton:</strong> Permet de choisir une valeur parmi plusieurs possibilités.</p>
+<p><strong>Tk:</strong> « Racine » de l'application graphique. C'est aussi la première fenêtre.</p>
+<p><strong>Toplevel:</strong> Une autre fenêtre qui n'est pas la « racine ».</p>
+<h2 id="widgets-un-peu-plus-complexes">Widgets un peu plus complexes</h2>
+<p><strong>Canvas:</strong> Un espace pour disposer divers éléments dessinés (lignes, cercles, rectangles, etc).</p>
+<p><strong>Menubutton:</strong> Un bouton-menu, à utiliser pour les menus déroulants.</p>
+<p><strong>Listbox:</strong> Une liste de choix proposés à l’utilisateur.</p>
+<p><strong>Scrollbar:</strong> Barre de défilement</p>
+<p><strong>Text:</strong> Affichage de texte formatté. Permet aussi à l’utilisateur d’éditer le texte affiché.</p>
+<h2 id="emplacement">Emplacement</h2>
+<p>Maintenant que nous avons vu quelques widgets de base, il faut spécifier où ils sont placé les uns par rapport aux autres.</p>
+<p>L'emplacement voulue des widgets peut être décrite de trois façons différentes:</p>
+<ol style="list-style-type: decimal">
+<li>En utilisant <strong>Frame</strong>, qui est un contenant de d’autres widgets. Il suffit d'emboîter les <code>Frame</code>s et passer les bons paramètres à la méthode <code>pack</code> pour obtenir l'organisation voulue.</li>
+<li>Utiliser la méthode <code>place</code> à la place de <code>pack</code> pour placer un élément à un endroit exacte.</li>
+<li><code>grid</code> permet de disposer par coordonnées l'emplacement des widgets dans une grille.</li>
+</ol>
+<h2 id="exemple-frame-et-pack">Exemple Frame et pack</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> Tkinter <span class="im">as</span> tk
+racine <span class="op">=</span> tk.Tk()
+premier <span class="op">=</span> tk.Label(racine, text<span class="op">=</span><span class="st">&#39;premier&#39;</span>)
+premier.pack(side<span class="op">=</span><span class="st">&#39;top&#39;</span>)
+deuxieme <span class="op">=</span> tk.Label(racine, text<span class="op">=</span><span class="st">&#39;deuxième&#39;</span>)
+deuxieme.pack(side<span class="op">=</span><span class="st">&#39;top&#39;</span>)
+troisieme <span class="op">=</span> tk.Frame(racine)
+troisieme.pack(side<span class="op">=</span><span class="st">&#39;top&#39;</span>)</code></pre></div>
+<div class="figure">
+<img src="tkinter4.png" />
+
+</div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">gauche <span class="op">=</span> tk.Label(troisieme, text<span class="op">=</span><span class="st">&#39;gauche&#39;</span>)
+gauche.pack(side<span class="op">=</span><span class="st">&#39;left&#39;</span>)
+milieu <span class="op">=</span> tk.Label(troisieme, text<span class="op">=</span><span class="st">&#39;milieu&#39;</span>)
+milieu.pack(side<span class="op">=</span><span class="st">&#39;left&#39;</span>)
+droite <span class="op">=</span> tk.Label(troisieme, text<span class="op">=</span><span class="st">&#39;droite&#39;</span>)
+droite.pack(side<span class="op">=</span><span class="st">&#39;left&#39;</span>)
+racine.mainloop()</code></pre></div>
+<div class="figure">
+<img src="tkinter5.png" />
+
+</div>
+<p><strong>Remarque:</strong> Le premier paramètre donné lors de la création d'un widget est le widget qui devrait contenir celui-ci.</p>
+<p>Les valeurs possible pour <code>side=</code> sont 'top', 'left', 'right', 'bottom'. Ici, les widgets contenus dans un <code>Frame</code> (ou <code>Tk</code> ou <code>Toplevel</code>) sont distribués uniformément. Pour voir les autres options possibles, lire le <code>help(tk.Label.pack)</code> ou les documents de référence.</p>
+<p><strong>Remarque (avancé):</strong> D'avoir mis <code>pack</code> comme méthode du widget contenu (plutôt que le widget contenant) est atypique de Python et est un vestige du langage Tcl/Tk. Le module <code>Tkinter</code> de Python est une interface vers les fonctions de ce langage.</p>
+<h2 id="exemple-place">Exemple <code>place</code></h2>
+<p>Si on ajoute ces deux lignes avant la fin du mainloop dans l'exemple précédent, on verrait le nouveau <code>Label</code> ajouté par dessus le reste.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">flottant <span class="op">=</span> tk.Label(racine, text<span class="op">=</span><span class="st">&#39;flottant&#39;</span>)
+flottant.place(x<span class="op">=</span><span class="dv">10</span>, y<span class="op">=</span><span class="dv">20</span>)</code></pre></div>
+<div class="figure">
+<img src="tkinter7.png" />
+
+</div>
+<p>Ici, nous appelons la méthode <code>place</code> <strong>à la place de</strong> <code>pack</code>.</p>
+<h2 id="exemple-grid">Exemple <code>grid</code></h2>
+<p>Nous pouvons aussi appeller la méthode <code>grid</code> à la place de <code>pack</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> Tkinter <span class="im">as</span> tk
+racine <span class="op">=</span> tk.Tk()
+premier <span class="op">=</span> tk.Label(racine, text<span class="op">=</span><span class="st">&#39;premier&#39;</span>)
+premier.grid(row<span class="op">=</span><span class="dv">1</span>, column<span class="op">=</span><span class="dv">1</span>)
+deuxieme <span class="op">=</span> tk.Label(racine, text<span class="op">=</span><span class="st">&#39;deuxième&#39;</span>)
+deuxieme.grid(row<span class="op">=</span><span class="dv">3</span>, column<span class="op">=</span><span class="dv">2</span>)
+troisieme <span class="op">=</span> tk.Label(racine, text<span class="op">=</span><span class="st">&#39;trosième&#39;</span>)
+troisieme.grid(row<span class="op">=</span><span class="dv">2</span>, column<span class="op">=</span><span class="dv">3</span>)
+racine.mainloop()</code></pre></div>
+<div class="figure">
+<img src="tkinter8.png" />
+
+</div>
+<p>Il est déconseiller d'utiliser <code>grid</code> et <code>pack</code> ensemble dans un même contenant (Frame, Tk ou Toplevel).</p>
+<h2 id="actions-de-lutilisateur">Actions de l'utilisateur</h2>
+<p>Pour exécuter une fonction lorsque l'utilisateur appuie sur la touche Entrée sur un widget Entry, nous pouvons utiliser la</p>
+<div class="sourceCode"><pre class="sourceCode python small"><code class="sourceCode python"><span class="im">import</span> Tkinter <span class="im">as</span> tk
+
+<span class="kw">def</span> touche_entree(widget):
+    <span class="co"># Affiche le contenu entré</span>
+    <span class="bu">print</span> entry.get()
+
+racine <span class="op">=</span> tk.Tk()
+entry <span class="op">=</span> tk.Entry(racine)
+entry.pack()
+entry.bind(<span class="st">&#39;&lt;Return&gt;&#39;</span>, touche_entree)
+racine.mainloop()</code></pre></div>
+<div class="figure">
+<img src="tkinter6.png" />
+
+</div>
+<h2 id="bind">bind</h2>
+<p><code>bind</code> peut aussi associer une fonction aux clicks et movements de la souris, etc. Voici une liste des possibilité <a href="http://www.fil.univ-lille1.fr/~marvie/python/chapitre6.html">obtenue d'ici</a></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Nom</th>
+<th align="left">Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>&lt;KeyPress&gt;</code></td>
+<td align="left">Pression sur n'importe quelle touche</td>
+</tr>
+<tr class="even">
+<td align="left"><code>&lt;KeyPress-a&gt;</code></td>
+<td align="left">Pression sur la touche ‘A’ (minuscule)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt;KeyPress-A&gt;</code></td>
+<td align="left">Pression sur la touche ‘A’ (majuscule)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>&lt;Return&gt;</code></td>
+<td align="left">Pression sur entrée</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt;Escape&gt;</code></td>
+<td align="left">Touche d’échappement</td>
+</tr>
+<tr class="even">
+<td align="left"><code>&lt;Up&gt; &lt;Down&gt;</code></td>
+<td align="left">Pression sur les flèches</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt;Button-1&gt;</code></td>
+<td align="left">Click souris gauche</td>
+</tr>
+<tr class="even">
+<td align="left"><code>&lt;Button-2&gt;</code></td>
+<td align="left">Click souris milieu (ou gauche et droite)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt;Button-3&gt;</code></td>
+<td align="left">Click souris droit</td>
+</tr>
+<tr class="even">
+<td align="left"><code>&lt;ButtonRelease&gt;</code></td>
+<td align="left">Fin de click gauche</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt;Motion&gt;</code></td>
+<td align="left">Mouvement de la souris</td>
+</tr>
+<tr class="even">
+<td align="left"><code>&lt;B1-Motion&gt;</code></td>
+<td align="left">Mouvement de la souris avec click gauche</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt;Enter&gt; &lt;Leave&gt;</code></td>
+<td align="left">Entrée et sortie souris d’un widget</td>
+</tr>
+<tr class="even">
+<td align="left"><code>&lt;Configure&gt;</code></td>
+<td align="left">Redimensionnement de la fenêtre</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt;Map&gt; &lt;Unmap&gt;</code></td>
+<td align="left">Ouverture et iconification de la fenêtre</td>
+</tr>
+</tbody>
+</table>
+<h2 id="idée-du-fonctionnement-en-général">Idée du fonctionnement en général</h2>
+<p>Lorsqu'une action est prise par l'utilisateur, l'idée est de récupérer la valeur des états et selon l'action, engendrer l'effet voulue.</p>
+<p>Cette méthode de fonctionnement, où l'on réagit à des actions par des appels à des fonctions porte le nom de <em>programmation évènementielle</em>.</p>
+<p><strong>Question (avancée):</strong> Comment est-ce que la programmation évènementielle est possible? Nous savons que les programmes sont pourtant exécutés ligne par ligne.</p>
+<h1 id="références">Références</h1>
+<p>Pour une liste plus exhaustive des fonctions de Tkinter et des paramètres que l'on peut leur passer.</p>
+<ul>
+<li><a href="http://www.fil.univ-lille1.fr/~marvie/python/chapitre6.html" class="uri">http://www.fil.univ-lille1.fr/~marvie/python/chapitre6.html</a></li>
+<li><a href="http://python.developpez.com/cours/TutoSwinnen/?page=Chapitre8" class="uri">http://python.developpez.com/cours/TutoSwinnen/?page=Chapitre8</a></li>
+<li><a href="http://effbot.org/tkinterbook/" class="uri">http://effbot.org/tkinterbook/</a></li>
+<li><a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html" class="uri">http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html</a></li>
+</ul>
+                </td>
+              </tr>
+            </table>
+                        <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="pos1">
+    <td height="20" colspan="2" class="bottom" align="right">
+    Website design modified from <a
+    href="http://www.oswd.org/design/information/id/879">Sliqua</a>
+    taken from <a href="http://www.oswd.org">OSWD</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

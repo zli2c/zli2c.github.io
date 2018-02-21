@@ -1,0 +1,9 @@
+echo read $1 lp
+echo optimize
+for i in `cat ccomplement`
+do
+ echo change objective cy$i 1
+ echo optimize
+ echo change objective cy$i 0
+done
+echo quit

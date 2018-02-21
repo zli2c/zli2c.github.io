@@ -1,0 +1,59 @@
+[demo@hearts tp5]$ python
+Python 2.7.10 (default, May 26 2015, 04:16:29) 
+[GCC 5.1.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> [0
+... 
+... 
+KeyboardInterrupt
+>>> [0] * 5
+[0, 0, 0, 0, 0]
+>>> [0,1] * 5
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+>>> mots = texte.split()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'texte' is not defined
+>>> texte = "Ecrire un programme Python qui genere une liste des mots consecutifs d'un texte. Une autre phrase de ce texte. En une derniere."
+>>> mots = texte.split()>>> nombre_de_mots = len(mots)
+>>> mots_consecutifs = [0] * (nombre_de_mots-1)
+>>> nombre_de_mots
+22
+>>> mots_consecutifs
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+>>> nombre_de_mots-1
+21
+>>> range(nombre_de_mots-1)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+>>> i = 0
+>>> i = range(nombre_de_mots-1)[0]
+>>> i
+0
+>>> (mots[i], mots[i+1])
+('Ecrire', 'un')
+>>> mots_consecutifs[i]
+0
+>>> mots_consecutifs[i] = (mots[i], mots[i+1])
+>>> mots_consectufis
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'mots_consectufis' is not defined
+>>> mots_consectufifs
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'mots_consectufifs' is not defined
+>>> mots_consecutifs
+[('Ecrire', 'un'), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+>>> i = range(nombre_de_mots-1)[1]
+>>> i
+1
+>>> (mots[i], mots[i+1])
+('un', 'programme')
+>>> range(10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> range(3, 10)
+[3, 4, 5, 6, 7, 8, 9]
+>>> range(3, 10, 2)
+[3, 5, 7, 9]
+>>> 
+
